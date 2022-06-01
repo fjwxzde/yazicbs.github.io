@@ -3404,7 +3404,9 @@ window.runAfterDomBinding = {
   height: 36px;
   margin-bottom: 40px;
 }
-</style><style type="text/css" id="s52174-0">/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+</style><style type="text/css" id="s52174-0">
+/*错误可能与：bang的声明 和 stylelint 有关。*/
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable declaration-bang-space-before */
 /* stylelint-disable declaration-bang-space-before */
 .s-kit-modal {
@@ -3455,11 +3457,12 @@ window.runAfterDomBinding = {
   color: rgba(0, 0, 0, 0.43);
   outline: 0;
 }
-.s-kit-modal-close-x {
+.s-kit-modal-close-x {/*<element class="s-kit-modal-close-x">*/
   display: block;
   font-style: normal;
-  vertical-align: baseline;
-  /*Visual Studio Code 提示：Property is ignored due to the display. With 'display: block', vertical-align should not be used.css(propertyIgnoredDueToDisplay)*/
+/*可能是行外元素*/
+/*  vertical-align: baseline; */
+/*Visual Studio Code 提示：Property is ignored due to the display. With 'display: block', vertical-align should not be used.css(propertyIgnoredDueToDisplay)*/
   text-align: center;
   text-transform: none;
   text-rendering: auto;
