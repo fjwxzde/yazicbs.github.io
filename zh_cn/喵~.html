@@ -1,1 +1,41 @@
+<!-- Code by Duck Studio -->
+<!-- 在本网页中，本网站作者不承担任何由您造成的问题:D -->
+
+<!-- Console log -->
+<script>
+    console.log(`你干嘛，嗨嗨呦`)
+    console.log('喵~')
+</script>
+
+<!-- Music start -->
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=520 src="//music.163.com/outchain/player?type=0&id=7839261927&auto=0&height=430"></iframe>
+<!-- Music End -->
+
+<!-- 哈哈自己练习用 -->
+<html> 
+<head> 
+<script type="text/javascript"> 
+function startTime() 
+{ 
+var today=new Date() 
+var h=today.getHours() 
+var m=today.getMinutes() 
+var s=today.getSeconds() 
+// 当数字是小于10的就要在前面加0.看起来规范 
+m=checkTime(m) 
+s=checkTime(s) 
+document.getElementById('txt').innerHTML=h+":"+m+":"+s 
+t=setTimeout('startTime()',1000) 
+} 
+function checkTime(i) 
+{ 
+if (i<10) 
+{i="0" + i} 
+return i 
+} 
+</script> 
+</head> 
+<body onload="startTime()"> 
+<div id="txt"></div> 
+</body> 
+</html> 
