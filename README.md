@@ -34,6 +34,7 @@ Code by **Duck Studio**.<br>
 如果您想加入本项目的编写，请联系**Yzcbs123@163.com**或者QQ**1707230454**。<br>
 万分感谢！<br>
 ## 我们的官方账号<br>
-[Bilibili@鸭鸭_カモ](https://space.bilibili.com/2054654702)<br>
+[Bilibili:鸭鸭_カモ](https://space.bilibili.com/2054654702)<br>
+[Twitter :Duck Duck Studio](https://twitter.com/JinchengFang)<br>
 <p style="text-align:right">鸭鸭「カモ」</p>
 <p style="text-align:right">2023年3月26日</p>
