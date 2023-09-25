@@ -1,0 +1,455 @@
+@font-face {
+    font-family: 'Brandon';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot);
+    /*[本处为CSS格式]已将其替换，原链接:https://static-assets.sxlcdn.com/webpack/fonts/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot*/
+    /*[字体文件]*/
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/brandon_bld-webfont.10b50ee4aa9930dd26ae117a07e922eb.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_bld-webfont.2bf5f4d8928806f7c91c290b5814aff9.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_bld-webfont.70c7d99488f7e8cf27634e9c58bf6217.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_bld-webfont.44a3e64aa120d1b7964f10be29ad878b.svg#BrandonGrotesqueBoldRegular) format('svg');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Brandon';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/brandon_reg-webfont.662dee687e0069f714f79db9bde55f81.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/brandon_reg-webfont.662dee687e0069f714f79db9bde55f81.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_reg-webfont.64088d528192c8fce171860f56a14a9f.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_reg-webfont.04206b825348a69ee85b523c1e67a70f.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_reg-webfont.348bd0ea620c7861d0c3ac028ba911ed.svg#BrandonGrotesqueRegularRg) format('svg');
+    /*[本处为CSS格式]已将其替换，原链接:https://static-assets.sxlcdn.com/webpack/fonts/brandon_reg-webfont.662dee687e0069f714f79db9bde55f81.eot*/
+    /*[字体文件]*/
+    /*以下全部已替换,注释省略,旧链接请查看之前的提交*/
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Brandon';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/brandon_light-webfont.d23193b7e25a59254d67a04a9f6d4eaa.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/brandon_light-webfont.d23193b7e25a59254d67a04a9f6d4eaa.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_light-webfont.90829ddb7531a53c1dcd670d545999d2.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_light-webfont.2c18926b679dfb8abff6fc13c2b8beeb.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_light-webfont.518c0c41a5141b2e59732f43d9b70575.svg#BrandonGrotesqueLight) format('svg');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Brandon';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/brandon_med-webfont.78c65e04664b2559e1ca630e2606c3b5.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/brandon_med-webfont.78c65e04664b2559e1ca630e2606c3b5.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_med-webfont.43b22b68b4b50438a8c9d5ed49507204.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_med-webfont.b2cf0cf708268a04055c5d8545d811a4.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/brandon_med-webfont.785c578a01a0d60f61ad665fe481306d.svg#BrandonGrotesqueMedium) format('svg');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'open_sans';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Bold-webfont.1d9c7945c7bc7dd0909105119bfbc191.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Bold-webfont.1d9c7945c7bc7dd0909105119bfbc191.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.2e90d5152ce92858b62ba053c7b9d2cb.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.76cc6be5d8a231dc012fef4bdb86f79c.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.93349923b5274a36ac93cb3168d09123.svg#open_sansbold) format('svg');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'open_sans';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-BoldItalic-webfont.6218c213bb8cf22b25710da6f3a90e48.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-BoldItalic-webfont.6218c213bb8cf22b25710da6f3a90e48.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-BoldItalic-webfont.7657144ec477cd61ac4a5d1af3fa2d28.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-BoldItalic-webfont.b6690626036a7d6824632769305b1978.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-BoldItalic-webfont.2b4eeeaef53b3496a5cdf82803666ed7.svg#open_sansbold_italic) format('svg');
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'open_sans';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Italic-webfont.43d5342998f3607bd61a8239e98b1160.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Italic-webfont.43d5342998f3607bd61a8239e98b1160.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Italic-webfont.f42641eed834f7b97a9499362c6c8855.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Italic-webfont.de7ef31e6295902347c5c3643b2d82da.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Italic-webfont.5b774c25787e0a52c013463c9e3c4219.svg#open_sansitalic) format('svg');
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'open_sans';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Light-webfont.09e00aa7622ece30a0f1e06b55f66c2a.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Light-webfont.09e00aa7622ece30a0f1e06b55f66c2a.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Light-webfont.45b47f3e9c7d74b80f5c6e0a3c513b23.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Light-webfont.2e98fc3ce85f31f63010b706259cb604.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Light-webfont.8f04ed9aeb2185499068d84842b95aa1.svg#open_sanslight) format('svg');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'open_sans';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-LightItalic-webfont.550b5fda4a27cfedb7131b1a6e85e748.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-LightItalic-webfont.550b5fda4a27cfedb7131b1a6e85e748.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-LightItalic-webfont.b553da506077488bc65289e10841d527.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-LightItalic-webfont.1d22953c479914c2f801e08de666b0e8.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-LightItalic-webfont.fd6dd5fa10c5a74f0a767eeb695342f1.svg#open_sanslight_italic) format('svg');
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'open_sans';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Regular-webfont.c4d82460ef260eb1589e73528cbfb257.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Regular-webfont.c4d82460ef260eb1589e73528cbfb257.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.79515ad0788973c533405f7012dfeccd.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.488d5cc145299ba07b75495100419ee6.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.8185eb3059c46e4169ce107dfcf85950.svg#open_sansregular) format('svg');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'open_sans';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Semibold-webfont.f28eb362fb6afe946d822ee5451c2146.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Semibold-webfont.f28eb362fb6afe946d822ee5451c2146.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Semibold-webfont.697574b47bcfdd2c45e3e63c7380dd67.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Semibold-webfont.b32acea6fd3c228b5059042c7ad21c55.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Semibold-webfont.3f6b1eed8a0832d6f316fc26526348a8.svg#open_sanssemibold) format('svg');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'open_sans';
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-SemiboldItalic-webfont.70bafcaaadad9e17b9c7784abbc6b1c2.eot);
+    src: url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-SemiboldItalic-webfont.70bafcaaadad9e17b9c7784abbc6b1c2.eot?#iefix) format('embedded-opentype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-SemiboldItalic-webfont.719f7321a8366f4ee609737026432113.woff) format('woff'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-SemiboldItalic-webfont.64f886b232962979e2eaf29d93108286.ttf) format('truetype'), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-SemiboldItalic-webfont.70eb93d7ba2ad241180085a9a74b0b95.svg#open_sanssemibold_italic) format('svg');
+    font-weight: 600;
+    font-style: italic;
+  }
+  .s-dialog-form .s-kit-modal-close {
+    right: 22px;
+  }
+  .s-dialog-form .form-title {
+    color: #4b5056;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'brandon', sans-serif;
+  }
+  .s-dialog-form .form-title:lang(ja) {
+    font-family: 'brandon', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  }
+  .s-dialog-form .form-title:lang(zh-cn),
+  .s-dialog-form .form-title:lang(zh),
+  .s-dialog-form .form-title:lang(sxl) {
+    font-family: 'brandon', 'PingFang SC', "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+  }
+  .s-dialog-form .form-title:lang(zh-tw) {
+    font-family: 'brandon', 'PingFang TC', 'Microsoft JhengHei', "微軟正黑體", STXihei, sans-serif;
+  }
+  .membership-dialog {
+    text-align: left;
+    border-radius: 4px;
+  }
+  .membership-dialog .s-kit-modal-close {
+    right: 22px;
+  }
+  .membership-dialog .mobile-dialog-style {
+    flex-direction: column;
+  }
+  .membership-dialog .mobile-dialog-style,
+  .membership-dialog .mobile-dialog-style > div {
+    width: 100%;
+  }
+  .membership-dialog .mobile-dialog-style .left {
+    max-height: 240px;
+    margin-bottom: 20px;
+  }
+  .membership-dialog .s-dialog-form .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 710px;
+  }
+  .membership-dialog .s-dialog-form .content.free_register:not(.slimed),
+  .membership-dialog .s-dialog-form .content.free_register:not(.slimed) > div {
+    width: 100%;
+  }
+  .membership-dialog .s-dialog-form .content.free_register:not(.slimed) .left {
+    display: none;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-card {
+    min-height: 50px;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-card .tier-plan-radio-group .s-kit-radio-card {
+    min-height: 20px;
+    border: 0px;
+    padding: 10px 0 0 0;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-card .tier-plan-radio-group .s-kit-radio-card .s-kit-radio-wrapper .s-kit-radio-input {
+    width: 14px;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-card .tier-plan-radio-group .s-kit-radio-card .plan-price {
+    font-weight: normal;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-group .s-kit-basic-card.gray {
+    border-radius: 0;
+    border-bottom-width: 0;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-group .s-kit-basic-card.gray .radio-text {
+    margin-top: 0;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-group .s-kit-basic-card.gray .radio-text .tier-plan-radio-group {
+    margin-top: 8px;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-group .s-kit-basic-card.gray .radio-text .tier-plan-radio-group .s-kit-basic-card.gray {
+    border: none;
+    padding: 10px;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-group .s-kit-basic-card.gray .radio-text .tier-plan-radio-group .s-kit-basic-card.gray .s-kit-radio .s-kit-radio-input {
+    width: 15px;
+    height: 15px;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-group .s-kit-basic-card.gray .radio-text .tier-plan-radio-group .s-kit-basic-card.gray .label-item .label {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-group .s-kit-basic-card.gray:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-group .s-kit-basic-card.gray:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-width: 1px;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-group > div:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .membership-dialog .s-dialog-form .content .s-kit-radio-group > div:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-width: 1px;
+  }
+  .membership-dialog .s-dialog-form .content > div {
+    width: 340px;
+  }
+  .membership-dialog .s-dialog-form .content .left {
+    margin-top: 4px;
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  .membership-dialog .s-dialog-form .content .left .tier-info .plan-price {
+    font-weight: normal;
+  }
+  .membership-dialog .s-dialog-form .content .left .s-kit-radio-group .left-card-content {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+  .membership-dialog .s-dialog-form .content .left .s-kit-radio-group .left-card-content .left-card-text {
+    flex: 1;
+    width: 0;
+  }
+  .membership-dialog .s-dialog-form .content .left .s-kit-radio-group .left-card-content .left-card-text .title {
+    width: 100%;
+    display: inline-block;
+  }
+  .membership-dialog .s-dialog-form .content.slimed {
+    flex-direction: column;
+  }
+  .membership-dialog .s-dialog-form .content.slimed,
+  .membership-dialog .s-dialog-form .content.slimed > div {
+    width: 100%;
+  }
+  .membership-dialog .s-dialog-form .content.slimed .left {
+    max-height: 240px;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 770px) {
+    .membership-dialog .s-dialog-form .content {
+      flex-direction: column;
+    }
+    .membership-dialog .s-dialog-form .content,
+    .membership-dialog .s-dialog-form .content > div {
+      width: 100%;
+    }
+    .membership-dialog .s-dialog-form .content .left {
+      max-height: 240px;
+      margin-bottom: 20px;
+    }
+    .membership-dialog .s-dialog-form .content .plan-price {
+      margin-top: 5px;
+      display: block;
+    }
+  }
+  .membership-dialog.s-kit-modal {
+    min-height: 266px;
+  }
+  .membership-dialog .error-message {
+    margin-bottom: 15px;
+    color: #E64751;
+  }
+  .membership-dialog .s-kit-input {
+    width: 100%;
+    height: 37px;
+    box-sizing: border-box;
+  }
+  .membership-dialog .s-form-field.paid-membership-radio {
+    color: #4b5056;
+    display: flex;
+    align-items: center;
+  }
+  .membership-dialog .s-form-field.paid-membership-radio input {
+    width: auto;
+    margin-right: 10px;
+  }
+  .membership-dialog .subscriptions-view .form-title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .membership-dialog .subscriptions-view .form-title .fa-angle-left {
+    font-size: 25px;
+    align-self: flex-start;
+    margin-right: 10px;
+  }
+  .membership-dialog .subscriptions-list {
+    border: 1px solid #ddd;
+  }
+  .membership-dialog .subscriptions-list .subscription-item {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 20px 0;
+    flex-wrap: wrap;
+  }
+  .membership-dialog .subscriptions-list .subscription-item .info {
+    flex: 1 1 0%;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 770px) {
+    .membership-dialog .subscriptions-list .subscription-item .info {
+      min-width: unset;
+      width: 0;
+    }
+  }
+  .membership-dialog .subscriptions-list .subscription-item .name {
+    overflow-wrap: break-word;
+    font-weight: 600;
+  }
+  .membership-dialog .subscriptions-list .subscription-item .s-kit-btn {
+    flex: 0 0 auto;
+    min-width: 140px;
+    margin: 0 0 20px;
+  }
+  .membership-dialog .subscriptions-list .subscription-item:last-child {
+    border-bottom: none;
+  }
+  .membership-dialog .subscriptions-list .subscription-item .s-kit-radio-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .membership-dialog .subscriptions-list .subscription-item .s-kit-radio-wrapper .discount-tag {
+    margin-left: 5px;
+  }
+  .membership-dialog .subscriptions-list .subscription-item .subscribe-plans {
+    margin-top: 5px;
+    line-height: 1;
+  }
+  .membership-dialog .subscriptions-list .subscription-item .subscribe-plans .sub-text {
+    margin-top: 5px;
+    color: #c6c9cd;
+  }
+  @media screen and (min-width: 770px) {
+    .membership-dialog .subscriptions-list .mid-gray .s-kit-btn {
+      margin-bottom: 0px;
+    }
+  }
+  .membership-dialog.payment .error-message {
+    margin-bottom: 0;
+  }
+  .membership-dialog.payment .s-kit-modal-body {
+    padding: 0;
+  }
+  .membership-dialog.payment .s-kit-modal-close-x {
+    display: none;
+  }
+  .membership-dialog.payment .stripe-form .form-body .s-form-field .entypo-mail {
+    top: 0;
+  }
+  .membership-dialog.payment .stripe-form .form-body .s-form-field .s-btn {
+    text-align: center;
+  }
+  .membership-dialog.payment .stripe-form .header {
+    margin-bottom: 0;
+  }
+  .membership-dialog.payment .stripe-form .form-body .title {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .membership-dialog.payment .square-form .s-form-field input {
+    padding: 12px 20px;
+    padding-left: 50px;
+  }
+  .membership-dialog.payment .square-form .form-body .square-card-container .error-message.more-space {
+    bottom: -10px;
+  }
+  .membership-dialog.subscriptions .s-kit-modal-body {
+    max-width: 560px;
+  }
+  .membership-dialog.subscriptions .loading:not(.s-kit-btn) {
+    line-height: 200px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .membership-dialog.payment_success .s-kit-modal-body {
+    max-width: 500px;
+    text-align: center;
+  }
+  .membership-dialog.payment_success .form-title {
+    font-weight: 600;
+  }
+  .membership-dialog.payment_success p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  .membership-dialog.payment_success .s-kit-btn {
+    min-width: 120px;
+  }
+  .membership-dialog.payment_failure .s-kit-modal-body {
+    max-width: 400px;
+    text-align: center;
+  }
+  .membership-dialog.account_info .s-kit-modal-body,
+  .membership-dialog.subscriptions .s-kit-modal-body {
+    min-height: 350px;
+    box-sizing: border-box;
+  }
+  .membership-dialog .payment-failed .content {
+    line-height: 1.4;
+    margin: 10px 0 30px;
+  }
+  .membership-dialog .payment-failed .bottom-buttons .s-kit-btn {
+    display: block;
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+  .membership-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .membership-section-wrapper .membership-dialog {
+    min-width: 350px;
+  }
+  .s4-dropdown-list {
+    position: absolute !important;
+    top: 100% !important;
+  }
+  .bottom-actions {
+    color: #a9aeb2;
+    margin-top: 20px;
+  }
+  .bottom-actions a {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+  }
+  .bottom-actions .s-terms-link {
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .bottom-actions .register-link {
+    color: #1bb0e6;
+  }
+  .s-kit-modal-body {
+    font-size: 14px !important;
+  }
+  .s-nav-top-center-item-container .s-membership-nav.s-nav-dropdown.s-navbar-dropdown .s-nav-link-container {
+    display: inline-block;
+  }
+  .bottom-actions {
+    max-width: 350px;
+  }
+  .bottom-actions .s-common-link {
+    display: inline-block;
+    text-decoration: underline;
+  }
+  .bottom-actions a {
+    margin-top: 20px;
+  }
+  .bottom-actions span {
+    line-height: 1.5;
+  }
+  @media (max-width: 400px) {
+    .s-kit-modal {
+      min-width: 100% !important;
+    }
+  }
