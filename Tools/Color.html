@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Color Display] ÑÕÉ«´úÂëÏÔÊ¾</title>
+    <title>[Color Display] é¢œè‰²ä»£ç æ˜¾ç¤º</title>
     <style>
         body, html {
             height: 100%;
@@ -16,10 +16,10 @@
         }
 
         #colorCode {
-            font-size: 5em; /* Ôö´ó×ÖÌå´óĞ¡ */
+            font-size: 5em; /* å¢å¤§å­—ä½“å¤§å° */
             color: white;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            user-select: none; /* ·ÀÖ¹ÓÃ»§Ñ¡ÔñÎÄ±¾ */
+            user-select: none; /* é˜²æ­¢ç”¨æˆ·é€‰æ‹©æ–‡æœ¬ */
         }
 
         #colorInput {
@@ -44,7 +44,7 @@
     var color = e.target.value;
     var colorCode = document.getElementById('colorCode');
 
-    // ³¢ÊÔ½«ÊäÈëÖµ×÷Îª±³¾°ÑÕÉ«ÉèÖÃ
+    // å°è¯•å°†è¾“å…¥å€¼ä½œä¸ºèƒŒæ™¯é¢œè‰²è®¾ç½®
     try {
       document.body.style.backgroundColor = color;
       colorCode.textContent = color;
