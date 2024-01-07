@@ -1,88 +1,83 @@
-.s-component-editor-inner.common-editor .s-component-content img {
-    margin: 0px auto;
-    border-radius: 3px;
-    max-width: 98%;
-    display: block;
-    padding-top: 10px 0;
-  }
-  .s-component-editor-inner.common-editor .s-component-content p {
-    margin: 0.5em 0;
-    line-height: 1.4;
-  }
-  .s-component-editor-inner.common-editor .s-component-content em {
-    font-style: italic;
-    font-weight: inherit;
-  }
-  .s-component-editor-inner.common-editor .s-component-content strong {
-    font-style: inherit;
-  }
-  .s-component-editor-inner.common-editor .s-component-content ol {
-    margin: 0.5em 0;
-    padding: 0 20px;
-    list-style-type: decimal;
-  }
-  .s-component-editor-inner.common-editor .s-component-content ul {
-    margin: 0.5em 0;
-    padding: 0 20px;
-    list-style-type: disc;
-  }
-  .s-component-editor-inner.common-editor .s-component-content li {
-    line-height: 1.4;
-  }
-  @media only screen and (max-width: 500px) {
-    .s-kit-modal-body {
-      max-height: 74vh;
-      overflow: auto;
-    }
-    .popups-dialog.s-email-form.modify-the-position .s-kit-modal-content .s-kit-modal-close {
-      top: -40px;
-      right: 0;
-    }
-    .s-kit-modal.popups-dialog {
-      position: fixed;
-      top: 40px;
-      left: 0;
-      min-width: 100%;
-      margin: 0;
-    }
-  }
-  .popups-dialog.s-email-form.modify-the-position .s-kit-modal-content {
-    overflow: visible;
-  }
-  .popups-dialog.s-email-form.modify-the-position .s-kit-modal-close {
-    top: 0;
-    right: -40px;
-    color: rgba(255, 255, 255, 0.75);
-  }
-  .popups-dialog.s-email-form .s-kit-modal-body {
-    padding: 0;
-  }
-  .popups-dialog.s-email-form .s-kit-modal-content {
-    width: 100%;
-  }
-  .popups-dialog.s-email-form .s-kit-modal-close {
-    top: 7px;
-    right: 6px;
-  }
-  .popups-dialog.s-email-form .submit-result-container {
-    padding: 40px;
-  }
-  .popups-dialog.s-email-form .submit-result-container .title {
-    margin-bottom: 40px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  .popups-dialog.s-email-form .submit-result-container .s-email-form-button {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 9px 9px;
-    font-size: 14px;
-    min-height: 36px;
-    line-height: 18px;
-    letter-spacing: 1.5px;
-    text-align: center;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+.cart-item-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.cart-item-wrapper .product-info {
+  display: flex;
+  align-content: center;
+}
+.cart-item-wrapper .product-info .image {
+  width: 130px;
+  height: 130px;
+  border-radius: 4px;
+  margin-right: 20px;
+  background-size: cover;
+  background-position: center;
+}
+.cart-item-wrapper .info-content {
+  flex: 1;
+  font-family: open_sans, Open Sans, sans-serif;
+}
+.cart-item-wrapper .info-content .name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4b5056;
+}
+.cart-item-wrapper .info-content .specification-item {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #a9aeb2;
+}
+.cart-item-wrapper .info-content .split-line {
+  margin: 0 6px;
+}
+.cart-item-wrapper .info-content .quantity-panel {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+}
+.cart-item-wrapper .info-content .operation-item {
+  border-radius: 2px;
+  color: #4b5056;
+  display: inline-flex;
+  font-size: 18px;
+  background-color: #F4F6F8;
+}
+.cart-item-wrapper .info-content .operation-item .minus-icon,
+.cart-item-wrapper .info-content .operation-item .plus-icon,
+.cart-item-wrapper .info-content .operation-item .delete-icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+.cart-item-wrapper .info-content .operation-item .quantity-input {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  border-radius: 0;
+  text-align: center;
+  background-color: #F4F6F8;
+}
+.cart-item-wrapper .info-content .operation-item .quantity-input:focus {
+  outline: none;
+}
+.cart-item-wrapper .info-content .error-message {
+  color: #FB7D2B;
+  line-height: 1.2;
+  margin-left: 10px;
+}
+.cart-item-wrapper .product-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #4b5056;
+}
