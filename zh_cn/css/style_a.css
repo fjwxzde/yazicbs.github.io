@@ -1,0 +1,88 @@
+.s-component-editor-inner.common-editor .s-component-content img {
+    margin: 0px auto;
+    border-radius: 3px;
+    max-width: 98%;
+    display: block;
+    padding-top: 10px 0;
+  }
+  .s-component-editor-inner.common-editor .s-component-content p {
+    margin: 0.5em 0;
+    line-height: 1.4;
+  }
+  .s-component-editor-inner.common-editor .s-component-content em {
+    font-style: italic;
+    font-weight: inherit;
+  }
+  .s-component-editor-inner.common-editor .s-component-content strong {
+    font-style: inherit;
+  }
+  .s-component-editor-inner.common-editor .s-component-content ol {
+    margin: 0.5em 0;
+    padding: 0 20px;
+    list-style-type: decimal;
+  }
+  .s-component-editor-inner.common-editor .s-component-content ul {
+    margin: 0.5em 0;
+    padding: 0 20px;
+    list-style-type: disc;
+  }
+  .s-component-editor-inner.common-editor .s-component-content li {
+    line-height: 1.4;
+  }
+  @media only screen and (max-width: 500px) {
+    .s-kit-modal-body {
+      max-height: 74vh;
+      overflow: auto;
+    }
+    .popups-dialog.s-email-form.modify-the-position .s-kit-modal-content .s-kit-modal-close {
+      top: -40px;
+      right: 0;
+    }
+    .s-kit-modal.popups-dialog {
+      position: fixed;
+      top: 40px;
+      left: 0;
+      min-width: 100%;
+      margin: 0;
+    }
+  }
+  .popups-dialog.s-email-form.modify-the-position .s-kit-modal-content {
+    overflow: visible;
+  }
+  .popups-dialog.s-email-form.modify-the-position .s-kit-modal-close {
+    top: 0;
+    right: -40px;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .popups-dialog.s-email-form .s-kit-modal-body {
+    padding: 0;
+  }
+  .popups-dialog.s-email-form .s-kit-modal-content {
+    width: 100%;
+  }
+  .popups-dialog.s-email-form .s-kit-modal-close {
+    top: 7px;
+    right: 6px;
+  }
+  .popups-dialog.s-email-form .submit-result-container {
+    padding: 40px;
+  }
+  .popups-dialog.s-email-form .submit-result-container .title {
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .popups-dialog.s-email-form .submit-result-container .s-email-form-button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 9px 9px;
+    font-size: 14px;
+    min-height: 36px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
