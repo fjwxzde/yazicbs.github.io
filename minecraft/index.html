@@ -61,6 +61,8 @@
         ];
 
         const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
+        //const randomSentenceElement = document.getElementById("random-sentence");
+        //randomSentenceElement.textContent = sentences[randomIndex];
         console.log(`[你知道吗]\n${randomSentence}`);
         // 每次访问随机展示(in console)
     </script>
@@ -111,6 +113,10 @@
 
         .right-text {
             text-align: right;
+        }
+
+        .center-text {
+            text-align: center;
         }
     </style>
 </head>
@@ -255,6 +261,14 @@
             <!-- Older -->
         </ul>
     </div>
+    <!-- No finish to edit ---
+    <div class="container">
+        <div class="center-text">
+            <p><strong>[你知道吗]</strong></p>
+            <p id="random-sentence"></p>
+        </div>
+    </div>
+    -->
     <div class="container">
         <div class="right-text">
             <a href="https://duckduckstudio.github.io/yazicbs.github.io/">回到主页</a>
