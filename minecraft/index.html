@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- Code by Duck Studio -->
-<!-- ©鸭鸭「カモ」 (包括工具) -->
-<!-- 如需搬运，请注明主页网址，而不是本页网址。感谢！ -->
+<!-- ©鸭鸭「カモ」 (包括图片) -->
 <html>
 <head>
     <title>鸭鸭「カモ」的Minecraft世界</title>
@@ -76,15 +75,19 @@
         ];
 
         const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
-        //const randomSentenceElement = document.getElementById("random-sentence");
-        //randomSentenceElement.textContent = sentences[randomIndex];
         console.log(`[你知道吗]\n${randomSentence}`);
         // 每次访问随机展示(in console)
+        
+        // debug
+        const randomIndex = Math.floor(Math.random() * sentences.length);
+
+        const randomSentenceElement = document.getElementById("random-sentence");
+        randomSentenceElement.textContent = sentences[randomIndex];
+        // --
     </script>
     <style>
         body {
             background-color: #f5f5dc; /* 米色背景 */
-            /*display: flex;*/
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -95,7 +98,6 @@
             background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
             border-radius: 10px;
             padding: 20px;
-            /*max-width: 500px;*/
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
@@ -110,11 +112,6 @@
             font-size: 24px; /* 调整标题文本大小 */
             margin-bottom: 10px; /* 调整标题与下方段落的间距 */
         }
-
-        /*p {
-            color: #666;
-            margin-bottom: 15px; /* 调整段落间距 */
-        /*}*/
 
         a {
             color: #000;
@@ -276,14 +273,14 @@
             <!-- Older -->
         </ul>
     </div>
-    <!-- No finish to edit ---
+    <!-- No finish to edit -->
     <div class="container">
         <div class="center-text">
             <p><strong>[你知道吗]</strong></p>
             <p id="random-sentence"></p>
         </div>
     </div>
-    -->
+    <!-- -->
     <div class="container">
         <div class="right-text">
             <a href="https://duckduckstudio.github.io/yazicbs.github.io/">回到主页</a>
