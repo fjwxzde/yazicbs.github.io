@@ -276,12 +276,12 @@
             // more and more ...
         ];
 
-        const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
-        console.log(`[你知道吗]\n${randomSentence}`);
-        // 每次访问随机展示(in console)
-        
-        // debug
+        // 每次访问随机
+
         const randomIndex = Math.floor(Math.random() * sentences.length);
+
+        const randomSentence = sentences[randomIndex];
+        console.log(`[你知道吗]\n${randomSentence}`);
 
         const randomSentenceElement = document./*Here start ERROR*/getElementById("random-sentence");
         randomSentenceElement.textContent = sentences[randomIndex];
