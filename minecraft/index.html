@@ -30,60 +30,6 @@
         回到主页：https://duckduckstudio.github.io/yazicbs.github.io/
         [最新维护日期:2024/1/12]
         `)
-
-        // [你知道吗]
-
-        const sentences = [
-            // -- 有用的信息 --
-            "M6线已经开始规划了哦！",
-            "M5线是一条小站通勤线。",
-            "繁花苑站不只规划一条线路哦！",
-            "所有的车站和轨道都是使用原版方块，没有用模组建的哦！",
-            "github.io是GitHub的二级域名哦！",// Warn
-            "本网页的所有代码你都可以在GitHub找到。",
-            "M5线的建设有一部分是为了连接M6线。",
-            "M2线已经全线建设完毕了。(指车站)",
-            "如果你发现网站(全站，包括首页)有任何问题，你可以告诉作者<Yzcbs123@163.com>。",
-            "蘑菇岛有自然生成的棕色哞牛！",
-            "蘑菇岛北站不是蘑菇岛站！",
-            "目前最新的车站是：M5线大冰湖站。",// Warn important
-            "蘑菇岛北站的北字左右都有空格，这是为了区分蘑菇岛北站与蘑菇岛站",
-            "东海港-蘑菇岛间有两个海底神殿！",
-            // -- 废话 -- [下面都是]
-            "你知道[你知道吗]吗？",// 你说我知不知道！
-            "杂鱼❤~杂鱼❤~",
-            "来了！1/14！(1/14表示1月14日)",// Warn important
-            "我(网站作者,某鸭的minecraft世界建设者)也是芙芙工具箱的作者哦！",
-            "你知道[你知道吗]里面有多少句以“哦！”结尾的句子吗？",
-            "哇！白色闪耀！(原...原...源...Arcaea，启动！)",// Warn
-            "网易MC？玩你的山羊去吧。",// Warn
-            "不知道，导员没说。  没事，去玩吧。",
-            "这里不只有信息，还有废话。",
-            "给 我 爪巴 ！",
-            "喵~ (猫叫)",
-            "你知道吗？你不知道。",
-            "awa...",
-            // -- 一身反骨 --
-            "不好评价。",
-            "很好评价。",
-            // --
-            // -- Songs --
-            "I just want for the JUMP JUMP JUMP JUMP!",
-            "if you can.",
-            "看见全白色的屏幕，你会想到什么？  原...原...源...My guiding star!(Arcaea,启动！)",
-            // more and more ...
-        ];
-
-        const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
-        console.log(`[你知道吗]\n${randomSentence}`);
-        // 每次访问随机展示(in console)
-        
-        // debug
-        const randomIndex = Math.floor(Math.random() * sentences.length);
-
-        const randomSentenceElement = document.getElementById("random-sentence");
-        randomSentenceElement.textContent = sentences[randomIndex];
-        // --
     </script>
     <style>
         body {
@@ -287,5 +233,59 @@
             <p>最后更新：<strong>2024/1/13</strong></p>
         </div>
     </div>
+    <script>
+        // [你知道吗]
+        const sentences = [
+            // -- 有用的信息 --
+            "M6线已经开始规划了哦！",
+            "M5线是一条小站通勤线。",
+            "繁花苑站不只规划一条线路哦！",
+            "所有的车站和轨道都是使用原版方块，没有用模组建的哦！",
+            "github.io是GitHub的二级域名哦！",// Warn
+            "本网页的所有代码你都可以在GitHub找到。",
+            "M5线的建设有一部分是为了连接M6线。",
+            "M2线已经全线建设完毕了。(指车站)",
+            "如果你发现网站(全站，包括首页)有任何问题，你可以告诉作者<Yzcbs123@163.com>。",
+            "蘑菇岛有自然生成的棕色哞牛！",
+            "蘑菇岛北站不是蘑菇岛站！",
+            "目前最新的车站是：M5线大冰湖站。",// Warn important
+            "蘑菇岛北站的北字左右都有空格，这是为了区分蘑菇岛北站与蘑菇岛站",
+            "东海港-蘑菇岛间有两个海底神殿！",
+            // -- 废话 -- [下面都是]
+            "你知道[你知道吗]吗？",// 你说我知不知道！
+            "杂鱼❤~杂鱼❤~",
+            "来了！1/14！(1/14表示1月14日)",// Warn important
+            "我(网站作者,某鸭的minecraft世界建设者)也是芙芙工具箱的作者哦！",
+            "你知道[你知道吗]里面有多少句以“哦！”结尾的句子吗？",
+            "哇！白色闪耀！(原...原...源...Arcaea，启动！)",// Warn
+            "网易MC？玩你的山羊去吧。",// Warn
+            "不知道，导员没说。  没事，去玩吧。",
+            "这里不只有信息，还有废话。",
+            "给 我 爪巴 ！",
+            "喵~ (猫叫)",
+            "你知道吗？你不知道。",
+            "awa...",
+            // -- 一身反骨 --
+            "不好评价。",
+            "很好评价。",
+            // --
+            // -- Songs --
+            "I just want for the JUMP JUMP JUMP JUMP!",
+            "if you can.",
+            "看见全白色的屏幕，你会想到什么？  原...原...源...My guiding star!(Arcaea,启动！)",
+            // more and more ...
+        ];
+
+        const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
+        console.log(`[你知道吗]\n${randomSentence}`);
+        // 每次访问随机展示(in console)
+        
+        // debug
+        const randomIndex = Math.floor(Math.random() * sentences.length);
+
+        const randomSentenceElement = document./*Here start ERROR*/getElementById("random-sentence");
+        randomSentenceElement.textContent = sentences[randomIndex];
+        // --
+    </script>
 </body>
 </html>
