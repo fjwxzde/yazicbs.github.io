@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烟花效果</title>
+    <style>
+        body {
+            background-color: black;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .firework {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            transition: transform 1s, opacity 1.5s;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+document.body.addEventListener('click', function(e) {
+    createFirework(e.clientX, e.clientY);
+});
+
+function createFirework(x, y) {
+    const color = getRandomColor();
+    const size = getRandomSize(5, 15); // 绽放大小上下限
+    const div = document.createElement('div');
+    div.className = 'firework';
+    div.style.left = x + 'px';
+    div.style.top = y + 'px';
+    div.style.width = size + 'px';
+    div.style.height = size + 'px';
+    div.style.backgroundColor = color;
+
+    document.body.appendChild(div);
+
+    // 动画效果
+    setTimeout(() => { // 模拟起飞
+        div.style.transform = `translate(-50%, -50%) scale(${getRandomScale(3, 6)})`; // 绽放大小随机
+        div.style.opacity = 0;
+    }, 0);
+
+    setTimeout(() => { // 清理
+        div.remove();
+    }, 1500); // 根据动画持续时间调整
+}
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+function getRandomSize(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandomScale(min, max) {
+    return Math.random() * (max - min) + min;
+}
+</script>
+
+</body>
+</html>
