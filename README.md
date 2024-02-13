@@ -1,13 +1,13 @@
 # 鸭鸭工作室 | 鸭鸭「カモ」 的个人网站<br>
 
 ## 关于本网页<br>
-本网页由鸭鸭「カモ」编写于维护，**如有任何问题可以前往[项目讨论区](https://github.com/DuckDuckStudio/yazicbs.github.io/discussions)进行反馈。**<br>
+本网页由 **鸭鸭「カモ」** 编写与维护，**如有任何问题可以[提交Issues](https://github.com/DuckDuckStudio/yazicbs.github.io/issues)进行反馈。**<br>
 Code by **Duck Studio**.<br>
-**Duck Studio**保留本网页最终解释权<br>
+**Duck Studio** 保留本网页最终解释权<br>
 
 ## 网站公告<br>
-我们最近在写一些新的页面，我们会尽快的写好并将其添加到主页面的QAQ，还请各位期待下。(想提前预览的话也可以找找本仓库的最新提交，你也许会有新发现) **[2023.9.25]**<br>
-我们已经与几天前**重写了隐私政策**，请留意！**继续浏览或者使用本网站即代表您同意本网站的隐私政策！** **[2023.9.16]**
+我们已为芙芙工具箱提供了网页！[before 2024.2.14]<br>
+我们已经**重写了隐私政策**，请留意！**继续浏览或者使用本网站即代表您同意本网站的隐私政策！** **[2023.9.16]**
 
 ## Q&A<br>
 ### 为啥要建立这个网页？<br>
@@ -40,6 +40,5 @@ Code by **Duck Studio**.<br>
 
 ## 我们的官方账号<br>
 [Bilibili:鸭鸭_カモ](https://space.bilibili.com/2054654702)<br>
-[Twitter: Duck Duck Studio](https://twitter.com/JinchengFang) （最近未使用）<br>
 <p style="text-align:right">鸭鸭「カモ」</p>
-<p style="text-align:right">2023年9月25日</p>
+<p style="text-align:right">Last edit : 2024年2月14日</p>
