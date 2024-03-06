@@ -178,7 +178,7 @@ br.clear {
 @font-face {
     font-family: open_sans;
     src: url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.1d9c7945c7bc7dd0909105119bfbc191.eot);
-    src: url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.1d9c7945c7bc7dd0909105119bfbc191.eot?#iefix) format("embedded-opentype"), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.2e90d5152ce92858b62ba053c7b9d2cb.woff) format("woff"), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.76cc6be5d8a231dc012fef4bdb86f79c.ttf) format("truetype"), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.93349923b5274a36ac93cb3168d09123.svg#open_sansbold) format("svg");
+    src: url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.1d9c7945c7bc7dd0909105119bfbc191.eot?#iefix) format("embedded-opentype"), url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Bold-webfont.2e90d5152ce92858b62ba053c7b9d2cb.woff) format("woff"), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.76cc6be5d8a231dc012fef4bdb86f79c.ttf) format("truetype"), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Bold-webfont.93349923b5274a36ac93cb3168d09123.svg#open_sansbold) format("svg");
     font-weight: 700;
     font-style: normal
 }
@@ -30048,7 +30048,7 @@ html#ecwid_html body#pages h6 {
     }
 }
 
-@media only screen and (min-width:727px + 1px) {
+@media only screen and (min-width:728px) {
     .s-page-site-search.s-section .container .s-repeatable-item img {
         max-width: 100px;
         border-radius: 3px
