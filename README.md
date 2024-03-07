@@ -24,6 +24,8 @@ Code by **Duck Studio**.<br>
       <a href = "xxx">点击进入我的bilibili主页</a>
     </div>
   </body>
+  <!-- No use JS at all -->
+</html>
 ```
 后面又想到我的账号可能可以写一个网页来推广(最初目的)，于是便有了这个网页。<br>
 再后来，我就渐渐的把这个网页写成了个人的网页。<br>
