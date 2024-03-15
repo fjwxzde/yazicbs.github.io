@@ -14,8 +14,10 @@
 }
 
 .s-item-text-group {
-    float: right;
-    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
 }
 
 .s-item-title {
@@ -29,4 +31,8 @@
 .half-offset-left {
     padding-left: 3.125%;
     /*padding-right: 3.125%*/
+}
+
+.s-item-text-wrapper {
+    margin-left: 10px; /* 调整文本与图片之间的间距 */
 }
