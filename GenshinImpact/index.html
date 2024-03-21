@@ -138,5 +138,59 @@
             </ul>
         </div>
         <!-- 旧的往后放 -->
+
+        <!-- 页脚 -->
+        <div class="container">
+            <div class="center-text">
+                <p><strong>[你知道吗]</strong></p>
+                <p id="random-sentence"></p>
+            </div>
+        </div>
+        <script>
+            // [你知道吗]
+            const sentences = [
+                // -- 有用的信息 --
+                "如果你发现网站(全站，包括首页)有任何问题，你可以告诉作者<Yzcbs123@163.com>。",
+                // -- 废话 -- [下面都是]
+                "原摄是什么，不知道欸。是真的不知道欸！",// 我不会告诉你这句话前面也有，就是拿来水的
+                "你知道[你知道吗]吗？",// 你说我知不知道！
+                "杂鱼❤~杂鱼❤~",
+                "不知道，导员没说。  没事，去玩吧。",
+                "这里不只有信息，还有废话。",
+                "给 我 爪巴 ！",
+                "喵~ (猫叫)",
+                "你知道吗？你不知道。",
+                "awa...",
+                // -- 一身反骨 --
+                "不好评价。",
+                "很好评价。",
+                // --
+                // -- Songs --
+                "I just want for the JUMP JUMP JUMP JUMP!",
+                "if you can.",
+                "看见全白色的屏幕，你会想到什么？  原...原...源...My guiding star!(Arcaea,启动！)",
+                // more and more ...
+            ];
+    
+            // 每次访问随机
+    
+            const randomIndex = Math.floor(Math.random() * sentences.length);
+    
+            const randomSentence = sentences[randomIndex];
+            console.log(`[你知道吗]\n${randomSentence}`);
+    
+            const randomSentenceElement = document./*Here start ERROR*/getElementById("random-sentence");
+            randomSentenceElement.textContent = sentences[randomIndex];
+            // --
+        </script>
+        <div class="container">
+            <div class="right-text">
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
+                <a href="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/privacy.html" target="_blank">[查看图片说明]</a>
+                <p>拍摄&玩家：鸭鸭「カモ」</p>
+                <p>网站编写&归属：DuckStudio（鸭鸭工作室）</p>
+                <p>最后更新：<strong>2024/3/21</strong></p>
+            </div>
+        </div>
     </body>
 </html>
