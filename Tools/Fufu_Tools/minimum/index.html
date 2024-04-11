@@ -93,7 +93,7 @@
 
             <div class="center-text">
                 <h1>最低系统要求</h1>
-                <i>适用于芙芙工具箱&nbsp;for&nbsp;windows&nbsp;v1.2.7</i>
+                <i>适用于芙芙工具箱&nbsp;for&nbsp;windows&nbsp;v1.2.7/v1.2.8</i>
                 <p>&nbsp;</p>
             </div>
 
@@ -108,8 +108,8 @@
             <div class="container">
                 <h2>最低要求：</h2>
                 <i>对于lite版↓</i>
-                <p>系统：Windows&nbsp;<strong>10</strong></p>
-                <p><strong>(必需)</strong>Python：Python&nbsp;<strong>3.7</strong></p>
+                <p>系统：Windows&nbsp;<strong>7</strong></p>
+                <p><strong>(必需)</strong>Python：Python&nbsp;<strong>3.7</strong>&nbsp;<i>(Tip:python3.9及以上版本不支持Windows7)</i></p>
                 <p>终端：cmd&nbsp;<strong>(必须支持utf-8编码)</strong></p>
                 <hr />
                 <i>对于打包版↓</i>
@@ -122,6 +122,38 @@
                 <ul>
                     <li><p>适用于Android™的Windows子系统(WSA)</p></li>
                     <li><p>安卓调试桥(ADB)</p></li>
+                </ul>
+            </div>
+            
+            <div class="container">
+                <h2>如何验证配置</h2>
+                <ul>
+                    <li>
+                        <p>你可以使用这个命令来验证Python是否正确配置：</p>
+                        <p><code>python --version</code></p>
+                        <p>一般情况下，你将会看到类似这样的输出：</p>
+                        <p><code>
+                            PS C:\Users\user_name> python --version<br>
+                            Python 3.12.0
+                        </code></p>
+                        <p>Python后面带的数字代表你使用的Python版本，<strong>使用芙芙工具箱时Python版本必须大于等于3.7.0</strong></p>
+                    </li>
+                    <li>
+                        <p>你可以使用这个命令来验证adb(Android 调试桥)是否正确配置：</p>
+                        <p><code>adb --version</code></p>
+                        <p>一般情况下，你将会看到类似这样的输出：</p>
+                        <p><code>
+                            PS C:\Users\user_name> adb --version<br>
+                            Android Debug Bridge version 1.0.41<br>
+                            Version 34.0.5-10900879<br>
+                            Installed as D:\path\to\adb\android_sdk\platform-tools\adb.exe<br>
+                            Running on Windows 10.0.22631
+                        </code></p>
+                        <p>Version后面带的数字代表你使用的adb版本</p>
+                    </li>
+                    <li>
+                        <p>大多数现代终端应用程序都支持 Unicode 字符，但请确保你的终端使用的字体支持 Unicode 字符。</p>
+                    </li>
                 </ul>
             </div>
 
