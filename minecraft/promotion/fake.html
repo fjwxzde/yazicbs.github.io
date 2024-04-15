@@ -85,58 +85,15 @@
     <!-- width / height only can use int. -->
     <div class="container">
         <img src="https://duckduckstudio.github.io/yazicbs.github.io/minecraft/title.png" alt="展示图" width="75%" height="75%">
-        <h1>某鸭的Minecraft世界的推广页面索引</h1>
     </div>
     <div class="container">
-        <!-- 示例
-        <h2>地点</h2>
-        <div class="container">
-            <a href="链接到具体推广页面" target="_blank">描述</a>
-            &nbsp;|&nbsp;
-            <a href="链接到具体推广页面2" target="_blank">描述2</a>
-        </div>
-        -->
-        <h2>橡木岛</h2>
-        <div class="container">
-            <a href="https://duckduckstudio.github.io/yazicbs.github.io/minecraft/promotion/oak_island/" target="_blank">橡木岛农场</a>
-        </div>
-        <h2>暂无已上线的推广页面！</h2>
+        <h1>You know, EYERYTHING is From the imagination.</h1>
+        <h1>你知道的，一切仅为想象。</h1>
     </div>
-    <!-- No finish to edit -->
-    <div class="container">
-        <div class="center-text">
-            <p><strong>[你知道吗]</strong></p>
-            <p id="random-sentence"></p>
-        </div>
-    </div>
-    <!-- -->
     <div class="container">
         <div class="right-text">
-            <a href="https://duckduckstudio.github.io/yazicbs.github.io/minecraft/">回到主页</a>
-            <p>最后更新：<strong>2024/4/14</strong></p>
+            <a href="https://duckduckstudio.github.io/yazicbs.github.io/minecraft/promotion/">回到主页</a>
         </div>
     </div>
-    <script>
-        // [你知道吗]
-        const sentences = [
-            // -- 有用的信息 --
-            "推广页面还未正式推出，将来将添加更多推广页面。",
-            "每个地区都有属于自己的推广页面",
-            "这里的推广内容仅限于想象，并非真实。",
-            "写这么多没用的网站很累的好吧...(你还知道啊)"
-            // more and more ...
-        ];
-
-        // 每次访问随机
-
-        const randomIndex = Math.floor(Math.random() * sentences.length);
-
-        const randomSentence = sentences[randomIndex];
-        console.log(`[你知道吗]\n${randomSentence}`);
-
-        const randomSentenceElement = document./*Here start ERROR*/getElementById("random-sentence");
-        randomSentenceElement.textContent = sentences[randomIndex];
-        // --
-    </script>
 </body>
 </html>
