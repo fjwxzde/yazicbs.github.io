@@ -48,7 +48,7 @@ Code by **Duck Studio**.<br>
 *(除我自己以外)*<br>
 暂无<br>
 ### 提出建议
-* [W1ndys](https://github.com/W1ndys)
+* [W1ndys](https://github.com/W1ndys) - [Issues #23](https://github.com/DuckDuckStudio/yazicbs.github.io/issues/23)
 
 
 ## 我的官方账号<br>
