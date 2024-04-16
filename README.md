@@ -4,6 +4,7 @@
 本网页由 **鸭鸭「カモ」** 编写与维护，**如有任何问题可以[提交Issues](https://github.com/DuckDuckStudio/yazicbs.github.io/issues)进行反馈。**<br>
 Code by **Duck Studio**.<br>
 **Duck Studio** 保留本网页最终解释权<br>
+[点我前往网站页面](https://duckduckstudio.github.io/yazicbs.github.io/)
 
 ## 网站公告<br>
 我们已为芙芙工具箱提供了网页！[before 2024.2.14]<br>
@@ -20,7 +21,7 @@ Code by **Duck Studio**.<br>
   </head>
   <body>
     <div>
-      <p>欢迎来到某鸭的网站</p>
+      <h1>欢迎来到某鸭的网站</h1>
       <a href = "xxx">点击进入我的bilibili主页</a>
     </div>
   </body>
@@ -38,9 +39,19 @@ Code by **Duck Studio**.<br>
 ### 可以加入本项目的编写吗？<br>
 欢迎加入本项目的编写！<br>
 如果您想加入本项目的编写，请联系**Yzcbs123@163.com**或者QQ**1707230454**。<br>
+当然，你也可以直接pr。<br>
 万分感谢！<br>
 
-## 我们的官方账号<br>
+## 特别感谢
+感谢所有为本网页做出贡献或提出建议的人！
+### 贡献者
+*(除我自己以外)*<br>
+暂无<br>
+### 提出建议
+* [W1ndys](https://github.com/W1ndys)
+
+
+## 我的官方账号<br>
 [Bilibili:鸭鸭_カモ](https://space.bilibili.com/2054654702)<br>
 <p style="text-align:right">鸭鸭「カモ」</p>
-<p style="text-align:right">Last edit : 2024年2月14日</p>
+<p style="text-align:right">Last edit : 2024年4月16日</p>
