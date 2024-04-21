@@ -52,6 +52,6 @@ Code by **Duck Studio**.<br>
 
 
 ## 我的官方账号<br>
-[Bilibili:鸭鸭_カモ](https://space.bilibili.com/2054654702)<br>
+请前往[[这个网页]](https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/index.html#official_account)查看。
 <p style="text-align:right">鸭鸭「カモ」</p>
 <p style="text-align:right">Last edit : 2024年4月21日</p>
