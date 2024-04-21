@@ -101,6 +101,14 @@
             th {
                 background-color: #f2f2f2;
             }
+
+            code {
+                display: inline-block;
+                padding: 0.5em;
+                background-color: rgba(235, 235, 235, 1);
+                color: #333;
+                border-radius: 4px;
+            }
         </style>
     </head>
     <body>
@@ -177,7 +185,22 @@
                 <p>A：</p>
                 <p>在发布新版本后，你可以更新芙芙工具箱。</p>
                 <p>目前由于技术原因，更新程序尚未制作，只制作了更新信息检测程序。所以目前如果需要更新芙芙工具箱请<strong>先卸载/删除本地的旧版本，然后安装/下载新版本</strong>。</p>
+                <p>请注意，如果需要保存您之前的配置，在卸载旧版前请先另存旧版中的<strong>除初始目录中的<code>config.ini</code>外</strong>所有的<code>config.ini</code>文件。详细信息请参阅<a href="#how_to_save_config">[Q:我该如何在更新时保留我的配置?]</a></p>
                 <p>如果您是使用code版芙芙工具箱，请cd到程序目录后运行<code>git pull</code>拉取最新源码</p>
+            </div>
+            <p>&nbsp;</p>
+            <div class="container">
+                <h2 id="how_to_save_config">Q：我该如何在更新时保留我的配置？</h2>
+                <p>A:</p>
+                <p>目前由于技术原因，暂未制作更新程序。如果直接删除/卸载旧版本后再下载/安装新版本，则会丢失旧版本中的所有配置</p>
+                <p>如果您希望保存您的配置并将其用于新版本，目前的办法是<strong>先另存旧版本中的除初始目录中的所有<code>config.ini</code>文件，在更新完成后用这些<code>config.ini</code>文件替换新版本中的<code>config.ini</code>文件</strong>。</p>
+                <p>请注意以下几点：</p>
+                <ol>
+                    <li><p>在另存旧版<code>config.ini</code>文件时请勿也另存初始目录中的<code>config.ini</code>文件。</p></li>
+                    <li><p>在替换新版的<code>config.ini</code>文件前，请先阅读新版本的更新说明，切勿替换更新说明中提到的<code>config.ini</code>文件。如果你这样做，你可能会遇到一些错误。</p></li>
+                    <li><p>切勿将旧版<code>config.ini</code>文件另存在初始目录中，以防旧版<code>config.ini</code>文件被误删。</p></li>
+                </ol>
+                <p>Note:初始目录指的是在<a href="#installation-path">[Q：如何找到芙芙工具箱的安装路径]</a>中程序输出的目录，也就是芙芙工具箱的目录。</p>
             </div>
         </div>
 
