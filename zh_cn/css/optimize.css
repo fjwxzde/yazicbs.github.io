@@ -1,0 +1,18 @@
+code {
+    display: inline-block;
+    padding: 0.5em;
+    background-color: rgba(235, 235, 235, 1);
+    color: #333;
+    border-radius: 4px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.YaKeLiXiaoGuo {/*我不信这样命名都能冲突*/
+    background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
