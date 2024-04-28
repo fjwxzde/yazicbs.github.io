@@ -1,5 +1,8 @@
 # 鸭鸭工作室 | 鸭鸭「カモ」 的个人网站<br>
 
+# 紧急通告
+本仓库下的页面将于2024/4/29 0:20起至2024/4/29 2:20暂时关闭测试，测试后将恢复网页访问。网页内容不受影响。
+
 ## 关于本网页<br>
 本网页由 **鸭鸭「カモ」** 编写与维护，**如有任何问题可以[提交Issues](https://github.com/DuckDuckStudio/yazicbs.github.io/issues)进行反馈。**<br>
 Code by **Duck Studio**.<br>
