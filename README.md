@@ -7,8 +7,7 @@ Code by **Duck Studio**.<br>
 [点我前往网站页面](https://duckduckstudio.github.io/yazicbs.github.io/)
 
 ## 网站公告<br>
-我已为芙芙工具箱提供了网页！[before 2024.2.14]<br>
-我已经**重写了隐私政策**，请留意！**继续浏览或者使用本网站即代表您同意本网站的隐私政策！** **[2023.9.16]**
+仓库提交重置 - time:2024.4.29 3:32<br>
 
 ## Q&A<br>
 ### 为啥要建立这个网页？<br>
