@@ -49,8 +49,10 @@ Code by **Duck Studio**.<br>
 ### 提出建议
 * [W1ndys](https://github.com/W1ndys) - [Issues #23](https://github.com/DuckDuckStudio/yazicbs.github.io/issues/23)
 
+## 一些离奇的事件
+网页代码发到[米游社上](https://www.miyoushe.com/ys/article/52202432)不合规？看来真的是写疯了。<br>
 
 ## 我的官方账号<br>
 请前往[[这个网页]](https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/index.html#official_account)查看。
 <p style="text-align:right">鸭鸭「カモ」</p>
-<p style="text-align:right">Last edit : 2024年4月21日</p>
+<p style="text-align:right">Last edit : 2024年4月29日</p>
