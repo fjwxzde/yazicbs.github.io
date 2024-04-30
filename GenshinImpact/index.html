@@ -50,7 +50,6 @@
             background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
             border-radius: 10px;
             padding: 20px;
-            text-align: center;/* 自带center-text */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
@@ -90,13 +89,12 @@
         
         img {
             max-width: 100%;
-            height: auto;
         }
         </style>
     </head>
     <body>
         <!-- width / height only can use int. -->
-        <div class="container">
+        <div class="container center-text">
             <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/show.png" alt="展示图" width="80%" height="80%"><br />
             <!-- 写到这才发现：坏了，没做展示图... -->
             <h1>欢迎来到某鸭的原神日常的展示页面！</h1>
@@ -105,9 +103,14 @@
         <!-- NOTE: 放原图！！！ 原图！！！ 原图！！！-->
         <!-- NOTE: 注意地区！！！-->
         <!-- 新的放前面 -->
-        <h2>Note:以下图片皆为原图</h2>
-        <div class="container">
+        <h2>Note:以下图片皆为PC端16:9(横屏)原图</h2>
+        <div class="container center-text">
             <ul>
+                <li>
+                    <h2>[蒙德]♡</h2>
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/20240430194305.png" alt="丘丘人度蜜月" width="70%" height="70%"><br />
+                </li>
+                <hr />
                 <li>
                     <h2>[稻妻]离岛</h2>
                     <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/20240427222226.png" alt="芙芙稻妻自拍1" width="70%" height="70%"><br />
@@ -155,6 +158,36 @@
                 </li>
             </ul>
         </div>
+        <h2>Note:以下图片皆为PC端9:16(竖屏)原图</h2>
+        <div class="container">
+            <ul>
+                <li>
+                    <h2 class="center-text">[枫丹]芙宁娜·德·枫丹</h2>
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/竖屏/20240430214916.png" alt="芙芙枫丹1" height="30%" width="30%">
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/竖屏/20240430215117.png" alt="芙芙枫丹2" height="30%" width="30%">
+                </li>
+            </ul>
+        </div>
+        <h2>Note:以下图片皆为PC端正方形(1080x1080)原图</h2>
+        <div class="container center-text">
+            <ul>
+                <li>
+                    <h2>[璃月]沉玉谷</h2>
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/正方形/20240430215728.png" alt="原摄展示图" height="45%" width="45%">
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/正方形/20240430215834.png" alt="原摄展示图" height="45%" width="45%"><br />
+                    <!--2张1行-->
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/正方形/20240430220043.png" alt="原摄展示图" height="45%" width="45%">
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/正方形/20240430220742.png" alt="原摄展示图" height="45%" width="45%"><br />
+                    <!--2张1行-->
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/正方形/20240430220320.png" alt="原摄展示图" height="45%" width="45%">
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/正方形/20240430220220.png" alt="原摄展示图" height="45%" width="45%"><br />
+                    <!--2张1行-->
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/正方形/20240430220542.png" alt="原摄展示图" height="45%" width="45%">
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/正方形/20240430220523.png" alt="原摄展示图" height="45%" width="45%"><br />
+                    <!--2张1行-->
+                </li>
+            </ul>
+        </div>
         <!-- 旧的往后放 -->
 
         <h2>Note:以下视频已发布在b站</h2>
@@ -170,7 +203,7 @@
         <p>&nbsp;</p>
 
         <!-- 页脚 -->
-        <div class="container">
+        <div class="container center-text">
             <div class="center-text">
                 <p><strong>[你知道吗]</strong></p>
                 <p id="random-sentence"></p>
@@ -210,7 +243,7 @@
             randomSentenceElement.textContent = sentences[randomIndex];
             // --
         </script>
-        <div class="container">
+        <div class="container center-text">
             <div class="right-text">
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/privacy.html" target="_blank">[查看图片说明]</a>
