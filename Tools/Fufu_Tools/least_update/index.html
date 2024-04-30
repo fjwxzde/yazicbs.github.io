@@ -129,90 +129,82 @@
                 <div class="center-text">
                     <h1>芙芙工具箱 v1.2.8</h1>
                 </div>
-                <p>这个版本为芙芙工具箱的<strong>第13个版本</strong><br><strong>注意：<code>lite</code>版请下载文件名带<code>lite</code>的附件！</strong>    </p>
+                <p>这个版本为芙芙工具箱的一个<strong>预览版本</strong>，皆在实现保存进度并测试的作用。<br>
+                    如果你是普通用户，可以选择性下载本版本或者等待v1.2.9版本发布，v1.2.9版本将会包含这个版本中可行的工具。<br>
+                    <strong>注意：<code>lite</code>版请下载文件名带<code>lite</code>的附件！</strong><br>
+                    <em>Note:本版本已知问题：在非 Unicode 的设备上可能会出现乱码，可以尝试使用Bandizip解压或下载7z压缩包</em><br>
+                </p>
                 <h2>该版本做了以下改动：</h2>
                 <h3>更新：</h3>
                 <ul>
-                <li>修改了实验性小工具的文件夹名(不影响使用) <em>(<code>[实验性小工具]</code> =&gt; <code>【实验性小工具】</code>)</em></li>
-                <li>更新了<code>查看电脑配置工具</code>，实现<code>[A]总是打开详细信息</code></li>
-                <li>更新了<code>信息确认</code>工具</li>
-                <li>修改了<code>.gitignore</code>(不影响使用)</li>
-                <li>更新了<code>缓存清理</code>工具，使其可以自定义临时文件夹而非仅限于<code>%temp%</code>(<a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues/11" target="_blank">GitHub Issues #11</a>)</li>
-                <li>更新额安装程序的主程序，使其展示更加明显的卸载入口</li>
-                <li><strong>更新了<code>LICENSE</code>文件</strong> <strong>Note:<code>LICENSE</code>文件以最新版为准</strong></li>
-                <li>在安装库文件的程序中去除了对于Python标准库的安装(<a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues/14" target="_blank">GitHub Issues #14</a>)</li>
-                <li>新编写了一些文章(放在<code>text</code>文件夹中，不影响程序)</li>
-                <li>更新了<code>[测试]更新信息提示程序</code></li>
-                <li>更新了<code>[实验性]自动左键连点</code>与<code>[实验性]自动按键连按</code>工具，使其提示消息不会刷屏(<a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues/20" target="_blank">GitHub Issues #20</a>)</li>
-                <li>更新了<code>安装必须库文件-自动选择</code>的镜像源链接，使其有更多可选镜像源</li>
-                <li>更新了主程序，使其在首次启动时显示最新LICENSE文件</li>
-                <li>修改了<code>[实验性]自动按键连按</code>工具的程序名(不影响使用) <em>(<code>自动按键连点.py</code> =&gt; <code>自动按键连按.py</code>)</em></li>
-                <li>使用Python重写了<code>进制转换</code>工具</li>
+                    <li>修改了<code>.gitignore</code>(不影响使用)</li>
+                    <li>更新了<code>SECURITY</code>文件(不影响使用)</li>
+                    <li>更新了<code>requirements.txt</code>文件(不影响使用)</li>
+                    <li>更新了<code>【实验性小工具说明】</code>文件(不影响使用)</li>
+                    <li>更新了环境配置工具，使仅在<code>[实验性]</code>的工具中使用的库文件安装变为可选</li>
+                    <li>重新编译了所有使用<code>c++</code>编写的工具</li>
                 </ul>
                 <h3>修复：</h3>
                 <ul>
-                <li>修复了主程序运行时图标未正常显示的问题</li>
-                <li>修复了<code>[实验性]休息一下</code>的<code>自启动设置</code>工具的一个已知问题(<a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues/12" target="_blank">GitHub Issues #12</a>)</li>
-                <li>修复了安装必须库文件时出现意外输出的问题(<a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues/13" target="_blank">GitHub Issues #13</a>)</li>
-                <li>修正了主程序中<code>[实验性]休息一下</code>工具的描述</li>
-                <li>修复了<code>[实验性]批量水印添加</code>无法正常打开的问题(<a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues/19" target="_blank">GitHub Issues #19</a>)</li>
-                <li>修复了<code>[实验性]自动按键连按</code>可能接受错误的按键输入的问题(<a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues/22" target="_blank">GitHub Issues #22</a>)</li>
-                <li>修复了在非简体中文的系统上可能出现乱码的问题，并使编码统一为UTF-8(<a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues/26" target="_blank">GitHub Issues #26</a>)</li>
+                    <li>修复了<code>[测试]更新信息提示程序</code>与<code>[测试]更新信息提示程序（后台）</code>的一个可能的路径问题</li>
                 </ul>
                 <h3>新增:</h3>
                 <ul>
-                <li>新增了<code>[实验性]hosts修改</code>工具</li>
-                <li>新增了<code>[实验性]url搜索引擎收录检测</code>工具</li>
-                <li>新增了<code>[实验性]git连续push尝试</code>工具与<code>[实验性]git连续pull尝试</code>工具</li>
-                <li>新增了版本信息<code>config.ini</code>文件</li>
-                <li>新增了<code>[测试]更新信息提示程序（后台）</code>工具</li>
-                <li>新增了<code>必须库文件更新</code>工具</li>
-                <li>新增了<code>[实验性]自动按键连按有效输入</code>文件</li>
-                <li>新增了<code>SECURITY</code>文件</li>
+                    <li>新增了<code>[实验性]视频音频提取</code>工具</li>
+                    <li>新增了<code>[实验性]自动替换指定文本</code>工具</li>
+                    <li>新增了<code>[实验性]查找含有指定内容的文件</code>工具</li>
+                    <li>新增了新的版本查询<code>py</code>程序与<code>c++</code>程序</li>
+                    <li>新增了<code>[实验性]自动使用 Pyinstaller 打包文件夹中的所有py/pyw文件</code>工具，该工具暂未加入主程序</li>
                 </ul>
                 <h3>弃用</h3>
                 <ul>
-                <li>删除了<code>打包版</code>与<code>安装程序</code>的环境配置分类及其文件夹</li>
+                    <li>弃用了环境配置中的<code>原bat程序</code>(现名<code>原bat程序（out_of_time）</code>)</li>
+                    <li>弃用了旧的版本查询<code>bat</code>程序</li>
                 </ul>
                 <hr />
-                
+        
                 <h3>分类解释</h3>
-                <ul>
-                <li><code>[实验性]</code>分类：还在编写但已初具雏形的程序，你可以使用他们，但<strong>可能会遇到一些未知问题</strong>。<em>你也可以从仓库中下载这些工具来替换你使用的版本，这有可能会修复一些已知问题。这个分类下的工具可能会在之后的版本被移除这个分类，也可能被移除。</em></li>
-                <li><code>[测试]</code>分类：已编写一部分但还未编写完成且未经测试或测试有问题的程序，一般<strong>不建议使用他们</strong>，因为这可能会导致一些不可逆的未知问题。<em>这个分类下的工具可能会在之后的版本被移除。</em> <strong>(Note:该分类下的程序不会被添加进主程序的分类中)</strong></li>
-                <li><del><code>[实验性]</code></del> 分类：在本版本被移出实验性分类的工具</li>
-                </ul>
+                <p>关于芙芙工具箱的分类解释，请前往这个网站查看→ <strong><a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/%E5%88%86%E7%B1%BB%E8%A7%A3%E9%87%8A/">[芙芙工具箱分类解释]</a></strong><br></p>
                 <hr />
-                
+        
                 <h3>下载程序</h3>
                 <table>
-                <thead>
-                <tr>
-                <th>lite版</th>
-                <th>打包版(zip)</th>
-                <th>安装程序(exe)</th>
-                </tr>
-                </thead>
-                <tbody><tr>
-                <td><a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/download/v1.2.8/Fufu_Tools.v1.2.8-lite.zip">Fufu_Tools.v1.2.8-lite.zip</a></td>
-                <td><a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/download/v1.2.8/Fufu_Tools.v1.2.8.zip">Fufu_Tools.v1.2.8.zip</a></td>
-                <td><a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/download/v1.2.8/Fufu_Tools_Setup.v.1.2.8.exe">Fufu_Tools_Setup.v.1.2.8.exe</a></td>
-                </tr>
-                </tbody></table>
+                    <thead>
+                        <tr>
+                            <th>版本类型</th>
+                            <th>下载链接</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr>
+                        <td>lite版</td>
+                        <td><a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/download/v1.2.8-2/Fufu_Tools.v1.2.8-2-lite.zip">Fufu_Tools.v1.2.8-2-lite.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>lite版(7z)</td>
+                        <td><a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/download/v1.2.8-2/Fufu_Tools.v1.2.8-2-lite.7z">Fufu_Tools.v1.2.8-2-lite.7z</a></td>
+                    </tr>
+                    <tr>
+                        <td>打包版(zip)</td>
+                        <td><a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/download/v1.2.8-2/Fufu_Tools.v1.2.8-2.zip">Fufu_Tools.v1.2.8-2.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>打包版(7z)</td>
+                        <td><a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/download/v1.2.8-2/Fufu_Tools.v1.2.8-2.7z">Fufu_Tools.v1.2.8-2.7z</a></td>
+                    </tr>        
+                    <tr>
+                        <td>安装程序(exe)</td>
+                        <td><a href="https://github.com/DuckDuckStudio/Fufu_Tools/releases/download/v1.2.8-2/Fufu_Tools_Setup.v.1.2.8-1.exe">Fufu_Tools_Setup.v.1.2.8-1.exe</a></td>
+                    </tr>
+                    </tbody>
+                </table>
                 <h4>版本解释</h4>
-                <ul>
-                <li><code>lite</code>版：这是一个十分轻量级的版本，<strong>占用空间最少，运行速度最快，功能与其他版本相同</strong>，但<strong>必须先配置Python</strong>。</li>
-                <li>打包版(zip)：这是一个经过打包后的版本，<strong>占用空间较大，运行速度较慢，功能与其他版本相同</strong>，虽然有些许缺点，但你在使用这个版本时<strong>无需配置Python</strong>。</li>
-                <li>打包版安装程序(exe)：这是打包版的安装程序，与 <em>打包版(zip)</em> 不同的是这个版本 <em>可以实现自动新建桌面图标等功能</em> ，且 <em>自带卸载工具</em> 。<strong>占用空间较大，运行速度较慢，功能与其他版本相同</strong>。</li>
-                </ul>
-                <p>版本建议：<br>如果你是电脑小白，不会配置Python，请下载<strong>打包版安装程序</strong>  </p>
-                <p>如果你懂得一点知识，但不会配置Python环境变量等，请下载<strong>打包版</strong> 或 <strong>打包版安装程序</strong>  </p>
-                <p>如果你懂得如何<strong>正确</strong>配置Python，或者已经正确配置且<strong>版本高于3.7[1]</strong>，请下载 <em><code>lite</code>版</em> <em>(对于懂得配置的强烈建议下载<code>lite</code>版，可以获得*<em>更快的运行速度、更少的占用空间、更快的bug修复</em></em>)*  </p>
-                <p>[1] 关于芙芙工具箱的系统要求，请前往这个网站查看→ <strong><a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/minimum/">[芙芙工具箱最低系统要求]</a></strong></p>
+                <p>关于芙芙工具箱的版本解释，请前往这个网站查看→ <strong><a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/versions/">[芙芙工具箱版本说明]</a></strong><br>
+                    关于芙芙工具箱的系统要求，请前往这个网站查看→ <strong><a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/minimum/">[芙芙工具箱最低系统要求]</a></strong><br></p>
+                <h4>如何更新</h4>
+                <p>关于如何更新芙芙工具箱，请前往这个网站查看→ <strong><a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/%E9%80%9A%E7%94%A8/index.html#how_to_update">[芙芙工具箱通用文档 - Q:我该如何更新芙芙工具箱]</a></strong></p>
                 <hr />
-                
-                <p>本版本<strong>版本号为1.2.8</strong><br><strong>首发日期2024/4/16</strong><br>-&gt; Code by 鸭鸭「カモ」 / DuckStudio<br><a href="https://duckduckstudio.github.io/yazicbs.github.io/">访问作者网站</a> | <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/">访问项目网站</a><br>-&gt; 联系开发者：<a href="mailto:Yzcbs123@163.com">Yzcbs123@163.com</a>  </p>      
-                <p><strong>Full Changelog</strong>:<a href="https://github.com/DuckDuckStudio/Fufu_Tools/compare/v1.2.7...v1.2.8" target="_blank">https://github.com/DuckDuckStudio/Fufu_Tools/compare/v1.2.7...v1.2.8</a></p>          
+
+                <p>本版本<strong>版本号为1.2.8-2</strong><br><strong>首发日期2024/4/30</strong><br>-&gt; Code by 鸭鸭「カモ」 / DuckStudio<br><a href="https://duckduckstudio.github.io/yazicbs.github.io/">访问作者网站</a> | <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/">访问项目网站</a> | <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">查看项目文档</a><br>-&gt; 联系开发者：<a href="mailto:Yzcbs123@163.com">Yzcbs123@163.com</a><br><strong>Full Changelog</strong>: <a href="https://github.com/DuckDuckStudio/Fufu_Tools/compare/v1.2.8-1...v1.2.8-2">https://github.com/DuckDuckStudio/Fufu_Tools/compare/v1.2.8-1...v1.2.8-2</a>  </p>
             </div>
         </div>
 
