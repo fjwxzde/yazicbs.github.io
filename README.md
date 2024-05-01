@@ -45,7 +45,7 @@ Code by **Duck Studio**.<br>
 感谢所有为本网页做出贡献或提出建议的人！
 ### 贡献者
 *(除我自己以外)*<br>
-* [银斑三傻](https://space.bilibili.com/27646076) - 提供[视频](https://www.bilibili.com/video/BV1xr4y1H7hx/)制作[音频](https://duckduckstudio.github.io/yazicbs.github.io/Interesting/duck_forever/sounds/quack3.mp3) - [许可证明](https://duckduckstudio.github.io/yazicbs.github.io/porject_photos/音频许可-银斑三傻.png)<br>
+* [银斑三傻](https://space.bilibili.com/27646076) - 提供[视频](https://www.bilibili.com/video/BV1xr4y1H7hx/)制作[音频](https://duckduckstudio.github.io/yazicbs.github.io/Interesting/duck_forever/sounds/quack3.mp3) - [许可证明](https://duckduckstudio.github.io/yazicbs.github.io/project_photos/音频许可-银斑三傻.png)<br>
 ### 提出建议
 * [W1ndys](https://github.com/W1ndys) - [Issues #23](https://github.com/DuckDuckStudio/yazicbs.github.io/issues/23)
 
