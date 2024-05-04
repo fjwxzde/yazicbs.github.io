@@ -75,6 +75,45 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
     <link rel="canonical" href="https://duckduckstudio.github.io/yazicbs.github.io/">
     <!--指定网页的规范化 URL，即该网页的主要版本-->
 
+    <!-- 音乐组件 -->
+    <!--官方教程：https://aplayer.js.org/#/zh-Hans/-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+     
+    <div id='aplayer'></div>
+     
+    <script>
+        var ap = new APlayer
+        ({
+            element: document.getElementById('aplayer'),
+            showlrc: false,
+            fixed: true,
+            mini: true,
+            /* url:http://music.163.com/song/media/outer/url?id=****.mp3 (****处填音乐id) */
+            audio: [
+                {
+                    title: 'Aira',
+                    author: 'ミツキヨ',
+                    url: 'http://music.163.com/song/media/outer/url?id=2098477275.mp3',
+                    pic: 'http://p2.music.126.net/0OY08L09cF4UMVnRuHK_BQ==/109951169045313754.jpg'
+                },
+                {
+                    title: 'Floating Star',
+                    author: 'Kirara Magic / Shion Lee',
+                    url: 'http://music.163.com/song/media/outer/url?id=1830190033.mp3',
+                    pic: 'http://p2.music.126.net/E0BDTR7BomvzrYu_4ixzuA==/109951165811598413.jpg'
+                },
+                {
+                    title: 'Particle Arts',
+                    author: 'Virtual Self',
+                    url: 'http://music.163.com/song/media/outer/url?id=523251142.mp3',
+                    pic: 'http://p2.music.126.net/yse1TOVcXNbesBSLPj3w5g==/109951168831529267.jpg'
+                }
+            ]
+        });
+        ap.init();
+    </script>
+    <!---->
     <script>
         /*控制台输出DuckStudio*/
         console.log(`
