@@ -127,7 +127,7 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
             鸭鸭「カモ」
             欢迎关注我的bilibili频道：@鸭鸭_カモ
             https://space.bilibili.com/2054654702/
-            [最新维护日期:2024/5/3]
+            [最新维护日期:2024/5/6]
             `)
         //初始化结束
 
@@ -162,7 +162,7 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
     <script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/detectIE.js" async="async"></script>
     <!-- 将忽略这里的脚本内容，因为存在 src 特性 -->
     <!-- 自写优化css -->
-    <link rel="stylesheet" type="text/css" href="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/css/optimize.css">
+    <link rel="stylesheet" type="text/css" href="D:\Duckhome\projects\MSVS\Source\Repos\yazicbs.github.io.online\zh_cn\css\optimize.css">
 
     <style id="color-style-tag">
         .s-custom-colors .s-bg-overlay:before {
@@ -402,7 +402,49 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                     <div class="s-subtitle">
                                                         <div class="s-component s-text">
                                                             <h4 class="s-component-content s-font-heading">
-                                                                <i>Sleep all day.</i>
+                                                                <span class="text" ></span>
+                                                                <!-- 打字效果JS -->
+                                                                <script>
+                                                                    // 获取要操作的 .text 标签
+                                                                    const text = document.querySelector('.text');
+                                                                
+                                                                    // 定义要显示的文字数组
+                                                                    const txt = ["Sleep all day.", "一个废物", "一只可爱的小鸭鸭"];
+
+                                                                    // 定义当前正在操作的文字下标和字符下标
+                                                                    let currentIndex = 0;
+                                                                    let charIndex = 0;
+
+                                                                    // 定义打字和删除字的状态，默认为打字状态
+                                                                    let typing = true;
+
+                                                                    // 设置定时器，每200毫秒执行一次
+                                                                    setInterval(function() {
+                                                                        if (typing) {
+                                                                            // 正在打字状态，显示当前字符串的前index个字符
+                                                                            text.innerHTML = txt[currentIndex].slice(0, ++charIndex);
+                                                                        } else {
+                                                                            // 正在删除字状态，显示当前字符串的前index个字符
+                                                                            text.innerHTML = txt[currentIndex].slice(0, --charIndex);
+                                                                        }
+    
+                                                                        // 判断打字或删除字是否完成
+                                                                        if (charIndex === txt[currentIndex].length + 3) {
+                                                                            // 打字完成后切换到删除字状态
+                                                                            typing = false;
+                                                                        } else if (charIndex < 0) {
+                                                                            // 删除字完成后切换到下一个字符串的打字状态
+                                                                            typing = true;
+                                                                            charIndex = 0;
+                                                                            currentIndex++;
+                                                                               // 如果当前文字下标超过数组长度，重置为0
+                                                                            if (currentIndex >= txt.length) {
+                                                                                currentIndex = 0;
+                                                                            }
+                                                                        }
+                                                                    }, 200);
+                                                                </script>    
+                                                                <!---->
                                                             </h4>
                                                         </div>
                                                     </div>
