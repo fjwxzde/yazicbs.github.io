@@ -32,13 +32,13 @@ li {
     right: -10px;
     top: 5px;
     height: 20px;
-    width: 3px;     
-    background-color: #fff;
+    width: 2px;     
+    background-color: #000000;
     animation: san 0.5s steps(1) infinite;
 }
 @keyframes san{
     0%,100%{
-        background-color: #fff;
+        background-color: #000000;
     }
     50%{
        background-color: transparent;
