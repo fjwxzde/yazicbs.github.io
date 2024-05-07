@@ -1186,11 +1186,11 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                     style="font-size: 17px; letter-spacing: 0px;">
                                                     <strong>关于本网站</strong>
                                                 </p>
-                                                <p>本网站由鸭鸭「カモ」建立，</p>
-                                                <p>网站版本：v1.7.1a</p>
+                                                <p>本网站由<strong>鸭鸭「カモ」</strong>建立，</p>
+                                                <p>网站版本：v1.7.2a</p>
                                                 <!--详见提交：https://github.com/DuckDuckStudio/yazicbs.github.io/commits/main-->
                                                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/">点击查看我的一些小工具</a>
-                                                <br><!-- 换行 -->
+                                                <br>
                                                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/">点击查看我的文章</a>
                                                 <br>
                                                 <a href="https://github.com/DuckDuckStudio" target="_blank">See my English README file</a>
@@ -1199,17 +1199,19 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                 <!-- 周年庆祝 -->                                                
                                                 <p id="year-happy" style="display: none;"><strong>庆祝某鸭的小站建立 <span id="year-difference"></span> 周年!</strong></p>
                                                 <script>
-                                                    /* 周年庆祝文本显示 */
+                                                    /* 周年庆祝文本显示(自动修改&显示) */
                                                     window.onload = function() {
                                                         var Now = new Date();
-                                                        var StartTime = new Date("2024-05-14T15:16:17+08:00"); // 指定的显示时间
+                                                        var currentYear = Now.getFullYear(); // 获取当前年份
+                                                        var startTimeString = currentYear + "-05-14T15:16:17+08:00";
+                                                        var StartTime = new Date(startTimeString); // 转换成日期对象
 
                                                         // 计算目标时间加上 48 小时后的时间
                                                         const EndTime = new Date(StartTime.getTime() + (48 * 60 * 60 * 1000)); // 48 小时的毫秒数
-                                                
+
                                                         if (Now >= StartTime) {
                                                             if (Now <= EndTime) {
-                                                                document.getElementById("year-happy").style.display="block";
+                                                                document.getElementById("year-happy").style.display = "block";
                                                             }
                                                         }
                                                     };
@@ -1217,7 +1219,7 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                     /* 计算周年数 */
                                                     const now = new Date(); // 获取当前日期
                                                     const currentYear = now.getFullYear(); // 获取当前年份
-                                                    const difference = currentYear - 2022; // 计算年份差距
+                                                    const difference = currentYear - 2021; // 计算年份差距
                                                     const yearDifferenceElement = document.getElementById("year-difference");// 获取要替换的文本元素
                                                     yearDifferenceElement.textContent = difference;// 将年份差距写入文本元素中
                                                 </script>
@@ -1240,7 +1242,7 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                 <p>QQ:1707230454</p>
                                                 <email>Yzcbs123@163.com</email>
                                                 <p>关于本网站的问题反馈：</p>
-                                                <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues" target="_blank">https://github.com/DuckDuckStudio/yazicbs.github.io/issues</a>
+                                                <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues" target="_blank">[前去提交Issues]</a>
                                                 <p>
                                                     <strong>本网站没有其他的仓库</strong>
                                                 </p>
