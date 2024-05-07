@@ -1036,25 +1036,6 @@ ol.list li {
     display: none
 }
 
-.s-pagination .s-pagination-item {
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 4px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    min-width: 28px;
-    height: 28px;
-    line-height: 28px;
-    text-align: center;
-    list-style: none;
-    float: left;
-    border: 1px solid #d9d9d9;
-    background-color: #fff;
-    margin: 0 8px 8px 0
-}
-
 .s-pagination .s-pagination-item.active {
     background-color: #93b719;
     border-color: #93b719;
