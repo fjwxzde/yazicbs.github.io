@@ -1126,10 +1126,29 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                             <p>
                                                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/privacy.html">[点我查看网站隐私政策]</a>
                                             </p>
-                                            <p>你是第 <span id="finicount_views">[加载中...]</span> 个访问本站的人。</p>
-                                            <p><i>(仅统计访问次数)</i></p>
+
+                                            <p>这个网页被访问了 <span id="finicount_views">[加载中...]</span> 次。</p>
                                             <script async src="//finicounter.eu.org/finicounter.js"></script><!--计数JS-->
                                             <!-- 计数使用GitHub上的 FiniCounter : https://github.com/finisky/finicounter -->
+
+                                            <p><strong>网站最新修改内容: <span id="commitMessage">[加载中...]</span></strong></p>
+                                            <!-- 使用GitHub API 获取最新 Git message -->
+                                            <script>
+                                                // GitHub API endpoint for fetching repository commits
+                                                const repoUrl = 'https://api.github.com/repos/DuckDuckStudio/yazicbs.github.io/commits';
+                                                
+                                                // Fetch data from GitHub API
+                                                fetch(repoUrl)
+                                                    .then(response => response.json())
+                                                    .then(data => {
+                                                        // Get latest commit message
+                                                        const latestCommitMessage = data[0].commit.message;
+                                                        
+                                                        // Display latest commit message on the HTML page
+                                                        document.getElementById('commitMessage').innerHTML = `${latestCommitMessage}`;
+                                                    })
+                                                    .catch(error => console.error('Error fetching data:', error));
+                                                </script>
                                             </div>
                                         </div>
                                     </div>
