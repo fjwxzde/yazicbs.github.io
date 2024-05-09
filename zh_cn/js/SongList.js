@@ -1,5 +1,5 @@
 // 网页左下角的歌单
-// Song url:http://music.163.com/song/media/outer/url?id=****.mp3 (****处填音乐id)
+// Song url:https://music.163.com/song/media/outer/url?id=****.mp3 (****处填音乐id)
 
 /* 随机 */
 // 歌单列表
@@ -16,7 +16,7 @@ var playlists = [
             title: 'Aurora VIP',
             author: 'Kirara Magic / Shion Lee',
             url: 'https://music.163.com/song/media/outer/url?id=1830187577.mp3',
-            pic: 'http://p2.music.126.net/E0BDTR7BomvzrYu_4ixzuA==/109951165811598413.jpg'
+            pic: 'https://p2.music.126.net/E0BDTR7BomvzrYu_4ixzuA==/109951165811598413.jpg'
         },
     ],
     // Music Game
@@ -66,7 +66,7 @@ var playlists = [
             title: 'Hardcore ASMR',
             author: 'ななひら / t+pazolite',
             url: 'https://music.163.com/song/media/outer/url?id=1904491623.mp3',
-            pic: 'http://p2.music.126.net/f2acbIEcDS-WdxsGZygIFg==/109951166743080327.jpg'
+            pic: 'https://p2.music.126.net/f2acbIEcDS-WdxsGZygIFg==/109951166743080327.jpg'
         },
         */
     ],
@@ -76,13 +76,13 @@ var playlists = [
             title: '太空漫步',
             author: 'HOYO-MiX',
             url: 'https://music.163.com/song/media/outer/url?id=2034615687.mp3',
-            pic: 'http://p2.music.126.net/RWIGyShmnjmUxizXco6fVg==/109951168505830245.jpg'
+            pic: 'https://p2.music.126.net/RWIGyShmnjmUxizXco6fVg==/109951168505830245.jpg'
         },
         {
             title: '水龙吟',
             author: 'HOYO-MiX',
             url: 'https://music.163.com/song/media/outer/url?id=2067222280.mp3',
-            pic: 'http://p1.music.126.net/oDhurcFOPMPVMLnc6xF99A==/109951168765200998.jpg'
+            pic: 'https://p1.music.126.net/oDhurcFOPMPVMLnc6xF99A==/109951168765200998.jpg'
         },
         {
             title: 'WHITE NIGHT (Instrumental)',
@@ -97,13 +97,13 @@ var playlists = [
             title: '清润玉响',
             author: 'HOYO-MiX',
             url: 'https://music.163.com/song/media/outer/url?id=2140118672.mp3',
-            pic: 'http://p1.music.126.net/MlajrhHqU-33qDnu41p11w==/109951169447872203.jpg'
+            pic: 'https://p1.music.126.net/MlajrhHqU-33qDnu41p11w==/109951169447872203.jpg'
         },
         {
             title: '柔灯轻漾时',
             author: 'HOYO-MiX',
             url: 'https://music.163.com/song/media/outer/url?id=2130083946.mp3',
-            pic: 'http://p2.music.126.net/vkLKNH2WpfYh4p4ACRRYOg==/109951169367650385.jpg'
+            pic: 'https://p2.music.126.net/vkLKNH2WpfYh4p4ACRRYOg==/109951169367650385.jpg'
         },
     ],
     // 崩坏3
@@ -112,13 +112,13 @@ var playlists = [
             title: 'Da Capo',
             author: 'HOYO-MiX',
             url: 'https://music.163.com/song/media/outer/url?id=2026565329.mp3',
-            pic: 'http://p2.music.126.net/awzv1LpuBJiKTeB7roh_Aw==/109951168434956885.jpg'
+            pic: 'https://p2.music.126.net/awzv1LpuBJiKTeB7roh_Aw==/109951168434956885.jpg'
         },
         {
             title: 'Da Capo',
             author: 'HOYO-MiX',
             url: 'https://music.163.com/song/media/outer/url?id=2026565329.mp3',
-            pic: 'http://p2.music.126.net/awzv1LpuBJiKTeB7roh_Aw==/109951168434956885.jpg'
+            pic: 'https://p2.music.126.net/awzv1LpuBJiKTeB7roh_Aw==/109951168434956885.jpg'
         },
     ],
 ];
