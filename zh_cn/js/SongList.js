@@ -114,12 +114,6 @@ var playlists = [
             url: 'https://music.163.com/song/media/outer/url?id=2026565329.mp3',
             pic: 'https://p2.music.126.net/awzv1LpuBJiKTeB7roh_Aw==/109951168434956885.jpg'
         },
-        {
-            title: 'Da Capo',
-            author: 'HOYO-MiX',
-            url: 'https://music.163.com/song/media/outer/url?id=2026565329.mp3',
-            pic: 'https://p2.music.126.net/awzv1LpuBJiKTeB7roh_Aw==/109951168434956885.jpg'
-        },
     ],
 ];
 
@@ -136,7 +130,7 @@ const playlistNames = {
     2: "崩铁",
     3: "原神",
     4: "崩坏3",
-    default: "[WARN]未定义歌单名称"
+    default: "[WARN] 未定义歌单名称"
     // 最后更新分类：2024/5/9
 };
 
@@ -145,7 +139,7 @@ const SongListSet = playlistNames[randomPlaylistIndex] || playlistNames.default;
 
 const logMessage = SongListSet === playlistNames.default ?
     console.warn(`${SongListSet}`) :
-    console.log(`[INFO]选中歌单 [${SongListSet}]`);
+    console.log(`[INFO] 选中歌单 [${SongListSet}]`);
 
 /* -----END----- */
 
