@@ -7,7 +7,6 @@ Code by **Duck Studio**.
 [点我前往网站页面](https://duckduckstudio.github.io/yazicbs.github.io/)
 
 ## 网站公告
-仓库提交重置 - time:2024.4.29 3:32  
 接收从芙芙工具箱仓库转移来的文章 - time:2024.5.9 1:51  
 
 <div id="模板"></div>
@@ -49,7 +48,10 @@ Code by **Duck Studio**.
 万分感谢！  
 ### 你个人对主页面的评价是？
 ~~就完全是乱七八糟的垃圾代码，我都想写个新的了。~~  
-很早之前写的，乱一点~~(亿点)~~正常。  
+很早之前写的，乱一点~~(亿点)~~正常。
+### 这个网页有什么彩蛋吗？
+自己去找。  
+提示：特定日期、代码中、F12    
 
 ## 特别感谢
 感谢所有为本网页做出贡献或提出建议的人！
@@ -62,4 +64,4 @@ Code by **Duck Studio**.
 ## 我的官方账号
 请前往[[这个网页]](https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/index.html#official_account)查看。
 <p style="text-align:right">鸭鸭「カモ」</p>
-<p style="text-align:right">Last edit : 2024年4月29日</p>
+<p style="text-align:right">Last edit : 2024年5月10日</p>
