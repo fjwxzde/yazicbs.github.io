@@ -8,7 +8,6 @@ localStorage.setItem("page_view_pgcount", pgcount);
 if (pgcount == 65){
     console.warn("[WARN] 个人访问量为空值！")
 }
-console.log(`[TEST] 个人访问量：${pgcount}`)
 
 window.onload = function() {
     // 定义MutationObserver回调函数
@@ -20,7 +19,6 @@ window.onload = function() {
                 var totalViews = totalViewsElement.innerText;
                 
                 if (!isNaN(totalViews)) {
-                    console.log(`[TEST] 总访问量：${totalViews}`)
                     // 计算非个人访问量
                     var NoPersonal = parseInt(totalViews) - pgcount;
                     if (isNaN(NoPersonal)) {

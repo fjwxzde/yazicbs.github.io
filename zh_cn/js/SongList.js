@@ -138,7 +138,7 @@ const playlistNames = {
 const SongListSet = playlistNames[randomPlaylistIndex] || playlistNames.default;
 
 const logMessage = SongListSet === playlistNames.default ?
-    console.warn(`${SongListSet}`) :
+    console.warn(`${SongListSet}，随机到的数字是${randomPlaylistIndex}`) :
     console.log(`[INFO] 选中歌单 [${SongListSet}]`);
 
 /* -----END----- */
