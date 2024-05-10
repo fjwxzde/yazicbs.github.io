@@ -12,17 +12,20 @@
 
 ### Git
 - [Git提交规范](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/Git/Git提交规范) ~~(如果是自己写的项目请先保证自己看得懂)~~
-                           
+- [如何将空文件夹添加到版本控制中](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/Git/跟踪空文件夹)
+
 ### HTML
 - [如何创建简单亚克力效果 (使用css)](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/html/如何创建简单亚克力效果)
 - [通过GitHubAPI获取仓库最新提交内容 (使用JS)](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/html/通过GitHubAPI获取仓库最新提交内容)
 - [如何引入外部CSS样式文件或JS脚本](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/html/如何引入外部css或js)
+- [如何自动重定向至新页面](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/html/自动重定向)
 
 ### JS
 - [随机选取APlay歌单](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/JS/随机歌单)
 - [var、let与const三种定义变量的方式的区别](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/JS/var、let与const)
 - [JS的注释](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/JS/关于注释)
 - [让 JS 代码在网页加载完成后再执行](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/JS/加载完成后再执行)
+- [自动显示建站周年庆祝文本](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/JS/自动显示建站周年庆祝文本)
 
 ### Python
 #### 库
