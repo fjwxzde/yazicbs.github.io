@@ -35,3 +35,9 @@
 
 ### 其他参数/用法
 关于`<link>`标签的更多信息，请查阅 [MDN文档](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link)。  
+
+<div style="text-align: right;">
+    <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
+    &nbsp;|&nbsp;
+    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/" target="_blank">[前往文章索引]</a>
+</div>

@@ -29,3 +29,9 @@ else:
 在上面的例子中，我们首先定义了变量 `x`的值为10，然后通过 `if...elif...else`语句判断了 `x`的大小关系。根据 `x`的取值不同，程序会输出不同的结果。
 
 需要注意的是，`if...elif...else`语句中的每个条件都会逐一被检查，一旦某个条件为真，相应的代码块会被执行，然后整个 `if...elif...else`语句就会结束。如果所有条件都为假，则会执行 `else`语句块（如果有的话）。
+
+<div style="text-align: right;">
+    <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
+    &nbsp;|&nbsp;
+    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/" target="_blank">[前往文章索引]</a>
+</div>

@@ -6,3 +6,9 @@
 | let | 是 | 块级作用域 | 否 | 否 |
 | const | 否 | 函数作用域 | 否 | 否 |
 <!--需查证const作用域-->
+
+<div style="text-align: right;">
+    <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
+    &nbsp;|&nbsp;
+    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/" target="_blank">[前往文章索引]</a>
+</div>
