@@ -42,9 +42,9 @@
 - [如何避免死循环](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/Python/循环/如何避免死循环)
 - [循环嵌套](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/Python/循环/循环嵌套)
 - [break与continue](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/Python/循环/break与continue)
-- [while循环](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/Python/循环/while)<!-- 才不是那个 Well -->
+- [while循环](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/信息速查/Python/循环/while)
 ## 独立文章
-- [给电脑小白的一点建议](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/给电脑小白的一点建议)<!-- 小白教小白( -->
+- [给电脑小白的一点建议](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/给电脑小白的一点建议)
 - [实用操作](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/实用操作)
 - [如何在朋友面前玩花的](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/想玩花的可以看这篇)
 
