@@ -218,7 +218,7 @@ br.clear {
 @font-face {
     font-family: open_sans;
     src: url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.c4d82460ef260eb1589e73528cbfb257.eot);
-    src: url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.c4d82460ef260eb1589e73528cbfb257.eot?#iefix) format("embedded-opentype"), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.79515ad0788973c533405f7012dfeccd.woff) format("woff"), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.488d5cc145299ba07b75495100419ee6.ttf) format("truetype"), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.8185eb3059c46e4169ce107dfcf85950.svg#open_sansregular) format("svg");
+    src: url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.c4d82460ef260eb1589e73528cbfb257.eot?#iefix) format("embedded-opentype"), url(https://duckduckstudio.github.io/yazicbs.github.io/外部文件/OpenSans-Regular-webfont.79515ad0788973c533405f7012dfeccd.woff) format("woff"), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.488d5cc145299ba07b75495100419ee6.ttf) format("truetype"), url(https://static-assets.sxlcdn.com/webpack/fonts/OpenSans-Regular-webfont.8185eb3059c46e4169ce107dfcf85950.svg#open_sansregular) format("svg");
     font-weight: 400;
     font-style: normal
 }
