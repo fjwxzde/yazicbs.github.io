@@ -78,9 +78,3 @@ os.chmod("filename", 0o755)  # 修改文件权限为 rwxr-xr-x
 总的来说，`os` 模块是 Python 编程中不可或缺的一部分，熟练掌握其用法将有助于提升编程效率和灵活性。
 
 希望本文对你理解 Python 中的 `os` 模块有所帮助！
-
-<div style="text-align: right;">
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
-    &nbsp;|&nbsp;
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/" target="_blank">[前往文章索引]</a>
-</div>

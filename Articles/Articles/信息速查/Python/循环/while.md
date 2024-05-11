@@ -59,9 +59,3 @@ while row <= 9:
 * 写 `while` 循环时，先**确定好循环的条件**。
 * 注意**避免死循环**，确保在循环内部修改循环的判断条件。
 * `while` 循环可以灵活地处理不同的需求，但要小心**控制循环次数**。
-
-<div style="text-align: right;">
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
-    &nbsp;|&nbsp;
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/" target="_blank">[前往文章索引]</a>
-</div>

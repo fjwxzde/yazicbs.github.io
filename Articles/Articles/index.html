@@ -16,6 +16,21 @@
       repo: '',
       //loadSidebar: true
       loadFooter: true,
+      plugins: [
+        function (hook) {
+          var footer = [
+              '<div style="text-align: right;">',
+              '<a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>',
+              '&nbsp;|&nbsp;',
+              '<a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/" target="_blank">[前往文章索引]</a>',
+              '</div>',
+          ].join('');
+
+          hook.afterEach(function (html) {
+            return html + footer;
+          });
+        }
+      ],
     }
   </script>
   <!-- Docsify v4 -->

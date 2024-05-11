@@ -50,9 +50,3 @@ print("World!")
 ### 总结
 
 通过学习和灵活运用 `print()` 函数，你可以更好地掌握 Python 编程中的输出技巧，展示和调试代码时更加得心应手。希望这篇文章有助于你更深入地理解和应用 `print()` 函数！
-
-<div style="text-align: right;">
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
-    &nbsp;|&nbsp;
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/" target="_blank">[前往文章索引]</a>
-</div>

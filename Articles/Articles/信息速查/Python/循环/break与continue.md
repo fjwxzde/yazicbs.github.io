@@ -37,8 +37,3 @@
 * `continue`语句可以**提前结束本次循环**，通常配合 `if`语句，在满足条件时提前结束本次循环。
 * 区别：`break`语句是**直接结束循环**，而 `continue`语句**只结束本次循环，还会继续执行下一次循环**
 
-<div style="text-align: right;">
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
-    &nbsp;|&nbsp;
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/" target="_blank">[前往文章索引]</a>
-</div>

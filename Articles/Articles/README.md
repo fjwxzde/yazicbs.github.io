@@ -52,8 +52,5 @@
 - [如何在朋友面前玩花的](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/想玩花的可以看这篇)
 
 <div style="text-align: right;">
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
-    &nbsp;|&nbsp;
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/" target="_blank">[前往文章索引]</a>
     <p>最后更新：<strong>2024/5/11</strong></p>
 </div>

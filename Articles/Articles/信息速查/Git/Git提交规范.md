@@ -21,9 +21,3 @@ Git commit message specification是一种规范，用于指导开发者编写Git
 * `<footer>`：包含一些附加信息，例如关联的Issue号、变更的重要性等。这部分也可以省略。
 
 遵循Git commit message specification能够使提交信息更加清晰、易读，有助于团队协作和版本控制管理。<br>
-
-<div style="text-align: right;">
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
-    &nbsp;|&nbsp;
-    <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/" target="_blank">[前往文章索引]</a>
-</div>
