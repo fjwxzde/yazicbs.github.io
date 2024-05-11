@@ -14,7 +14,7 @@ Code by **Duck Studio**.
 
 ## 页面模板
 本仓库提供了一些我自己写的页面模板，这里列出链接:  
-* [某鸭的文章页面模板(小鸡习下的html页面)](https://github.com/DuckDuckStudio/yazicbs.github.io/blob/main/Articles/Articles/某鸭的文章页面模板.html)  
+* [某鸭的文章页面模板(小鸡习下的html页面)](https://github.com/DuckDuckStudio/Articles/blob/main/docs/某鸭的文章页面模板.html)  
 
 ## Q&A
 ### 为啥要建立这个网页？
