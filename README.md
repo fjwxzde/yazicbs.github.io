@@ -8,7 +8,7 @@ Code by **Duck Studio**.
 
 ## 网站公告
 接收从芙芙工具箱仓库转移来的文章 - time:2024.5.9 1:51
-“小鸡习”的文章迁移至[这个页面](https://duckduckstudio.github.io/yazicbs.github.io/Articles/Articles/) - time:2024.5.11 1:52    
+“小鸡习”的文章迁移至[这个页面](https://duckduckstudio.github.io/Articles) - time:2024.5.11 16:56    
 
 <div id="模板"></div>
 
