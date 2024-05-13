@@ -14488,7 +14488,6 @@ body:not(.edit) .s-animation-image_link_hover-dark_overlay .s-section:not(.s-foo
     font-family: entypo;
     font-style: normal;
     font-weight: 400;
-    speak: none;
     display: inline-block;
     text-decoration: inherit;
     width: 1em;
@@ -15719,7 +15718,6 @@ body:not(.edit) .s-animation-image_link_hover-dark_overlay .s-section:not(.s-foo
     -ms-user-select: none;
     user-select: none;
     -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: subpixel-antialiased
 }
 
@@ -15752,7 +15750,6 @@ body:not(.edit) .s-animation-image_link_hover-dark_overlay .s-section:not(.s-foo
     z-index: 99993;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-tap-highlight-color: transparent
 }
 
 .fancybox-slide {
@@ -15819,7 +15816,6 @@ body:not(.edit) .s-animation-image_link_hover-dark_overlay .s-section:not(.s-foo
     font-size: 16px;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
     -webkit-overflow-scrolling: touch
 }
 
@@ -16239,7 +16235,6 @@ body:not(.edit) .s-animation-image_link_hover-dark_overlay .s-section:not(.s-foo
     z-index: 99993;
     word-break: normal;
     -webkit-overflow-scrolling: touch;
-    -webkit-tap-highlight-color: transparent;
     box-sizing: border-box
 }
 
@@ -16270,7 +16265,6 @@ body:not(.edit) .s-animation-image_link_hover-dark_overlay .s-section:not(.s-foo
     border-color: #fff;
     border-style: solid;
     border-width: 0 0 5px 5px;
-    -webkit-tap-highlight-color: transparent;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-sizing: border-box
@@ -22865,7 +22859,6 @@ ul.slides li.slide {
     text-align: center;
     cursor: pointer;
     outline-style: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
 .navbar-drawer-bar a .entypo,
@@ -26516,7 +26509,7 @@ ul.slides li.slide {
     transition: .3s
 }
 
-.s-bg-video-mixin .video-bg-wrap video::--webkit-media-controls-play-button,
+.s-bg-video-mixin .video-bg-wrap video::state(webkit-media-controls-play-button),
 .s-bg-video-mixin .video-bg-wrap video::-webkit-media-controls-panel {
     display: none !important;
     -webkit-appearance: none
@@ -26816,9 +26809,9 @@ ul.slides li.slide {
     transition: .3s
 }
 
-.s-section.s-bg-video .video-bg-wrap video::--webkit-media-controls-play-button,
+.s-section.s-bg-video .video-bg-wrap video::state(webkit-media-controls-play-button),
 .s-section.s-bg-video .video-bg-wrap video::-webkit-media-controls-panel,
-.s-section.video-bg .video-bg-wrap video::--webkit-media-controls-play-button,
+.s-section.video-bg .video-bg-wrap video::state(webkit-media-controls-play-button),
 .s-section.video-bg .video-bg-wrap video::-webkit-media-controls-panel {
     display: none !important;
     -webkit-appearance: none
@@ -27713,9 +27706,9 @@ ul.slides li.slide {
     transition: .3s
 }
 
-.s-section.s-slider-section .item.s-bg-video .video-bg-wrap video::--webkit-media-controls-play-button,
+.s-section.s-slider-section .item.s-bg-video .video-bg-wrap video::state(webkit-media-controls-play-button),
 .s-section.s-slider-section .item.s-bg-video .video-bg-wrap video::-webkit-media-controls-panel,
-.s-section.s-slider-section .item.video-bg .video-bg-wrap video::--webkit-media-controls-play-button,
+.s-section.s-slider-section .item.video-bg .video-bg-wrap video::state(webkit-media-controls-play-button),
 .s-section.s-slider-section .item.video-bg .video-bg-wrap video::-webkit-media-controls-panel {
     display: none !important;
     -webkit-appearance: none
@@ -31423,7 +31416,6 @@ html#ecwid_html body#pages h6 {
     box-sizing: border-box;
     -webkit-touch-callout: none;
     touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent
 }
 
 .slick-slider.transition-fade .slick-slide:not(.slick-active) {
