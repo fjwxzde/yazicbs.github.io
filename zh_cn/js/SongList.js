@@ -118,7 +118,7 @@ var playlists = [
 ];
 
 // 从歌单列表中随机选择一个歌单
-var randomPlaylistIndex = Math.round(/* 四舍五入 */Math.random() * playlists.length);
+var randomPlaylistIndex = Math.floor(/* 四舍五入 */Math.random() * playlists.length);
 // 关于随机，详见MDN: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 // 伪随机
 var randomPlaylist = playlists[randomPlaylistIndex];
