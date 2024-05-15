@@ -90,6 +90,17 @@
         img {
             max-width: 100%;
         }
+
+        /* 派蒙说 */
+        .image-PaiMengSay {  
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }  
+  
+        .PaiMengSay {
+            margin-left: 10px;/*与左侧图片的间隔*/
+        }
+        /* END */
         </style>
     </head>
     <body>
@@ -261,34 +272,37 @@
         <p>&nbsp;</p>
 
         <!-- 页脚 -->
-        <div class="container center-text">
-            <div class="center-text">
-                <p><strong>[你知道吗]</strong></p>
-                <p id="random-sentence"></p>
-            </div>
+        <div class="container">  
+            <div class="image-PaiMengSay">  
+                <img src="D:\Duckhome\projects\MSVS\Source\Repos\yazicbs.github.io.online\GenshinImpact\photos\派蒙说.png" width="136" height="205" alt="派 蒙 说:">  
+                <div class="PaiMengSay container">  
+                    <strong>派蒙说:</strong>  
+                    <span id="random-sentence">[思考中...]</span>  
+                </div>  
+            </div>  
         </div>
+
         <script>
-            // [你知道吗]
+            // [派蒙说]
             const sentences = [
                 // -- 有用的信息 --
                 "如果你发现网站有任何问题，你可以告诉作者<Yzcbs123@163.com>。",
                 // -- 废话 -- [下面都是]
                 "原摄是什么，不知道欸。是真的不知道欸！",// 我不会告诉你这句话前面也有，就是拿来水的
-                "你知道[你知道吗]吗？",// 你说我知不知道！
                 "杂鱼❤~杂鱼❤~",
-                "不知道，导员没说。  没事，去玩吧。",
-                "这里不只有信息，还有废话。",
+                "不知道，导员没说。",
                 "给 我 爪巴 ！",
                 "喵~ (猫叫)",
-                "你知道吗？你不知道。",
+                "你知道我会说什么吗？你不知道。",
                 "awa...",
                 // -- 一身反骨 --
                 "不好评价。",
                 "很好评价。",
-                "没有人，比我，更懂，原 神 摄 影 ！\n(单纯就是玩梗，实际菜的要死)",
+                "没有人，比我，更懂，原 神 摄 影 ！",
                 // --
                 "看见全白色的屏幕，你会想到什么？  原...原...源...My guiding star!(Arcaea,启动！)",
                 "又御又可爱还真是抱歉呢~",
+                "来，摸摸头~",
                 // more and more ...
             ];
     
@@ -297,7 +311,7 @@
             const randomIndex = Math.floor(Math.random() * sentences.length);
     
             const randomSentence = sentences[randomIndex];
-            console.log(`[你知道吗]\n${randomSentence}`);
+            console.log(`派蒙说: ${randomSentence}`);
     
             const randomSentenceElement = document./*Here start ERROR*/getElementById("random-sentence");
             randomSentenceElement.textContent = sentences[randomIndex];
@@ -310,7 +324,7 @@
                 <p>拍摄&玩家：鸭鸭「カモ」</p>
                 <p>网站编写&归属：DuckStudio</p>
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/一定是玩原神玩的.png" alt="一定是玩原神玩的！" width="10%" height="10%">
-                <p>最后更新：<strong>2024/5/12</strong></p>
+                <p>最后更新：<strong>2024/5/15</strong></p>
             </div>
         </div>
     </body>
