@@ -1179,8 +1179,24 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                                         <div class="s-component s-text">
                                                                             <div class="s-component-content s-font-body">
                                                                                 <p>中文Git、芙芙工具箱、GUS(GenshinImpact UP Search)作者</p>
+                                                                                <p id="contentForXiamen" style="display:none;">初二学生(厦门双十海附)</p>
                                                                                 <p>不会聊天...(万能的关键字)</p>
                                                                                 <p><del>整天在网页里写本地路径</del></p>
+                                                                                <script>
+                                                                                    // 判断用户所在地区
+                                                                                    fetch('https://ipapi.co/json/')
+                                                                                        .then(response => response.json())
+                                                                                        .then(data => {
+                                                                                          const city = data.city;
+                                                                                          if (city === 'Xiamen') {
+                                                                                            document.getElementById('contentForXiamen').style.display = 'block';
+                                                                                            console.log('都是厦门的啊？！欢迎欢迎！')
+                                                                                          } else {
+                                                                                            console.log('欢迎来自' + city + '的访客！');
+                                                                                          }
+                                                                                        })
+                                                                                        .catch(error => console.error('错误:', error));
+                                                                                </script>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1211,7 +1227,7 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                 <strong>关于本网站</strong>
                                             </p>
                                             <p>本网站由<strong>鸭鸭「カモ」</strong>建立，</p>
-                                            <p>网站版本：v1.7.5a</p>
+                                            <p>网站版本：v1.7.6a</p>
                                             <!--详见提交：https://github.com/DuckDuckStudio/yazicbs.github.io/commits/main-->
                                             <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/" target="_blank">点击查看我的一些小工具</a>
                                             <br>
