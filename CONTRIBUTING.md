@@ -4,6 +4,7 @@
 
 如果你对网页做出了贡献，我会在网页的明显位置做出感谢的。  
 当然，你也可以写一个你自己的网页，如果你不希望我写的感谢网页的话。只要不要将你自己的网页和我的网页混在一起就行，免得我自己误删。  
+你可以将其放在`other`文件夹中，那里面专门放其他人的网页。  
 
 # 提交建议 / 直接修改
 您可以通过在仓库的[Issues](https://github.com/DuckDuckStudio/yazicbs.github.io/issues)界面提交您的建议，您也可以Fork本仓库后直接修改并提交 PR。  
@@ -71,6 +72,7 @@ yazicbs.github.io
 ├───new_page → 摆烂了很久的新页面  
 │   ├───css  
 │   └───photos  
+├───other → 其他人的网页，请将每个人的网页再用文件夹包起来！如果可以，请在这里添加对您的网页的说明。  
 ├───pictures → 网页所用图片(zh_cn)  
 ├───project_photos → 其他repo使用的图片  
 │   └───文章图片 → repo Articles 使用的图片  
