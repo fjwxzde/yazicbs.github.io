@@ -68,10 +68,9 @@ Code by **Duck Studio**.
 ### 提出建议
 * [W1ndys](https://github.com/W1ndys) - [Issues #23](https://github.com/DuckDuckStudio/yazicbs.github.io/issues/23)
 ### 网站依赖
-* [docsify](https://docsify.js.org/) - 部署“小鸡习”下的 Markdown 文章
 * [FiniCounter](https://github.com/finisky/finicounter) - 访问计数
 
 ## 我的官方账号
 请前往[[这个网页]](https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/index.html#official_account)查看。
 <p style="text-align:right">鸭鸭「カモ」</p>
-<p style="text-align:right">Last edit : 2024年5月11日</p>
+<p style="text-align:right">Last edit : 2024年5月18日</p>
