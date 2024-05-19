@@ -115,9 +115,51 @@
             <div class="center-text">
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/Articles/photos/blogs.png" alt="展示图" width="960" height="540">
                 <h1>某鸭的日常记录</h1>
-                <i>Sleep all day ~</i><br>
+                <i><span class="text">[在加载啦！再等等看嘛~]</span></i><br>
+                <!-- 打字效果JS -->
+                <script>
+                    // 获取要操作的 .text 标签
+                    const text = document.querySelector('.text');
+                
+                    // 定义要显示的文字数组
+                    const txt = ["Sleep all day.", "Just do it!", "Never give you up~", "小中考加油！"];
+
+                    // 定义当前正在操作的文字下标和字符下标
+                    let currentIndex = 0;
+                    let charIndex = 0;
+
+                    // 定义打字和删除字的状态，默认为打字状态
+                    let typing = true;
+
+                    // 设置定时器，每200毫秒执行一次
+                    setInterval(function() {
+                        if (typing) {
+                            // 正在打字状态，显示当前字符串的前index个字符
+                            text.innerHTML = txt[currentIndex].slice(0, ++charIndex);
+                        } else {
+                            // 正在删除字状态，显示当前字符串的前index个字符
+                            text.innerHTML = txt[currentIndex].slice(0, --charIndex);
+                        }
+
+                        // 判断打字或删除字是否完成
+                        if (charIndex === txt[currentIndex].length + 3) {
+                            // 打字完成后切换到删除字状态
+                            typing = false;
+                        } else if (charIndex < 0) {
+                            // 删除字完成后切换到下一个字符串的打字状态
+                            typing = true;
+                            charIndex = 0;
+                            currentIndex++;
+                            // 如果当前文字下标超过数组长度，重置为0
+                            if (currentIndex >= txt.length) {
+                                currentIndex = 0;
+                            }
+                        }
+                    }, 200);
+                </script>
                 <i>某鸭的一些闲话都会放在这里，至于为什么没有做评论区...反正也没人看...对吧？</i><br>
-                <a href="#index">[点我前往索引]</a>
+                <i>建议使用<code>Ctrl</code>+<code>F</code>搜索内容。</i>
+                <a href="#index">[点我前往索引]</a>&nbsp;|&nbsp;<a href="#say-index">[点我前往概括式索引]</a>
             </div>
             <p>&nbsp;</p>
             <hr />
@@ -136,6 +178,16 @@
                 建议
                 * 每次写Blog都复制一个Blog完整样例来进行修改
             -->
+
+            <!-- blog 样例 Start -->
+            <div class="center-text">
+                <p id="20240520"><i>2024/5/20</i></p>
+            </div>
+            <p>听说多写日记多看书可以增强写作文的能力，这是真的吗？</p>
+            <p>我：多写日记(×)&nbsp;写Blog、技术文章(✔)&nbsp;|&nbsp;多看书(×)&nbsp;多看文档(✔)</p>
+            <p>感觉我的写作能力也没有提升啊，要写的时候连个题目都想不出来。</p>
+            <hr />
+            <!-- blog 样例 End -->
 
             <!-- blog 样例 Start -->
             <div class="center-text">
@@ -557,6 +609,8 @@
             <a href="#20240514">2024/5/14</a>
             &nbsp;|&nbsp;
             <a href="#20240517">2024/5/17</a>
+            &nbsp;|&nbsp;
+            <a href="#20240520">2024/5/20</a>
             <h4 id="y2024m04">4月</h4><!---->
             <a href="#20240410">2024/4/10</a>
             &nbsp;|&nbsp;
@@ -639,11 +693,99 @@
             </ul>
             <p>特殊部分：</p>
             <ul>
-                <li><p>id命名格式说明：id</p></li>
                 <li><p>Blog索引：index</p></li>
+                <li><p>id命名格式说明：id</p></li>
+                <li><p>概括式Blog索引：say-index</p></li>
                 <li><p>其他记录页面: other</p></li>
             </ul>
             <p>在链接后面添上#id即可快速跳转，例如<a href="#index">https://duckduckstudio.github.io/yazicbs.github.io/Articles/Blogs.html#index</a>(快速跳转到Blog索引)</p>
+        </div>
+
+        <div class="container" style="margin-right: 30px; margin-left: 30px;">
+            <h2 id="say-index">概括式 Blog 索引</h2>
+            <p><i>并非所有Blog都有概括。</i></p>
+            <!-- 倒序 月份新的在前 日期旧的在前 -->
+            <h3 id="y2024">2024年</h3>
+            <h4 id="y2024m05">5月</h4><!---->
+            <a href="#20240507">2024/5/7(还差一点，Minecraft)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240511">2024/5/11(给i他 铺设)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240514">2024/5/14(阿帽截图)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240517">2024/5/17(用终端看ACI)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240520">2024/5/20(看文档+写技术文章=毫无提升)</a>
+            <h4 id="y2024m04">4月</h4><!---->
+            <a href="#20240410">2024/4/10(双爆+强化)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240414">2024/4/14(头孢加酒,____)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041501">2024/4/15[1](万物皆可暂停...)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041502">2024/4/15[2](一段吐槽...)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041503">2024/4/15[3]</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041504">2024/4/15[4]</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041601">2024/4/16[1](异议!)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041602">2024/4/16[2](芙芙工具箱v1.2.8天书发行版)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041603">2024/4/16[3](Arc成绩)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041801">2024/4/18[1](不配水吞药?)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041802">2024/4/18[2](1818黄金眼↓↑~)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041901">2024/4/19[1](给自己写规则)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041902">2024/4/19[2](坐扁了一只蟑螂)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041903">2024/4/19[3](写文档=荒废时间=废物)</a>
+            &nbsp;|&nbsp;
+            <a href="#2024041904">2024/4/19[4](废 物 英 语，PR)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240420">2024/4/20(Powered by [虚空终端])</a>
+            &nbsp;|&nbsp;
+            <a href="#20240421">2024/4/21</a>
+            &nbsp;|&nbsp;
+            <a href="#2024042301">2024/4/23[1]</a>
+            &nbsp;|&nbsp;
+            <a href="#2024042302">2024/4/23[2]</a>
+            <h4 id="y2024m03">3月</h4><!---->
+            <a href="#20240302">2024/3/2(您有一个MISS)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240304">2024/3/4(Git failed with a fatal error.)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240322">2024/3/22(Arc ptt 红框)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240330">2024/3/30(就差一点，原神)</a>
+            <h4 id="y2024m02">2月</h4><!---->
+            <a href="#20240205">2024/2/5(原神100GB)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240209">2024/2/9(我一直都爱着你啊!)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240219">2024/2/19(某种神奇算法)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240222">2024/2/22(双倍遗器狗粮)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240229">2024/2/29(八神虫子截图)</a>
+            <h4 id="y2024m01">1月</h4><!---->
+            <a href="#20240114">2024/1/14(芙宁娜，璃月，崴脚)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240116">2024/1/16(音游+弹窗)</a>
+            &nbsp;|&nbsp;
+            <a href="#20240123">2024/1/23(音游越慢越简单)</a>
+
+            <h3 id="y2023">2023年</h3>
+            <h4 id="y2023m07">7月</h4>
+            <a href="#20230712">2023/7/12(骨折光困难通关)</a>
+
+            <h3 id="y2022">2022年</h3>
+            <h4 id="y2022m08">8月</h4>
+            <a href="#20220827">2022/8/27(原神四小只)</a>
         </div>
 
         <div class="container" style="margin-right: 30px; margin-left: 30px;">
