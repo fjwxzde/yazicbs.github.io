@@ -4,7 +4,7 @@ var currentYear_year = Now_year.getFullYear(); // 获取当前年份
 var startTimeString_year = currentYear_year + "-01-28T18:00:00+08:00";
 var StartTime_year = new Date(startTimeString_year); // 转换成日期对象
 
-// 计算目标时间加上 48 小时后的时间
+// 计算目标时间加上 18 小时后的时间
 const EndTime = new Date(StartTime_year.getTime() + (18 * 60 * 60 * 1000)); // 18 小时的毫秒数
 
 if (Now_year >= StartTime_year) {
