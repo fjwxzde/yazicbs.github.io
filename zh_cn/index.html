@@ -37,9 +37,10 @@ a     a  h   a  c     a a           a  a   a   s  a    a  a  a    a
 aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
 -->
 
-<!-- 控制台JS小游戏 by鸭鸭「カモ」 GPL3 -->
-<script src="D:\Duckhome\projects\MSVS\Source\Repos\yazicbs.github.io.online\zh_cn\js\games\guess_number.js"></script>
-<!-------------------------------------->
+<!-- FUN JS by鸭鸭「カモ」 -->
+<script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/games/guess_number.js"></script>
+<script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/NewYear.js"></script>
+<!--------------------------------->
 
 <html lang="zh">
     <head>
@@ -94,7 +95,6 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                 鸭鸭「カモ」
                 欢迎关注我的bilibili频道：@鸭鸭_カモ
                 https://space.bilibili.com/2054654702/
-                [最新维护日期:2024/5/23]
             `)
             //初始化结束
 
@@ -118,9 +118,6 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
             }
         </script>
         <!-- 基本初始化 结束 -->
-
-        <!-- 过 年 啦 ！ -->
-        <script src="https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/js/NewYear.js"></script>
 
         <script>
             (function () {
@@ -1221,8 +1218,8 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                     <strong>关于本网站</strong>
                                                 </p>
                                                 <p>本网站由<strong>鸭鸭「カモ」</strong>建立，</p>
-                                                <p>网站版本：v1.7.7a</p>
-                                                <!--详见提交：https://github.com/DuckDuckStudio/yazicbs.github.io/commits/main-->
+                                                <p><strong>最后编辑：2024年5月25日</strong></p>
+                                                <p><i>网站版本: v1.7.8</i></p>
                                                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/" target="_blank">点击查看我的一些小工具</a>
                                                 <br>
                                                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/" target="_blank">点击查看我的文章</a>
@@ -1232,6 +1229,7 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                 <p>本网站专为电脑端制作，手机端如有显示问题敬请谅解，谢谢！</p>
                                                 <!-- 周年庆祝 -->
                                                 <p id="year-happy" style="display: none;"><strong>庆祝某鸭的小站建立 <span id="year-difference"></span> 周年!</strong></p>
+                                                <p>©Duck studio 2021 - <span id="now_year">[加载中...]</span></p>
                                                 <script>
                                                     /* 周年庆祝文本显示(自动修改&显示) */
                                                     window.onload = function() {
@@ -1253,12 +1251,16 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                     /* 计算周年数 */
                                                     const now = new Date(); // 获取当前日期
                                                     const currentYear = now.getFullYear(); // 获取当前年份
+
+                                                    /* 自动替换版权年份 */
+                                                    const NowYearElement = document.getElementById("now_year");// 获取要替换的文本元素
+                                                    NowYearElement.textContent = currentYear;// 将年份写入文本元素中
+
                                                     const difference = currentYear - 2021; // 计算年份差距
                                                     const yearDifferenceElement = document.getElementById("year-difference");// 获取要替换的文本元素
                                                     yearDifferenceElement.textContent = difference;// 将年份差距写入文本元素中
                                                 </script>
                                                 <!-- END -->
-                                                <p>©Duck studio 2021 - 2024</p>
                                             </div>
                                         </div>
                                     </div>
