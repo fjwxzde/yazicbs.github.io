@@ -127,8 +127,8 @@
 
             <div class="container">
                 <h2 id="总调用">总调用</h2>
-                <p>你可以在主程序直接启动总调用程序对代码进行检查，也可以使用指令调用指定检查部分进行特定而不是全部的检查。</p>
-                <p>在主程序的开发工具分类你应该会看到三个按钮，以下是各个按钮的解释:</p>
+                <p>你可以在主程序直接启动总调用程序对代码进行检查，也可以使用指令调用指定工具。</p>
+                <p>在主程序的开发工具分类你应该会看到 4 个按钮，以下是各个按钮的解释:</p>
                 <table>
                     <thead>
                         <tr>
@@ -142,6 +142,10 @@
                             <td>应用所有检查</td>
                         </tr>
                         <tr>
+                            <td>复制目录</td>
+                            <td>将开发工具所在目录复制到剪贴板上以方便<code>cd</code></td>
+                        </tr>
+                        <tr>
                             <td>配置文件</td>
                             <td>打开开发工具的总配置文件(<code>config.ini</code>)</td>
                         </tr>
@@ -151,12 +155,14 @@
                         </tr>
                     </tbody>
                 </table>
+                <p>你虽然可以直接在主程序中调用一些功能，但我并<strong>不建议这样做</strong>。</p>
+                <p>最好的调用方法应该是<strong>使用命令调用</strong>。</p>
             </div>
             <br />
             <div class="container">
                 <h2 id="命令调用">命令调用</h2>
-                <p>当然，你也可以使用命令来进行单独调用。</p>
                 <p>以下为示例命令，在执行前请先<code>cd</code>到开发工具目录，然后再<code>cd</code>到对应分类。</p>
+                <p>使用<code>python 工具名.py --help</code>获取每个工具的详细指令帮助！</p>
                 <table>
                     <thead>
                         <tr>
@@ -176,6 +182,11 @@
                             <td>非UTF-8编码</td>
                             <td><code>python 非UTF-8编码.py [-h] [--file_extensions FILE_EXTENSIONS] --dir DIRECTORY</code></td>
                         </tr>
+                        <tr>
+                            <td>生成工具</td>
+                            <td>需求生成</td>
+                            <td><code>python 需求生成.py [-h] --dir DIR [--output OUTPUT] [--env ENV]</code></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -184,7 +195,7 @@
         <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
             <div class="right-text">
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
-                <p>最后更新：<strong>2024/5/24</strong></p>
+                <p>最后更新：<strong>2024/5/25</strong></p>
                 <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
                 <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
             </div>
