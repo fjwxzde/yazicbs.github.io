@@ -120,3 +120,9 @@ yazicbs.github.io
 > 各个文件的详细作用在这里无法列出，因为实在是太多文件了，请见谅。  
 > 如果你不了解某个文件的具体作用是什么，可以 **先打开看看里面是什么东西** ，然后你大概就知道那个文件是做什么的了。而且我大部分注释都没有删。  
 
+# 通用样式
+你可以直接使用以下通用样式:  
+```html
+<!-- 芙芙工具箱网页通用样式 by鸭鸭「カモ」 -->
+<link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+```
