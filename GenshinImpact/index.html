@@ -397,10 +397,13 @@
             let canvas = document.querySelector("#canvas");
             let ctx = canvas.getContext("2d");
             let img = document.querySelector("#star_img");
+            let meteorShowerEnabled = localStorage.getItem('meteorShowerEnabled') === 'true';
 
             // 等待图片加载完成后获取真实大小
             img.onload = function() {
-                console.log("流星雨就要来喽~")
+                if (meteorShowerEnabled) {
+                    console.log("[Effect] 流星雨就要来喽~")
+                }
 
                 // 获取图片的自然大小
                 let imageWidth = img.naturalWidth;
@@ -415,10 +418,13 @@
 
             let meteors = [];
             let allstar = 40;
+            let shouldClearSky = false;
 
             function init() {
-                for (let i = 0; i < allstar; i++) {
-                    newmeteor();
+                if (meteorShowerEnabled) {
+                    for (let i = 0; i < allstar; i++) {
+                        newmeteor();
+                    }
                 }
             }
 
@@ -466,7 +472,35 @@
                 }
             }
 
-            setInterval(draw, 1);
+            if (!meteorShowerEnabled) {
+                console.warn(`[Effect] 效果已被禁用。`)
+            }
+
+            if (meteorShowerEnabled) {
+                setInterval(draw, 1);
+            }
+            
+            function Clear_sky() {
+                if (meteorShowerEnabled) {
+                    meteors = [];
+                    meteorShowerEnabled = false;
+                    localStorage.setItem('meteorShowerEnabled', 'false');
+                    console.log("[Effect] 流星雨效果已被禁用");
+                } else {
+                    console.log("[Effect] 流星雨效果已经被禁用，无需重复操作");
+                }
+            }
+
+            function Start_Meteor_shower() {
+                if (!meteorShowerEnabled) {
+                    meteorShowerEnabled = true;
+                    localStorage.setItem('meteorShowerEnabled', 'true');
+                    location.reload();
+                    console.log("[Effect] 流星雨效果已重新启用");
+                } else {
+                    console.log("[Effect] 流星雨效果已经启用，无需重复操作");
+                }
+            }
         </script>
     </body>
 </html>
