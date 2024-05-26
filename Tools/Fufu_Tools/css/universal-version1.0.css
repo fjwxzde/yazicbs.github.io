@@ -26,10 +26,6 @@ code {
     font-family: Consolas, 'Courier New', monospace;
 }
 
-pre {
-    white-space: pre-wrap;
-}
-
 .right-text {
     text-align: right;
 }
