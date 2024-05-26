@@ -1,4 +1,4 @@
-/* 芙芙工具箱网页通用样式 Version 1.0 */
+/* 芙芙工具箱网页通用样式 Version 1.1 */
 /* by鸭鸭「カモ」 */
 /* NOTE:全站所有相同样式页面都会用到的才可放进来！ */
 
@@ -10,7 +10,6 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
 }
 
 th {

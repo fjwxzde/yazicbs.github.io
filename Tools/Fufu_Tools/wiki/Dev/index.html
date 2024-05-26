@@ -69,7 +69,7 @@
             }
         </style>
         <!-- 芙芙工具箱网页通用样式 by鸭鸭「カモ」 -->
-        <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
+        <link rel="stylesheet" href="D:\Duckhome\projects\MSVS\Source\Repos\yazicbs.github.io.online\Tools\Fufu_Tools\css\universal.css">
     </head>
     <body>
         <!-- width / height only can use int. -->
@@ -136,17 +136,85 @@
                         <tr>
                             <td>代码校对</td>
                             <td>尾随空格</td>
-                            <td><code>python 尾随空格.py [-h] [--file_extensions FILE_EXTENSIONS] --dir DIRECTORY</code></td>
+                            <td>
+                                <pre>
+                                    <code>
+usage: 尾随空格.py [-h] [--file_extensions FILE_EXTENSIONS] --dir DIRECTORY
+
+检查指定目录下的文件是否存在尾随空格
+
+options:
+    -h, --help            show this help message and exit
+    --file_extensions FILE_EXTENSIONS
+                        要检查的文件扩展名列表，以 , 分隔
+    --dir DIRECTORY       要检查的目录路径
+                                    </code>
+                                </pre>
+                            </td>
                         </tr>
                         <tr>
                             <td>代码校对</td>
                             <td>非UTF-8编码</td>
-                            <td><code>python 非UTF-8编码.py [-h] [--file_extensions FILE_EXTENSIONS] --dir DIRECTORY</code></td>
+                            <td>
+                                <pre>
+                                    <code>
+usage: 非UTF-8编码.py [-h] [--file_extensions FILE_EXTENSIONS] --dir DIRECTORY
+
+检查指定目录下的文件是否存在非UTF-8编码的文件
+
+options:
+    -h, --help            show this help message and exit
+    --file_extensions FILE_EXTENSIONS
+                        要检查的文件扩展名列表，以 , 分隔
+    --dir DIRECTORY       要检查的目录路径
+                                    </code>
+                                </pre>
+                            </td>
                         </tr>
                         <tr>
                             <td>生成工具</td>
                             <td>需求生成</td>
-                            <td><code>python 需求生成.py [-h] --dir DIR [--output OUTPUT] [--env ENV]</code></td>
+                            <td>
+                                <pre>
+                                    <code>
+usage: 需求生成.py [-h] --dir DIR [--output OUTPUT] [--env ENV]
+
+根据目录中的Python文件生成requirements.txt文件。
+
+options:
+    -h, --help       show this help message and exit
+    --dir DIR        包含Python文件的目录路径。
+    --output OUTPUT  requirements.txt文件的输出路径（完整路径）。
+    --env ENV        指定已有环境中的Python解释器，仅列出环境中还未安装的库。
+                                    </code>
+                                </pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>统计</td>
+                            <td>代码总行数</td>
+                            <td>
+                                <pre>
+                                    <code>
+usage: 代码总行数.py [-h] --dir DIR_PATH [--ignore-folders IGNORE_FOLDERS] [--ignore-files IGNORE_FILES] [--formats FILE_FORMATS] [--ignore-empty-lines] [--ignore-comments] [--show-ignored-lines]
+
+计算指定目录中的总代码行数
+
+options:
+    -h, --help            show this help message and exit
+    --dir DIR_PATH        要扫描的目录
+    --ignore-folders IGNORE_FOLDERS
+                        要忽略的文件夹（逗号分隔）
+    --ignore-files IGNORE_FILES
+                        要忽略的文件（逗号分隔）
+    --formats FILE_FORMATS
+                        要包含的文件格式（逗号分隔）
+    --ignore-empty-lines  在统计时忽略空行
+    --ignore-comments     在统计时忽略注释行
+    --show-ignored-lines  显示总共忽略的空行和注释行数
+                                    </code>
+                                </pre>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -156,7 +224,7 @@
         <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
             <div class="right-text">
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
-                <p>最后更新：<strong>2024/5/25</strong></p>
+                <p>最后更新：<strong>2024/5/26</strong></p>
                 <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
                 <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
             </div>
