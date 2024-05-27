@@ -172,6 +172,28 @@ options:
                             </td>
                         </tr>
                         <tr>
+                            <td>代码校对</td>
+                            <td>参数查重</td>
+                            <td>
+                                <pre>
+                                    <code>
+usage: 参数查重.py [-h] [--show-duplicates] [--remove-duplicates] [--copy-to-clipboard] input
+
+参数查重工具
+
+positional arguments:
+    input                输入以逗号分隔的字符串
+
+options:
+    -h, --help           show this help message and exit
+    --show-duplicates    查找并显示重复内容
+    --remove-duplicates  查找并移除重复内容（保留一个）
+    --copy-to-clipboard  将结果复制到剪贴板（必须与--remove_duplicates同时使用）
+                                    </code>
+                                </pre>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>生成工具</td>
                             <td>需求生成</td>
                             <td>
@@ -196,8 +218,8 @@ options:
                             <td>
                                 <pre>
                                     <code>
-usage: 代码总行数.py [-h] --dir DIR_PATH [--ignore-folders IGNORE_FOLDERS] [--ignore-files IGNORE_FILES] [--formats FILE_FORMATS] [--ignore-empty-lines] [--ignore-comments] [--show-ignored-lines]
-
+usage: 代码总行数.py [-h] --dir DIR_PATH [--ignore-folders IGNORE_FOLDERS] [--ignore-files IGNORE_FILES] [--formats FILE_FORMATS] [--ignore-empty-lines] [--ignore-comments] [--show-ignored-lines] [--show-test-info] [--code-file-formats]
+                        
 计算指定目录中的总代码行数
 
 options:
@@ -212,6 +234,8 @@ options:
     --ignore-empty-lines  在统计时忽略空行
     --ignore-comments     在统计时忽略注释行
     --show-ignored-lines  显示总共忽略的空行和注释行数
+    --show-test-info      显示测试信息（非必要不要使用）
+    --code-file-formats   仅统计代码文件
                                     </code>
                                 </pre>
                             </td>
@@ -219,12 +243,18 @@ options:
                     </tbody>
                 </table>
             </div>
+            <br />
+            <div class="container">
+                <h2 id="配置文件">config.ini</h2>
+                <p><del>什么？你问我配置文件里的东西都是做什么用的？你不会看注释吗？</del></p>
+                <p><del>什么？你说你把注释删掉了？请</del><a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/files/ini/开发工具默认config/config.ini" download>[点我下载默认配置文件(20240527)]</a></p>
+            </div>
         </div>
 
         <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
             <div class="right-text">
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
-                <p>最后更新：<strong>2024/5/26</strong></p>
+                <p>最后更新：<strong>2024/5/27</strong></p>
                 <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
                 <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
             </div>
