@@ -72,25 +72,6 @@
                 max-width: 100%;
             }
 
-            /* 流星图片 */
-            * {
-                margin: 0;
-                padding: 0;
-            }
-
-            #canvas {
-                filter: drop-shadow(0 0 1px white);
-                position: absolute; /* 设置流星画布绝对定位 */
-                top: 0;
-                left: 0;
-            }
-
-            .star_img {
-                position: relative; /* 设置容器相对定位 */
-                display: inline-block; /* 让容器只占据图片大小的空间 */
-            }
-            /* END */
-
             /* 派蒙说 */
             .image-PaiMengSay {  
                 display: flex;
@@ -155,13 +136,10 @@
                     <p><i>这张图也是 Powered by 虚空终端 的展示图的背景图哦！</i></p>
                     <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/20240428221542.png" alt="遥望须弥城"><br />
                     <p><i>感谢 小陈陈(chy)(UID523188024) 的拍摄协助！</i></p>
-                    <div class="star_img">
-                        <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/20230706070439.png" alt="繁星点点" id="star_img">
-                        <canvas id="canvas"></canvas>
-                    </div>
-                    <br /><!--将换行移出避免冲突-->
+                    <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/original/20230706070439.png" alt="繁星点点" id="star_img">
+                    <br />
                     <p><i>忘了是哪里了，只记得有个任务和珍贵箱子。</i></p>
-                    <p><i>流星雨效果在图片加载完后刷新即可显示，详情请查看控制台。<a href="https://duckduckstudio.github.io/yazicbs.github.io/Interesting/sky/" target="_blank">[点我查看纯享版]</a></i></p>
+                    <p><i><a href="https://duckduckstudio.github.io/yazicbs.github.io/Interesting/sky/" target="_blank">[点我查看流星雨纯享版]</a></i></p>
                     <p><i>效果参考<a href="https://www.bilibili.com/video/BV1pp4y177GS/" target="_blank">b站UP[小K师兄]的[一起来看流星雨呗，前端程序员用canvas来写一场浪漫的流星雨～]</a></i></p>
                     <hr />
                     <h2>[须弥]护世森</h2>
@@ -380,121 +358,8 @@
                 <p>拍摄&玩家：鸭鸭「カモ」</p>
                 <p>网站编写&归属：DuckStudio</p>
                 <img src="https://duckduckstudio.github.io/yazicbs.github.io/GenshinImpact/photos/一定是玩原神玩的.png" alt="一定是玩原神玩的！" width="10%" height="10%">
-                <p>最后更新：<strong>2024/5/26</strong></p>
+                <p>最后更新：<strong>2024/5/28</strong></p>
             </div>
         </div>
-        <!--- 特殊效果 --->
-        <script>
-            // 流星雨JS
-            // https://www.bilibili.com/video/BV1pp4y177GS/
-
-            let canvas = document.querySelector("#canvas");
-            let ctx = canvas.getContext("2d");
-            let img = document.querySelector("#star_img");
-            let meteorShowerEnabled = localStorage.getItem('meteorShowerEnabled') === 'true';
-
-            // 等待图片加载完成后获取真实大小
-            img.onload = function() {
-                if (meteorShowerEnabled) {
-                    console.log("[Effect] 流星雨就要来喽~")
-                }
-
-                // 获取图片的自然大小
-                let imageWidth = img.naturalWidth;
-                let imageHeight = img.naturalHeight;
-
-                // 设置画布大小为图片实际大小
-                canvas.width = imageWidth;
-                canvas.height = imageHeight;
-
-                init();
-            };
-
-            let meteors = [];
-            let allstar = 40;
-            let shouldClearSky = false;
-
-            function init() {
-                if (meteorShowerEnabled) {
-                    for (let i = 0; i < allstar; i++) {
-                        newmeteor();
-                    }
-                }
-            }
-
-            function newmeteor() {
-                meteors.push({
-                    lines: [{
-                        x: parseInt(Math.random() * canvas.width * 0.75),
-                        y: parseInt(Math.random() * canvas.height * 0.65),
-                    }],
-                    life: parseInt(Math.random() * 100) + 100,
-                    age: 0
-                });
-            }
-
-            function draw() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-                for (let i = 0; i < meteors.length; i++) {
-                    let meteor = meteors[i];
-                    let lines = meteor.lines;
-
-                    for (let j = 0; j < lines.length; j++) {
-                        ctx.fillStyle = `rgba(255,255,255,${j / lines.length})`;
-                        ctx.fillRect(lines[j].x, lines[j].y, 1, 1);
-                    }
-
-                    ctx.fillStyle = 'yellow';
-                    let s_head = lines[lines.length - 1];
-                    ctx.fillRect(s_head.x, s_head.y, 2, 2);
-
-                    if (meteor.age <= meteor.life / 2) {
-                        lines.push({
-                            x: s_head.x + 1,
-                            y: s_head.y + 0.3
-                        });
-                    } else {
-                        lines.shift();
-                    }
-
-                    meteor.age++;
-                    if (meteor.age >= meteor.life) {
-                        meteors.splice(i, 1);
-                        newmeteor();
-                    }
-                }
-            }
-
-            if (!meteorShowerEnabled) {
-                console.warn(`[Effect] 效果已被禁用。`)
-            }
-
-            if (meteorShowerEnabled) {
-                setInterval(draw, 1);
-            }
-            
-            function Clear_sky() {
-                if (meteorShowerEnabled) {
-                    meteors = [];
-                    meteorShowerEnabled = false;
-                    localStorage.setItem('meteorShowerEnabled', 'false');
-                    console.log("[Effect] 流星雨效果已被禁用");
-                } else {
-                    console.log("[Effect] 流星雨效果已经被禁用，无需重复操作");
-                }
-            }
-
-            function Start_Meteor_shower() {
-                if (!meteorShowerEnabled) {
-                    meteorShowerEnabled = true;
-                    localStorage.setItem('meteorShowerEnabled', 'true');
-                    location.reload();
-                    console.log("[Effect] 流星雨效果已重新启用");
-                } else {
-                    console.log("[Effect] 流星雨效果已经启用，无需重复操作");
-                }
-            }
-        </script>
     </body>
 </html>
