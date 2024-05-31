@@ -7,7 +7,6 @@
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
         <!--编码UTF-8-->
         <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport" name="viewport">
-        <!--移动设备优化，允许缩放-->
         <meta content="Duck FOREVER - 循环鸭叫，清新背景音" name="description">
         <!--定义了网页的描述，用于搜索引擎显示网页摘要-->
         <meta content="DuckStudio,DuckDuckStudio,有趣的东西,Interesting,Duck,鸭子,循环鸭叫" name="keywords">
@@ -36,17 +35,9 @@
                 height: 100vh;
                 font-family: Arial, sans-serif;
             }
-            
-            /* 扩距
-            *    margin-top: 1%;
-            *    margin-bottom: 1%;
-            *    margin-left: 1%;
-            *    margin-right: 1%;
-            *    such as: <div class="container" style="margin-right: 1%; margin-left: 1%;">左右扩距</div>
-            */
-            
+
             .container {
-                background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+                background-color: rgba(255, 255, 255, 0.7);
                 border-radius: 10px;
                 padding: 20px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -59,8 +50,7 @@
 
             h2 {
                 color: #333;
-                font-size: 24px; /* 调整标题文本大小 */
-                margin-bottom: 10px; /* 调整标题与下方段落的间距 */
+                font-size: 24px;
             }
 
             img {
@@ -87,16 +77,15 @@
         <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
     </head>
     <body>
-        <!-- width / height only can use int. -->
         <div class="container" style="margin-top: 1%; margin-right: 1%; margin-left: 1%;">
             <div class="center-text">
-                <p>&nbsp;</p>
+                <img src="https://duckduckstudio.github.io/yazicbs.github.io/pictures/duck.png" alt="受 鸭" width="40%" height="40%">
                 <h1>Duck FOREVER</h1>
                 <i>循环鸭叫，清新背景音</i>
                 <p>&nbsp;</p>
 
                 <!-- 添加按钮 -->
-                <button onclick="playQuack()">Let's PLAY NOW</button>
+                <button onclick="playQuack()"><span id="text">Let's PLAY NOW</span></button>
 
                 <p>&nbsp;</p>
 
@@ -107,7 +96,7 @@
 
         <div class="container" style="margin-right: 1%; margin-left: 1%;">
             <div class="center-text">
-                <p><strong>[一些闲话]</strong></p>
+                <p><strong>[你知道吗]</strong></p>
                 <p id="random-sentence"></p>
             </div>
         </div>
@@ -115,7 +104,7 @@
         <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
             <div class="right-text">
                 <p>It's just for fun.&nbsp;NO MUCH.</p>
-                <p><a href="https://duckduckstudio.github.io/yazicbs.github.io/">回到首页</a></p>
+                <p>还没玩够？前往<a href="https://duckduckstudio.github.io/yazicbs.github.io/Interesting/">欢愉索引</a>再找点乐子吧~</p>
             </div>
         </div>
 
@@ -123,18 +112,24 @@
         <script>
             var audioElement = new Audio();
             var quackSounds = [
-                "https://duckduckstudio.github.io/yazicbs.github.io/Interesting/duck_forever/sounds/quack1.mp3",
-                "https://duckduckstudio.github.io/yazicbs.github.io/Interesting/duck_forever/sounds/quack2.mp3",
-                "https://duckduckstudio.github.io/yazicbs.github.io/Interesting/duck_forever/sounds/quack3.mp3",
-                "https://duckduckstudio.github.io/yazicbs.github.io/Interesting/duck_forever/sounds/rush_duck.mp3",
+                "sounds/quack1.mp3",
+                "sounds/quack2.mp3",
+                "sounds/quack3.mp3",
+                "sounds/rush_duck.mp3",
                 // 添加更多音频文件路径
             ];
             var currentQuackIndex = -1;
     
             function playQuack() {
-                // 如果当前没有选定鸭叫音频，就随机选择一个
-                if (currentQuackIndex === -1) {
+                if (currentQuackIndex === -1) {// 如果当前没有选定鸭叫音频，就随机选择一个
                     currentQuackIndex = Math.floor(Math.random() * quackSounds.length);
+                    const NewText = document.getElementById("text");
+                    NewText.textContent = "再来一个";
+                } else {// 如果当前有选定鸭叫音频，就随机选择一个和当前的不同的
+                    let nowcurrentQuackIndex = currentQuackIndex
+                    while (nowcurrentQuackIndex === currentQuackIndex){
+                        currentQuackIndex = Math.floor(Math.random() * quackSounds.length);
+                    }
                 }
                 // 设置音频源
                 audioElement.src = quackSounds[currentQuackIndex];
@@ -149,15 +144,19 @@
         <script>
             // [你知道吗] - [你不用知道]
             const sentences = [
-                "感谢b站UP主 银斑三傻 为本页面提供视频制作音频",
+                "b站UP主 银斑三傻 为本页面提供了视频制作音频",
+                "音频是完全随机的哦",
+                "我录的鸭子怕手机",
+                "啪啪啪(扇翅膀声)",
+                "[你知道吗] - [你不用知道]",
+                "本页面使用了 芙芙工具箱通用样式",
             ];
     
             // 每次访问随机
-    
             const randomIndex = Math.floor(Math.random() * sentences.length);
     
             const randomSentence = sentences[randomIndex];
-            console.log(`[闲话]\n${randomSentence}`);
+            console.log(`[你知道吗]\n${randomSentence}`);
     
             const randomSentenceElement = document./*Here start ERROR*/getElementById("random-sentence");
             randomSentenceElement.textContent = sentences[randomIndex];

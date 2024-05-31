@@ -1,18 +1,20 @@
-import subprocess
-import requests
-import sys
 import os
+import sys
+import requests
+import subprocess
 from colorama import init, Fore
 
-init(autoreset=True)  # 初始化 Colorama，使颜色输出生效
+init(autoreset=True)
+script_path = os.path.dirname(os.path.abspath(__file__))
+full_path = os.path.join(script_path, "中文git.py")
 
 # ---------- 版本定义及更新 ----------
 # 定义版本号
-VERSION = 'v2.0'
+VERSION = 'v2.4'
 
 def always_check():# 每次执行命令都要检查的
     # ----------- 检查更新 ----------
-    current_version = VERSION.split('-')[0]
+    current_version = VERSION
     url = 'https://api.github.com/repos/DuckDuckStudio/Chinese_git/releases/latest'
     try:
         response = requests.get(url)
@@ -20,7 +22,7 @@ def always_check():# 每次执行命令都要检查的
         latest_version = data['tag_name']  # 从 GitHub 获取最新版本号
 
         if latest_version != current_version:
-            print(f"{Fore.BLUE}[!]{Fore.RESET} 发现新版本 {Fore.RED}{VERSION}{Fore.RESET} → {Fore.GREEN}{latest_version}{Fore.RESET}\n运行 {Fore.BLUE}中文git 更新{Fore.RESET} 命令以更新。")
+            print(f"{Fore.BLUE}[!]{Fore.RESET} 发现新版本 {Fore.RED}{current_version}{Fore.RESET} → {Fore.GREEN}{latest_version}{Fore.RESET}\n运行 {Fore.BLUE}中文git 更新{Fore.RESET} 命令以更新。")
     except:
         pass
 
@@ -37,7 +39,7 @@ def check_for_updates():
         latest_version = data['tag_name']  # 从 GitHub 获取最新版本号
 
         if latest_version != current_version:
-            print(f"{Fore.BLUE}[!]{Fore.RESET} 发现新版本 {Fore.GREEN}{latest_version}{Fore.RESET} 可用！")
+            print(f"{Fore.BLUE}[!]{Fore.RESET} 发现新版本 {Fore.RED}{current_version}{Fore.RESET} → {Fore.GREEN}{latest_version}{Fore.RESET} 可用！")
             return latest_version
         else:
             print(f"{Fore.GREEN}✓{Fore.RESET} 您已安装最新版本 {Fore.BLUE}{current_version}{Fore.RESET}。")
@@ -48,19 +50,18 @@ def check_for_updates():
 
 def download_update_file(version):
     # 根据版本号是否包含 '-pack' 后缀来确定文件后缀名
-    file_extension = '.exe' if '-pack' in version else '.py'
+    file_extension = '.py'
 
     # 根据版本确定下载 URL
-    download_url = 'https://github.com/DuckDuckStudio/Chinese_git/releases/download/{}/Chinese_git{}'.format(version, file_extension)
-    if file_extension == '.py':# 仅供py版下载，且仅提供最新版
-        spare_download_url = f'https://duckduckstudio.github.io/yazicbs.github.io/Tools/chinese_git/Spare-Download/Chinese_git.py'
+    download_url = f'https://github.com/DuckDuckStudio/Chinese_git/releases/download/{version}/Chinese_git.py'
+    spare_download_url = f'https://duckduckstudio.github.io/yazicbs.github.io/Tools/chinese_git/Spare-Download/Chinese_git.py'
 
     try:
         response = requests.get(download_url)
         filename = response.headers['Content-Disposition'].split('=')[1]
         
         # 重命名下载的文件为"中文Git.exe" 或 "中文Git.py"
-        new_filename = '中文Git{}'.format(file_extension)
+        new_filename = '中文Git.py'
         
         with open(new_filename, 'wb') as f:
             f.write(response.content)
@@ -71,12 +72,11 @@ def download_update_file(version):
     except Exception as e:
         print(f"{Fore.RED}✕{Fore.RESET} 下载更新文件时出错: {e}")
         choice = input(f"{Fore.BLUE}?{Fore.RESET} 是否切换备用下载路线(是/否):").lower()
-        if choice in ['是', 'y']:
+        if choice in ['是', 'y', 'yes']:
             try:
                 response = requests.get(spare_download_url)
-                filename = response.headers['Content-Disposition'].split('=')[1]
                 
-                new_filename = '中文Git{}'.format(file_extension)
+                new_filename = '中文git.py'
                 
                 with open(new_filename, 'wb') as f:
                     f.write(response.content)
@@ -104,7 +104,7 @@ def auto_update():
     if new_version:
         # 询问用户是否安装更新
         choice = input(f"{Fore.BLUE}?{Fore.RESET} 是否要安装此更新? (是/否): ").lower()
-        if choice in ['是','y']:
+        if choice in ['是','y','yes']:
             new_filename = download_update_file(new_version)
             if new_filename:
                 replace_current_program(new_filename)
@@ -112,9 +112,90 @@ def auto_update():
             print(f"{Fore.BLUE}[!]{Fore.RESET} 已跳过更新。")
 
 # ---------- 版本...更新 结束 ----------
+# ---------- 公告获取 -----------------
+notice_url = 'https://duckduckstudio.github.io/yazicbs.github.io/Tools/chinese_git/notice/notice.txt'
+previous_notice_file = os.path.join(script_path, 'previous_notice.txt')# 显示过的公告
 
-script_path = os.path.dirname(__file__)
-full_path = os.path.join(script_path, "中文git.py")
+def get_notice_content(url, manual=False):
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            content = response.text
+            return content
+        else:
+            if manual:
+                print(f"{Fore.RED}✕{Fore.RESET} 获取最新公告失败！\n状态码: {Fore.BLUE}{response.status_code}{Fore.RESET}")
+                t = input(f"{Fore.BLUE}?{Fore.RESET} 是否读取本地最新公告({Fore.GREEN}是{Fore.RESET}/{Fore.RED}否{Fore.RESET}):").lower()
+                if t in ['是', 'y', 'yes']:
+                    display_notice('本地')
+            return None
+    except Exception as e:
+        if manual:
+            print(f"{Fore.RED}✕{Fore.RESET} 获取最新公告失败！\n错误信息: {Fore.RED}{e}{Fore.RESET}")
+            t = input(f"{Fore.BLUE}?{Fore.RESET} 是否读取本地最新公告({Fore.GREEN}是{Fore.RESET}/{Fore.RED}否{Fore.RESET}):").lower()
+            if t in ['是', 'y', 'yes']:
+                display_notice('本地')
+        return None
+
+def save_previous_notice(content):
+    with open(previous_notice_file, 'w') as file:
+        file.write(content)
+
+def read_previous_notice():
+    try:
+        with open(previous_notice_file, 'r') as file:
+            return file.read()
+    except FileNotFoundError:
+        return ""
+
+def display_notice(manual=False):
+    if manual == True:
+        content = get_notice_content(notice_url, True)
+    elif manual == False:
+        content = get_notice_content(notice_url)
+
+    if manual == "本地":
+        content = read_previous_notice()
+        if content == "":
+            print(f"{Fore.RED}✕{Fore.RESET} 没有本地公告")
+            return
+    else:
+        previous_notice = read_previous_notice()
+
+    if content:
+        lines = content.split('\n')
+        level_line = lines[0].strip()
+        level = int(level_line.split(':')[1])
+
+        if level == 1:
+            color = Fore.RED
+        elif level == 2:
+            color = Fore.YELLOW
+        elif level == 3:
+            color = Fore.GREEN
+        elif level == 4:
+            color = Fore.BLUE
+        else:
+            color = ''
+
+        if manual == True:
+            print(f"{color}[!最新公告({level}级)!]{Fore.RESET}")
+            for line in lines[1:]:
+                print(line)
+            print(f"{color}[!------------!]{Fore.RESET}")
+        elif manual == "本地":
+            print(f"{color}[!最新本地公告({level}级)!]{Fore.RESET}")
+            for line in lines[1:]:
+                print(line)
+            print(f"{color}[!------------!]{Fore.RESET}")
+        else:
+            if content != previous_notice:
+                print(f"\n{color}[!有新公告({level}级)!]{Fore.RESET}")
+                for line in lines[1:]:
+                    print(line)
+                print(f"{color}[!------------!]{Fore.RESET}")
+                save_previous_notice(content)
+# ---------- 公告获取 结束 ------------
 
 def git_command(command, *args):
     git_command_mapping = {
@@ -131,7 +212,6 @@ def git_command(command, *args):
         "远程地址": "remote -v",
         "远程更新": "remote update",
         "查看远程分支": "branch -r",
-        "版本": "-v",
         "克隆": "clone",
         "签出到": "checkout",
         "查看图形化日志" :"log --graph",
@@ -140,11 +220,14 @@ def git_command(command, *args):
         "查看本地分支": "branch",
         "强推": "push --force",
         "更名分支": "branch -m",
-        # --- 更新 ---
+        # --- 特殊功能 ---
+        "版本": "-v",
         "更新": "update",
+        "公告": "notice",
         # --- 结束 ---
         "还原": "revert",
         "重置": "reset",
+        "差异": "diff",
         # 可根据需要添加更多映射
     }
     if command == "帮助":
@@ -209,6 +292,9 @@ def git_command(command, *args):
                 print(f"版本：{Fore.BLUE}{VERSION}{Fore.RESET}")
                 print(f"安装在: {Fore.BLUE}{full_path}{Fore.RESET}")
                 result = subprocess.run('git ' + git_command + ' ' + ' '.join(args), capture_output=True, text=True)
+            elif command == "公告":
+                display_notice(True)
+                return
             elif command == "还原":
                 if not args:
                     print(f"{Fore.RED}✕{Fore.RESET} 还原命令需要参数")
@@ -302,12 +388,15 @@ def git_command(command, *args):
                 print(f"{Fore.RED}✕{Fore.RESET} 错误: {result.stderr}")
             
             always_check()# 自动检查更新
+            display_notice() # 自动公告获取
         except Exception as e:
-            print(f"{Fore.RED}✕{Fore.RESET} 执行git命令时出错: {e}")
+            print(f"{Fore.RED}✕{Fore.RESET} 执行命令时出错: {e}")
             always_check()# 自动检查更新
+            display_notice() # 自动公告获取
     else:
-        print("不支持的git命令:", command)
+        print("不支持的命令:", command)
         always_check()# 自动检查更新
+        display_notice() # 自动公告获取
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
@@ -317,3 +406,4 @@ if __name__ == "__main__":
         print("python 中文git.py <中文指令> [参数]")
         print("即：python 中文git.py <你想干什么> [具体要啥]")
         always_check()
+        display_notice() # 自动公告获取
