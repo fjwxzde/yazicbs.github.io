@@ -17,6 +17,13 @@ li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.name_container {
+    background-color: rgba(255, 255, 255, 0.7); /* 亚克力效果垫底 */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 /* ------ 打字效果 ------ */
 .text{
     display: inline-block;
