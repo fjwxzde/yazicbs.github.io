@@ -502,6 +502,34 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                             </div>
                                         </div>
                                         <!-------------------->
+                                        <!-------------------->
+                                        <div class="transition lazyloaded s-bg-white s-new-media-section s-section s-media-section s-top-padding-half background-image"
+                                            data-react-style="{}">
+                                            <div class="container">
+                                                <div class="columns sixteen">
+                                                </div>
+                                                <div class="s-mh s-layout-normal s-repeatable">
+                                                    <div>
+                                                        <div data-sorting-index="0" class="s-repeatable-item s-last-row">
+                                                            <div class="clearfix">
+                                                                <div>
+                                                                    <div class="s-item-text-group ">
+                                                                        <div class="s-item-title">
+                                                                            <div class="s-component s-text">
+                                                                                <div class="hello_container">
+                                                                                    <h2><span id="hello-there">Hello，____你哪里的?</span></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-------------------->
                                     </div>
                                 </li>
                                 <li class="slide s-section-3 css-1rkmeg4 "
@@ -1191,13 +1219,30 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                                                         fetch('https://ipapi.co/json/')
                                                                                             .then(response => response.json())
                                                                                             .then(data => {
-                                                                                            const city = data.city;
-                                                                                            if (city === 'Xiamen') {
-                                                                                                document.getElementById('contentForXiamen').style.display = 'block';
-                                                                                                console.log('都是厦门的啊？！欢迎欢迎！')
-                                                                                            } else {
-                                                                                                console.log('欢迎来自' + city + '的访客！');
-                                                                                            }
+                                                                                                const city = data.city;
+                                                                                                const province = data.region;
+                                                                                                const country = data.country;
+
+                                                                                                const cityMessages = {
+                                                                                                    'Jinjiang': '晋江',
+                                                                                                    'Xiamen': '厦门',
+                                                                                                    'Fuzhou': '福州',
+                                                                                                    'Quanzhou': '泉州',
+                                                                                                    'Putian': '莆田',
+                                                                                                    'Zhangzhou': '漳州',
+                                                                                                    'Nanping': '南平',
+                                                                                                    'Longyan': '龙岩',
+                                                                                                    'Sanming': '三明',
+                                                                                                    'Ningde': '宁德'
+                                                                                                };
+
+                                                                                                // 如果用户所在地区不是中国福建省内的城市，则显示默认的欢迎消息
+                                                                                                const defaultWelcomeMessage = `欢迎来自 ${province}${country === 'CN' ? '福建省' : ''} 的访客！`;
+                                                                                                const welcomeMessage = cityMessages[city] ? `欢迎来自 ${cityMessages[city]} 的访客！` : defaultWelcomeMessage;
+                                                                                                console.log(welcomeMessage);
+
+                                                                                                const helloSpan = document.getElementById('hello-there');
+                                                                                                helloSpan.textContent = `你好，${cityMessages[city]}！`;
                                                                                             })
                                                                                             .catch(error => console.error('[ERROR]获取地区失败:', error));
                                                                                     </script>
@@ -1305,7 +1350,7 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                 <script>
                                                     // GitHub API endpoint for fetching repository commits
                                                     const repoUrl = 'https://api.github.com/repos/DuckDuckStudio/yazicbs.github.io/commits';
-                                                    
+
                                                     // Fetch data from GitHub API
                                                     fetch(repoUrl)
                                                         .then(response => response.json())
@@ -1316,7 +1361,11 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                             // Display latest commit message on the HTML page
                                                             document.getElementById('commitMessage').innerHTML = `${latestCommitMessage}`;
                                                         })
-                                                        .catch(error => console.error('[ERROR]无法获取GitHub上的最新提交信息:', error));
+                                                        .catch(error => {
+                                                            console.error('[ERROR]无法获取GitHub上的最新提交信息:', error);
+                                                            // Replace content on the HTML page with an error message
+                                                            document.getElementById('commitMessage').innerHTML = '[加载失败，请检查网络或联系网站管理员]';
+                                                        });
                                                     </script>
                                                 </div>
                                             </div>
