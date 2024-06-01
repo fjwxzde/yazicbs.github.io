@@ -106,6 +106,8 @@
         <div class="container">
             <div class="center-text">
                 <p><strong>[这 些 你 知 道 了 也 没 用]</strong></p>
+                <i>小Tip:在控制台看效果更佳哦~</i>
+                <hr />
                 <p id="random-sentence"></p>
             </div>
         </div>
@@ -165,7 +167,7 @@
                 "Rhythm Games(节奏游戏) VS Music Games(音乐游戏)",
                 "鸡肉 爆炒 焖烧 放油！",
                 "☆劲☆爆☆四☆压☆",
-                "星白在永夜城吃大餐）",
+                "星白在永夜城吃大餐(",
                 "Daisuke",
                 "该 Dai 的终究会 suke",
                 /* 疑似雌小鬼入侵616账号 */
@@ -184,6 +186,11 @@
                 /* ----- */
                 "僕の和风 本 当 上 手\n(★♫♫♫♫♫♫♫♫♫♫♫♫♫♫♫♫♫♫★)",
                 "什么？！Arc出新番了？！\n新女酮？",
+                "7 岁 就 能 PM",
+                "这键真的非常oc",
+                "我说话disuke",
+                "我\n说\n话\n带\n纵\n连",
+                "我\n 说\n话\n 带\n交 \n互",
             ];
     
             // 每次访问随机
@@ -191,16 +198,17 @@
             const randomIndex = Math.floor(Math.random() * sentences.length);
     
             const randomSentence = sentences[randomIndex];
+
+            console.log(randomSentence)
     
-            const randomSentenceElement = document./*Here start ERROR*/getElementById("random-sentence");
-            /* 2024.4.29:What ERROR? */
+            const randomSentenceElement = document.getElementById("random-sentence");
             randomSentenceElement.textContent = randomSentence;
             // --
         </script>
         <div class="container">
             <div class="right-text">
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/" target="_blank">[前往某鸭的主页]</a>
-                <p>最后更新：<strong>2024/5/14</strong></p>
+                <p>最后更新：<strong>2024/6/1</strong></p>
             </div>
         </div>
     </body>
