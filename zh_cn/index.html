@@ -1288,36 +1288,42 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                                                     <p>不会聊天...(万能的关键字)</p>
                                                                                     <p><del>整天在网页里写本地路径</del></p>
                                                                                     <script>
-                                                                                        // 判断用户所在地区
                                                                                         fetch('https://ipapi.co/json/')
-                                                                                            .then(response => response.json())
-                                                                                            .then(data => {
-                                                                                                const city = data.city;
-                                                                                                const province = data.region;
-                                                                                                const country = data.country;
+                                                                                        .then(response => response.json())
+                                                                                        .then(data => {
+                                                                                            const city = data.city;
+                                                                                            const province = data.region;
+                                                                                            const country = data.country;
 
-                                                                                                const cityMessages = {
-                                                                                                    'Jinjiang': '晋江',
-                                                                                                    'Xiamen': '厦门',
-                                                                                                    'Fuzhou': '福州',
-                                                                                                    'Quanzhou': '泉州',
-                                                                                                    'Putian': '莆田',
-                                                                                                    'Zhangzhou': '漳州',
-                                                                                                    'Nanping': '南平',
-                                                                                                    'Longyan': '龙岩',
-                                                                                                    'Sanming': '三明',
-                                                                                                    'Ningde': '宁德'
-                                                                                                };
+                                                                                            const cityMessages = {
+                                                                                                'Jinjiang': '晋江',
+                                                                                                'Xiamen': '厦门',
+                                                                                                'Fuzhou': '福州',
+                                                                                                'Quanzhou': '泉州',
+                                                                                                'Putian': '莆田',
+                                                                                                'Zhangzhou': '漳州',
+                                                                                                'Nanping': '南平',
+                                                                                                'Longyan': '龙岩',
+                                                                                                'Sanming': '三明',
+                                                                                                'Ningde': '宁德'
+                                                                                            };
 
-                                                                                                // 如果用户所在地区不是中国福建省内的城市，则显示默认的欢迎消息
-                                                                                                const defaultWelcomeMessage = `欢迎来自 ${province}${country === 'CN' ? '福建省' : ''} 的访客！`;
-                                                                                                const welcomeMessage = cityMessages[city] ? `欢迎来自 ${cityMessages[city]} 的访客！` : defaultWelcomeMessage;
-                                                                                                console.log(welcomeMessage);
+                                                                                            let welcomeMessage = '';
 
-                                                                                                const helloSpan = document.getElementById('hello-there');
-                                                                                                helloSpan.textContent = `你好，${cityMessages[city]}！`;
-                                                                                            })
-                                                                                            .catch(error => console.error('[ERROR]获取地区失败:', error));
+                                                                                            if (country === 'CN') {
+                                                                                                welcomeMessage = `你好，${cityMessages[city] || province}！`;
+                                                                                            } else if (country === 'JP') {
+                                                                                                welcomeMessage = `こんにちは、${cityMessages[city] || province}！`;
+                                                                                            } else {
+                                                                                                welcomeMessage = `Hello, ${cityMessages[city] || province}!`;
+                                                                                            }
+
+                                                                                            console.log(welcomeMessage);
+
+                                                                                            const helloSpan = document.getElementById('hello-there');
+                                                                                            helloSpan.textContent = welcomeMessage;
+                                                                                        })
+                                                                                        .catch(error => console.error('[ERROR]获取地区失败:', error));
                                                                                     </script>
                                                                                 </div>
                                                                             </div>
