@@ -10,6 +10,9 @@ Code by **Duck Studio**.
 接收从芙芙工具箱仓库转移来的文章 - time:2024.5.9 1:51
 “小鸡习”的文章迁移至[这个页面](https://duckduckstudio.github.io/Articles) - time:2024.5.11 16:56    
 
+## 网站仓库状态
+![Alt](https://repobeats.axiom.co/api/embed/e19801f5fdc2c56d7f85f73c12c8993f8c8023c7.svg "Repobeats analytics image")  
+
 <div id="模板"></div>
 
 ## 页面模板
@@ -65,12 +68,16 @@ Code by **Duck Studio**.
 ### 贡献者
 *(除我自己以外)*  
 * [银斑三傻](https://space.bilibili.com/27646076) - 提供[视频](https://www.bilibili.com/video/BV1xr4y1H7hx/)制作[音频](https://duckduckstudio.github.io/yazicbs.github.io/Interesting/duck_forever/sounds/quack3.mp3) - [许可证明](https://duckduckstudio.github.io/yazicbs.github.io/project_photos/音频许可-银斑三傻.png)  
+* [Luna Grace](https://github.com/Luna-Grace)
+
 ### 提出建议
 * [W1ndys](https://github.com/W1ndys) - [Issues #23](https://github.com/DuckDuckStudio/yazicbs.github.io/issues/23)
-### 网站依赖
-* [FiniCounter](https://github.com/finisky/finicounter) - 访问计数
 
-## 我的官方账号
+<!--### 网站依赖-->
+<!--* [FiniCounter](https://github.com/finisky/finicounter) - 访问计数-->
+<!--该功能有问题已停用-->
+
+## 我的账号
 请前往[[这个网页]](https://duckduckstudio.github.io/yazicbs.github.io/zh_cn/index.html#official_account)查看。
 <p style="text-align:right">鸭鸭「カモ」</p>
-<p style="text-align:right">Last edit : 2024年5月18日</p>
+<p style="text-align:right">Last edit : 2024年6月2日</p>
