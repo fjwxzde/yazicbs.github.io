@@ -168,9 +168,9 @@
             <!--
                 折叠样式使用说明:
                 请在需要折叠的地方的前面添加上如下代码，已确保有按钮可以控制是否折叠。
-                <button onclick="toggleContent(n)" class="toggle-btn expanded"><span id="tc-span">点我展开内容</span></button>
+                <button onclick="toggleContent(n)" class="toggle-btn expanded"><span id="tc-span1">点我展开内容</span></button>
                 将(n)替换为对应的数，例如:
-                <button onclick="toggleContent(1)" class="toggle-btn expanded"><span id="tc-span">点我折叠内容</span></button>
+                <button onclick="toggleContent(1)" class="toggle-btn expanded"><span id="tc-span1">点我折叠内容</span></button>
                 Note:请注意默认文本，默认折叠时是“点我展开内容”，反之是“点我折叠内容”
                     对应的默认状态请在代码末尾的JS脚本中设置。
                 
@@ -195,14 +195,14 @@
             <div class="center-text">
                 <p id="20240604"><i>2024/6/4</i></p>
             </div>
-            <button onclick="toggleContent(1)" class="toggle-btn expanded"><span id="tc-span">点我折叠内容</span></button>
+            <button onclick="toggleContent(1)" class="toggle-btn expanded"><span id="tc-span1">点我折叠内容</span></button>
             <div id="content1" class="collapse-content">
                 <p><i>这只是一段故事，<span class="hidden_text">虽然真的发生过，但</span>没有任何评价的意思。</i></p>
                 <p>P1: 给你10分钟，够不够？</p>
                 <p>P2: 可以再多点吗，10分钟根本写不完...</p>
                 <p>P1: 你整天在那写写写的，要把重心放到学习上，知道吗？</p>
                 <p>P2(内心): 你的意思是十分钟做完以下操作吗？</p>
-                <button onclick="toggleContent(2)" class="toggle-btn expanded">点我展开内容</button>
+                <button onclick="toggleContent(2)" class="toggle-btn expanded"><span id="tc-span2">点我展开内容</span></button>
                 <div id="content2" class="collapse-content">
                     <ol>
                         <li><p>编写一个新程序</p></li>
@@ -316,7 +316,7 @@
             <div class="center-text">
                 <p id="2024042301"><i>2024/4/23[1]</i></p>
             </div>
-            <button onclick="toggleContent(3)" class="toggle-btn expanded"><span id="tc-span">点我展开内容</span></button>
+            <button onclick="toggleContent(3)" class="toggle-btn expanded"><span id="tc-span3">点我展开内容</span></button>
             <div id="content3" class="collapse-content">
                 <p class="hidden_text">(总结：2024/4/22 - 不如意的一天)</p>
                 <p>先是写代码 git 推送不了，然后又是背生物全都忘光了，又被说<span class="hidden_text">这些东西等到大学了你就会发现你现在弄的这些东西很幼稚了</span>...</p>
@@ -447,7 +447,7 @@
             <div class="center-text">
                 <p id="2024041504"><i>2024/4/15&nbsp;[4]</i></p>
             </div>
-            <button onclick="toggleContent(4)" class="toggle-btn expanded"><span id="tc-span">点我展开内容</span></button>
+            <button onclick="toggleContent(4)" class="toggle-btn expanded"><span id="tc-span4">点我展开内容</span></button>
             <div id="content4" class="collapse-content">
                 <p>家长：“又在玩什么？(严肃的)”</p>
                 <p>我：“Visual Code.(摆烂的)”</p>
@@ -472,7 +472,7 @@
                 <p id="2024041502"><i>2024/4/15&nbsp;[2]</i></p>
             </div>
             <p>一段吐槽：</p>
-            <button onclick="toggleContent(5)" class="toggle-btn expanded"><span id="tc-span">点我展开内容</span></button>
+            <button onclick="toggleContent(5)" class="toggle-btn expanded"><span id="tc-span5">点我展开内容</span></button>
             <div id="content5" class="collapse-content">
                 <p>真的有点搞不懂现在的一些家长，自己孩子得了心理类的疾病(例如抑郁症等)接受不了就说“欸~孩子他啥病没有~都是他装的~”</p>
                 <p>更离谱的是还有<strong>医院确诊得了心理疾病的</strong>孩子的家长认为孩子没病装病，<strong>私自把孩子的药给停了</strong>(消息来源：车棍儿老师的哔哩哔哩视频)</p>
@@ -771,24 +771,6 @@
         </div>
 
         <div class="container" style="margin-right: 30px; margin-left: 30px;">
-            <h2 id="id">id命名格式说明</h2>
-            <p>具体某篇Blog：aaaa年bb月cc日&nbsp;→&nbsp;aaaabbcc&nbsp;(e.g.&nbsp;20240418)</p>
-            <p>索引：</p>
-            <ul>
-                <li><p>aaaa年&nbsp;→&nbsp;yaaaa&nbsp;(e.g.&nbsp;y2024)</p></li>
-                <li><p>aaaa年bb月&nbsp;→&nbsp;yaaaambb&nbsp;(e.g.&nbsp;y2024m04)</p></li>
-            </ul>
-            <p>特殊部分：</p>
-            <ul>
-                <li><p>Blog索引：index</p></li>
-                <li><p>id命名格式说明：id</p></li>
-                <li><p>概括式Blog索引：say-index</p></li>
-                <li><p>其他记录页面: other</p></li>
-            </ul>
-            <p>在链接后面添上#id即可快速跳转，例如<a href="#index">https://duckduckstudio.github.io/yazicbs.github.io/Articles/Blogs.html#index</a>(快速跳转到Blog索引)</p>
-        </div>
-
-        <div class="container" style="margin-right: 30px; margin-left: 30px;">
             <h2 id="say-index">概括式 Blog 索引</h2>
             <p><i>并非所有Blog都有概括。</i></p>
             <p><i>更建议使用<code>Ctrl</code>+<code>F</code>搜索关键词。</i></p>
@@ -883,6 +865,63 @@
         </div>
 
         <div class="container" style="margin-right: 30px; margin-left: 30px;">
+            <h2 id="id">id命名格式说明</h2>
+            <button onclick="toggleContent(6)" class="toggle-btn expanded"><span id="tc-span6">点我展开内容</span></button>
+            <div id="content6" class="collapse-content">
+                <p>具体某篇Blog：aaaa年bb月cc日&nbsp;→&nbsp;aaaabbcc&nbsp;(e.g.&nbsp;20240418)</p>
+                <p>索引：</p>
+                <ul>
+                    <li><p>aaaa年&nbsp;→&nbsp;yaaaa&nbsp;(e.g.&nbsp;y2024)</p></li>
+                    <li><p>aaaa年bb月&nbsp;→&nbsp;yaaaambb&nbsp;(e.g.&nbsp;y2024m04)</p></li>
+                </ul>
+                <p>特殊部分：</p>
+                <ul>
+                    <li><p>Blog索引：index</p></li>
+                    <li><p>id命名格式说明：id</p></li>
+                    <li><p>概括式Blog索引：say-index</p></li>
+                    <li><p>其他记录页面: other</p></li>
+                    <li><p>统计: count</p></li>
+                </ul>
+                <p>在链接后面添上#id即可快速跳转，例如<a href="#index">https://duckduckstudio.github.io/yazicbs.github.io/Articles/Blogs.html#index</a>(快速跳转到Blog索引)</p>
+            </div>
+        </div>
+
+        <div class="container" style="margin-right: 30px; margin-left: 30px;">
+            <h2 id="count">统计</h2>
+            <p><i>数据截至2024年6月9日 2点12分</i></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>项目</th>
+                        <th>值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>总篇数</td>
+                        <td>41</td>
+                    </tr>
+                    <tr>
+                        <td>总字数</td>
+                        <td>3046(估算)</td>
+                    </tr>
+                    <tr>
+                        <td>总代码行数</td>
+                        <td>963</td>
+                    </tr>
+                    <tr>
+                        <td>最后更新(统计)</td>
+                        <td>2024年6月9日</td>
+                    </tr>
+                    <tr>
+                        <td>最早发布</td>
+                        <td>2024年3月1日</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container" style="margin-right: 30px; margin-left: 30px;">
             <h2 id="other">其他记录页面</h2>
             <a href="https://duckduckstudio.github.io/yazicbs.github.io/music_games/" target="_blank">某鸭的音游记录的索引页面</a>
             &nbsp;|&nbsp;
@@ -904,12 +943,12 @@
                 if (content.style.display === 'none') {
                     content.style.display = 'block';
                     btn.classList.add('expanded');
-                    const tcSpan = document.getElementById('tc-span');
+                    const tcSpan = document.getElementById('tc-span' + id);
                     tcSpan.textContent = "点我折叠内容";
                 } else {
                     content.style.display = 'none';
                     btn.classList.remove('expanded');
-                    const tcSpan = document.getElementById('tc-span');
+                    const tcSpan = document.getElementById('tc-span' + id);
                     tcSpan.textContent = "点我展开内容";
                 }
             }
@@ -922,6 +961,7 @@
             document.getElementById('content3').style.display = 'none';
             document.getElementById('content4').style.display = 'none';
             document.getElementById('content5').style.display = 'none';
+            document.getElementById('content6').style.display = 'none';
         </script>
     </body>
 </html>
