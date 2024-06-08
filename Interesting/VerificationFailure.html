@@ -138,16 +138,16 @@
             var userAgent = navigator.userAgent;
             console.log(`用户设备: ${userAgent}`)
 
-            if (userAgent.match(/iPhone\s13/)) {
+            if (userAgent.includes("iPhone 13")) {
                 is_vf()
             } else if (userAgent.includes("Windows NT 10.0") && !userAgent.includes("ARM")) {
-                console.log("测试环境...done");
-                console.warn("将显示xf页面内容，使用以下函数更新显示:")
+                console.log("\n测试环境...done");
                 console.warn(`
-                [block_all()] [none_all()]
-                [block_vf()] [block_xf()]
-                [none_vf()] [none_xf()]
-                [is_vf()] [is_xf()]
+将显示xf页面内容，使用以下函数更新显示:
+[block_all()] [none_all()]
+[block_vf()] [block_xf()]
+[none_vf()] [none_xf()]
+[is_vf()] [is_xf()]
                 `)
                 is_xf()
             } else {
