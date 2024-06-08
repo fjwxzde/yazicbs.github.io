@@ -34,7 +34,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            /*font-family: Arial, sans-serif;*/
+            overflow-y: hidden; /* 隐藏垂直滚动条 */
         }
 
         .container {
@@ -43,6 +43,20 @@
             padding: 20px;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .under_container {
+            position: fixed; /* 固定定位 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            overflow-y: hidden; /* 隐藏垂直滚动条 */
         }
 
         h1 {
@@ -66,12 +80,80 @@
     </head>
     <body>
         <!-- width / height only can use int. -->
-        <div class="container">
-            <h1 class="center-text">出错了！</h1>
-            <p>您未通过身份验证，请重启应用重试！</p>
-            <div class="container">
-                <p>ERROR CODE: 0x00001</p>
+        <div class="under_container">
+            <div id="vf" style="display: none;">
+                <h1 class="center-text">出错了！</h1>
+                <p>您未通过身份验证，请重启应用重试！</p>
+                <div class="container">
+                    <p>ERROR CODE: 0x00001</p>
+                </div>
             </div>
+            <p id="xf" style="display: none;">你找错地方了，赶紧走！这里不是你该来的地方！<br/>ERROR CODE: 404 No Page.</p>
         </div>
+
+        <!--设备验证JS-->
+        <script>
+            /* 调试函数 */
+            function block_all() {
+                document.getElementById('vf').style.display = 'block';
+                document.getElementById('xf').style.display = 'block';
+                return "done"
+            }
+            function none_all() {
+                document.getElementById('vf').style.display = 'none';
+                document.getElementById('xf').style.display = 'none';
+                return "done"
+            }
+            /* --- */
+            function none_vf() {
+                document.getElementById('vf').style.display = 'none';
+                return "done"
+            }
+            function none_xf() {
+                document.getElementById('xf').style.display = 'none';
+                return "done"
+            }
+            /* --- */
+            function block_vf() {
+                document.getElementById('vf').style.display = 'block';
+                return "done"
+            }
+            function block_xf() {
+                document.getElementById('xf').style.display = 'block';
+                return "done"
+            }
+            /* --- */
+            function is_xf() {
+                document.getElementById('vf').style.display = 'none';
+                document.getElementById('xf').style.display = 'block';
+                return "done"
+            }
+            function is_vf() {
+                document.getElementById('vf').style.display = 'block';
+                document.getElementById('xf').style.display = 'none';
+                return "done"
+            }
+        </script>
+        <script>
+            var userAgent = navigator.userAgent;
+            console.log(`用户设备: ${userAgent}`)
+
+            if (userAgent.match(/iPhone\s13/)) {
+                is_vf()
+            } else if (userAgent.includes("Windows NT 10.0") && !userAgent.includes("ARM")) {
+                console.log("测试环境...done");
+                console.warn("将显示xf页面内容，使用以下函数更新显示:")
+                console.warn(`
+                [block_all()] [none_all()]
+                [block_vf()] [block_xf()]
+                [none_vf()] [none_xf()]
+                [is_vf()] [is_xf()]
+                `)
+                is_xf()
+            } else {
+                is_xf()
+                window.location.href='https://duckduckstudio.github.io/yazicbs.github.io/404.html';
+            }
+        </script>
     </body>
 </html>
