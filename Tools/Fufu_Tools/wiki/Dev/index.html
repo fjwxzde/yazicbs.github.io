@@ -258,6 +258,17 @@ options:
                                 </pre>
                             </td>
                         </tr>
+                        <tr>
+                            <td>git</td>
+                            <td>账号切换</td>
+                            <td>
+                                <pre>
+                                    <code>
+usage: 账号切换.py [--fast] USERNAME
+                                    </code>
+                                </pre>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -284,16 +295,44 @@ WARNING: 无效的程序调用
             </div>
             <br />
             <div class="container">
-                <h2 id="配置文件">config.ini</h2>
-                <p><del>什么？你问我配置文件里的东西都是做什么用的？你不会看注释吗？</del></p>
+                <h2 id="ini">ini配置文件说明</h2>
+                <p>详见配置文件中的注释。</p>
                 <p><del>什么？你说你把注释删掉了？请</del><a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/files/ini/开发工具默认config/config.ini" download>[点我下载默认配置文件(20240527)]</a></p>
+            </div>
+            <br />
+            <div class="container">
+                <h2 id="json">json配置文件说明</h2>
+                <p><i>Examples:</i></p>
+                <ul>
+                    <li>
+                        <h3>git/账户切换/accounts.json</h3>
+                        <pre>
+                            <code>
+{
+    "用户1": {
+        "name": "用户名1",
+        "email": "邮箱1@example.com",
+        "aliases": ["用户1别名1", "用户1别名2"]
+    },
+    "用户2": {
+        "name": "用户名2",
+        "email": "邮箱2@example.com",
+        "aliases": ["用户2别名1", "用户2别名2"]
+    }
+}
+                            </code>
+                            <p><strong>[!WARNING]</strong><br>请勿在<code>json</code>文件中添加注释！</p>
+                        </pre>
+                    </li>
+                </ul>
             </div>
         </div>
 
         <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
             <div class="right-text">
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
-                <p>最后更新：<strong>2024/6/4</strong></p>
+                <p>最后更新：<strong>2024/6/10</strong></p>
+                <p>Last edit by <strong><a href="https://github.com/Luna-Grace" target="_blank">Luna Grace</a></strong></p>
                 <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
                 <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
             </div>
