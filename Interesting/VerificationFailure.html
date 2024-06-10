@@ -89,6 +89,10 @@
                 </div>
             </div>
             <p id="xf" style="display: none;">你找错地方了，赶紧走！这里不是你该来的地方！<br/>ERROR CODE: 404 No Page.</p>
+            <div id="info" style="display: none;">
+                <p>设备参数：<span id="info1">[NaN]</span></p>
+                <p>比较: <span id="info2">[NaN]</span></p>
+            </div>
         </div>
 
         <!--设备验证JS-->
@@ -133,12 +137,22 @@
                 document.getElementById('xf').style.display = 'none';
                 return "done"
             }
+            /* --- */
+            function show_info() {
+                document.getElementById('info').style.display = 'block';
+                return "done"
+            }
         </script>
         <script>
             var userAgent = navigator.userAgent;
             console.log(`用户设备: ${userAgent}`)
 
-            if (userAgent.includes("iPhone 13")) {
+            const info1Span = document.getElementById('info1');
+            info1Span.textContent = userAgent;
+            const info2Span = document.getElementById('info2');
+            info2Span.textContent = navigator.userAgent;
+
+            if (userAgent.includes("iPhone")) {
                 is_vf()
             } else if (userAgent.includes("Windows NT 10.0") && !userAgent.includes("ARM")) {
                 console.log("\n测试环境...done");
@@ -148,6 +162,7 @@
 [block_vf()] [block_xf()]
 [none_vf()] [none_xf()]
 [is_vf()] [is_xf()]
+[show_info()]
                 `)
                 is_xf()
             } else {
