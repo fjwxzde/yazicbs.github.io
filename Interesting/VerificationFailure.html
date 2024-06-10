@@ -147,15 +147,15 @@
             var userAgent = navigator.userAgent;
             console.log(`用户设备: ${userAgent}`)
 
-            const info1Span = document.getElementById('info1');
-            info1Span.textContent = userAgent;
-            const info2Span = document.getElementById('info2');
-            info2Span.textContent = navigator.userAgent;
-
             if (userAgent.includes("iPhone")) {
                 is_vf()
             /*
             } else if (userAgent.includes("Windows NT 10.0") && !userAgent.includes("ARM")) {
+                const info1Span = document.getElementById('info1');
+                info1Span.textContent = userAgent;
+                const info2Span = document.getElementById('info2');
+                info2Span.textContent = navigator.userAgent;
+                
                 console.log("\n测试环境...done");
                 console.warn(`
 将显示xf页面内容，使用以下函数更新显示:
