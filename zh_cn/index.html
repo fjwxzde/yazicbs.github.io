@@ -1284,7 +1284,7 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                                             <div class="s-component s-text">
                                                                                 <div class="s-component-content s-font-body">
                                                                                     <p>中文Git、芙芙工具箱、GUS(GenshinImpact UP Search)作者</p>
-                                                                                    <p id="contentForXiamen" style="display:none;">初二学生(厦门双十海附)</p>
+                                                                                    <p>GitHub Star: <strong><span id="total-stars">[计算中...]</span></strong></p>
                                                                                     <p>不会聊天...(万能的关键字)</p>
                                                                                     <p><del>整天在网页里写本地路径</del></p>
                                                                                     <script>
@@ -1324,6 +1324,41 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                                                             helloSpan.textContent = welcomeMessage;
                                                                                         })
                                                                                         .catch(error => console.error('[ERROR]获取地区失败:', error));
+                                                                                        // ------- Location ↑ --- GitHub Status ↓ -------
+                                                                                        const USERNAME = 'DuckDuckStudio';
+
+                                                                                        async function getTotalStars() {
+                                                                                            try {
+                                                                                                let totalStars = 0;
+                                                                                                let page = 1;
+                                                                                                let hasMoreRepos = true;
+
+                                                                                                while (hasMoreRepos) {
+                                                                                                const response = await fetch(`https://api.github.com/users/${USERNAME}/repos?per_page=100&page=${page}`);
+
+                                                                                                if (!response.ok) {
+                                                                                                    throw new Error(`GitHub API 错误: ${response.statusText}`);
+                                                                                                }
+
+                                                                                                const repos = await response.json();
+                                                                                                if (repos.length === 0) {
+                                                                                                    hasMoreRepos = false;
+                                                                                                } else {
+                                                                                                    for (const repo of repos) {
+                                                                                                    totalStars += repo.stargazers_count;
+                                                                                                    }
+                                                                                                    page++;
+                                                                                                }
+                                                                                                }
+
+                                                                                                //console.log(`一共获取到: ${totalStars} ⭐`);
+                                                                                                document.getElementById('total-stars').innerText = `${totalStars} ⭐`;
+                                                                                            } catch (error) {
+                                                                                                console.error('GitHub Star 自动替换出错:', error);
+                                                                                            }
+                                                                                        }
+
+                                                                                        getTotalStars();
                                                                                     </script>
                                                                                 </div>
                                                                             </div>
