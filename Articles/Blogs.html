@@ -130,8 +130,10 @@
 
                         // 判断打字或删除字是否完成
                         if (charIndex === txt[currentIndex].length + 3) {
-                            // 打字完成后切换到删除字状态
-                            typing = false;
+                            // 打字完成后停留时间较长（1000毫秒），然后切换到删除字状态
+                            setTimeout(function() {
+                                typing = false;
+                            }, 1000);
                         } else if (charIndex < 0) {
                             // 删除字完成后切换到下一个字符串的打字状态
                             typing = true;
