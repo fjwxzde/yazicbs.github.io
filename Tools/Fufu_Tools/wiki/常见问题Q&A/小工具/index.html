@@ -94,7 +94,14 @@
                 安装库文件以解决此问题：<br>
                 <img src="https://duckduckstudio.github.io/Fufu_Tools/photos/%E5%AE%89%E8%A3%85%E5%BA%93%E6%96%87%E4%BB%B6.png" alt="安装库文件" width="70%" height="70%" ><br>
                 你也可以选择使用<code>环境配置\虚拟环境.py</code>来配置虚拟Python环境。<br>
-                如果在安装完库文件后仍然无法运行小工具(在出现相同错误的情况下)或者你使用的是打包版本的小工具，请 <strong><a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">提交Issues</a></strong>。<br></p>
+                <h3>手动配置（推荐）</h3>
+                <ol>
+                    <li><p><code>cd</code>到芙芙工具箱目录</p></li>
+                    <li><p>运行<code>python -m venv .venv</code>命令</p></li>
+                    <li><p>运行<code>.venv\Scripts\Activate.ps1</code>(PowerShell)或<code>.venv\Scripts\Activate.bat</code>(cmd) 命令 (运行后应看到<code>(.venv)</code>前缀)</p></li>
+                    <li><p>运行<code>pip install -r 环境配置\requirements.txt</code>(镜像源在命令后面加上<code>-i https://pypi.tuna.tsinghua.edu.cn/simple</code>) 命令</p></li>
+                </ol>
+                如果在安装完库文件后仍然无法运行小工具（在出现相同错误的情况下）或者你使用的是打包版本的小工具，请 <strong><a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">提交Issues</a></strong>。<br></p>
             </div>
             <p>&nbsp;</p>
             <div class="container">
@@ -129,7 +136,7 @@
         <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
             <div class="right-text">
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
-                <p>最后更新：<strong>2024/4/17</strong></p>
+                <p>最后更新：<strong>2024/6/22</strong></p>
                 <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
                 <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
             </div>
