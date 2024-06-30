@@ -1033,17 +1033,16 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                                                 <div class="s-component s-text">
                                                                                     <div class="s-component-content s-font-body">
                                                                                         <p>
+                                                                                            <i><del>我当然知道图片中的英文翻译有问题...</del></i>
+                                                                                        </p>
+                                                                                        <p>
                                                                                             这是一款经典的数字华容道游戏，玩家在游戏中通过<strong>移动游戏界面中相邻数字方块</strong>，<strong>使其按照1~23的顺序排列</strong>，同时<strong>左上角记录相应所用时间</strong>。感兴趣的朋友可以来挑战一下看看自己完成游戏的最短时间。
                                                                                         </p>
                                                                                         <p>
-                                                                                            本游戏目前<strong>只支持中文（简体）</strong>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            本游戏由Duck
-                                                                                            Studio制作。<strong>手机端同样可玩！</strong>
+                                                                                            本游戏由Duck Studio制作。<strong>手机端同样可玩！</strong>
                                                                                         </p>
                                                                                         <a href="https://duck-studio-2022.itch.io/digital-huarong-road/"
-                                                                                            target="_blank">点我在线游玩</a>
+                                                                                            target="_blank">点我在线游玩 (在itch.io上)</a>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1403,8 +1402,8 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                     <strong>关于本网站</strong>
                                                 </p>
                                                 <p>本网站由<strong>鸭鸭「カモ」</strong>建立，</p>
-                                                <p><strong>最后编辑：2024年5月26日</strong></p>
-                                                <p><i>网站版本: v1.8.1</i></p>
+                                                <p><strong>全站更新时间：<span id="commitTime">[加载中...]</span></strong></p>
+                                                <p><i>网站版本: v1.8.2</i></p>
                                                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/" target="_blank">点击查看我的一些小工具</a>
                                                 <br>
                                                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Articles/" target="_blank">点击查看我的文章</a>
@@ -1475,26 +1474,34 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                 <p><strong><span id="commitMessage">[加载中...]</span></strong></p>
                                                 <!-- 使用GitHub API 获取最新 Git message -->
                                                 <script>
-                                                    // GitHub API endpoint for fetching repository commits
                                                     const repoUrl = 'https://api.github.com/repos/DuckDuckStudio/yazicbs.github.io/commits';
 
-                                                    // Fetch data from GitHub API
                                                     fetch(repoUrl)
                                                         .then(response => response.json())
                                                         .then(data => {
-                                                            // Get latest commit message
-                                                            const latestCommitMessage = data[0].commit.message;
-                                                            
-                                                            // Display latest commit message on the HTML page
-                                                            document.getElementById('commitMessage').innerHTML = `${latestCommitMessage}`;
+                                                            const latestCommitMessage = data[0].commit.message; // 获取最新提交的消息
+                                                            const latestCommitTime = new Date(data[0].commit.committer.date); // 获取最新提交的时间，并转换为 Date 对象
+
+                                                            // 格式化日期
+                                                            const year = latestCommitTime.getFullYear();
+                                                            const month = (latestCommitTime.getMonth() + 1).toString().padStart(2, '0'); // 月份从0开始，需要加1，并补齐两位数
+                                                            const day = latestCommitTime.getDate().toString().padStart(2, '0'); // 获取日期，并补齐两位数
+
+                                                            // 格式化时间
+                                                            const hours = latestCommitTime.getHours().toString().padStart(2, '0'); // 获取小时，并补齐两位数
+                                                            const minutes = latestCommitTime.getMinutes().toString().padStart(2, '0'); // 获取分钟，并补齐两位数
+
+                                                            // 构建完整的日期时间字符串
+                                                            const formattedDateTime = `${year}年${month}月${day}日 ${hours}时${minutes}分`;
+
+                                                            document.getElementById('commitMessage').innerHTML = latestCommitMessage;
+                                                            document.getElementById('commitTime').innerHTML = formattedDateTime;
                                                         })
                                                         .catch(error => {
                                                             console.error('[ERROR]无法获取GitHub上的最新提交信息:', error);
-                                                            // Replace content on the HTML page with an error message
                                                             document.getElementById('commitMessage').innerHTML = '[加载失败，请检查网络或联系网站管理员]';
                                                         });
-                                                    </script>
-                                                </div>
+                                                </script>
                                             </div>
                                         </div>
                                     </div>
