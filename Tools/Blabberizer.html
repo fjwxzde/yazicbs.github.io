@@ -107,10 +107,10 @@
             nouns2: ['创新', '效率', '品质', '服务', '营销', '管理', '协作', '沟通', '学习', '发展', '解决方案', '市场策略', '团队合作'],
             memes: ['996', '加班狂魔', '2333', '打酱油', '全力以赴', '666', '放飞自我', '扎心了老铁', '弯弯的月亮', '囧rz', '不忘初心', '一言难尽', '装逼', '作死', '划水', '中二病', '吃土', '逆向思维', '躺平', '原神,启动！'],
 
-            specialSentences: {
-                '01-01': '新的一年，让我们更加奋发努力，创造更多辉煌的业绩！',
-                '04-01': '突然来了条信息！哦是废话，那没事了。',
-            },
+            //specialSentences: {
+            //    '01-01': '新的一年，让我们更加奋发努力，创造更多辉煌的业绩！',
+            //    '04-01': '突然来了条信息！哦是废话，那没事了。',
+            //},
 
             generate: function() {
                 let sentence;
@@ -119,14 +119,14 @@
                 const day = String(currentDate.getDate()).padStart(2, '0');
                 const currentDateString = month + '-' + day;
 
-                if (currentDateString in this.specialSentences) {
-                    sentence = this.specialSentences[currentDateString];
-                } else {
+                //if (currentDateString in this.specialSentences) {
+                //    sentence = this.specialSentences[currentDateString];
+                //} else {
                     sentence = this.randomItem(this.nouns)
                         + this.randomItem(this.verbs)
                         + this.randomItem(this.adjectives)
                         + this.randomItem(this.nouns2);
-                }
+                //}
 
                 document.getElementById('result').textContent = sentence;
             },
