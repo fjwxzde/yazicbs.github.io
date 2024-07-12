@@ -1316,7 +1316,10 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                                                                 'Nanping': '南平',
                                                                                                 'Longyan': '龙岩',
                                                                                                 'Sanming': '三明',
-                                                                                                'Ningde': '宁德'
+                                                                                                'Ningde': '宁德',
+                                                                                                /* --- Other city --- */
+                                                                                                'Beijing': '北京',
+                                                                                                'Shanghai': '上海',
                                                                                             };
 
                                                                                             let welcomeMessage = '';
@@ -1324,9 +1327,9 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                                                                                             if (country === 'CN') {
                                                                                                 welcomeMessage = `你好，${cityMessages[city] || province}！`;
                                                                                             } else if (country === 'JP') {
-                                                                                                welcomeMessage = `こんにちは、${cityMessages[city] || province}！`;
+                                                                                                welcomeMessage = `こんにちは、${city || province}！`;
                                                                                             } else {
-                                                                                                welcomeMessage = `Hello, ${cityMessages[city] || province}!`;
+                                                                                                welcomeMessage = `Hello, ${city || province}!`;
                                                                                             }
 
                                                                                             console.log(welcomeMessage);
