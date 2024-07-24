@@ -1,8 +1,4 @@
-LERVE:2
-[新增文档]
-关于配置文件的文档已添加到用户手册中。
+LERVE:3
 [更新说明]
-中文Git v2.8 (Pre-release) 已发布
-由于Issue#22:
-使用winget获取的请使用`winget update DuckStudio.ChineseGit`更新
-使用其他版本的请手动更新
+中文Git v2.9 已发布
+你可以使用`中文git 更新`命令来更新到最新版本
