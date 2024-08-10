@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 芙芙工具箱相关问题
+    url: https://github.com/DuckDuckStudio/Fufu_Tools/issue
+    about: 提交关于芙芙工具箱的问题
+  - name: 中文Git相关问题
+    url: https://github.com/DuckDuckStudio/Chinese_git/issue
+    about: 提交关于中文Git的问题
+  - name: 查看已经打开的问题
+    url: https://github.com/DuckDuckStudio/yazicbs.github.io/issues
+    about: 请确认你的问题没有与已存在的问题重复。
