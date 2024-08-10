@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #eadbbf;
+}
+
+.container {
+    text-align: center;
+}
+
+#Time-Remaining {
+    font-size: 1200%;
+}
+
+.seconds {
+    font-size: 300%;
+}
+
+.comma {
+    color: #888;
+    font-size: 0.7em;
+}
