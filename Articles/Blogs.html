@@ -110,11 +110,51 @@
                 <script>
                     // 获取要操作的 .text 标签
                     const text = document.querySelector('.text');
-                
+
                     // 定义要显示的文字数组
-                    const txt = ["Sleep all day.", "Just do it!", "Never give you up~"];
+                    const txt = [
+                        "Sleep all day.",
+                        "不管你有没有昼夜的概念，首先祝你早上 中午 晚上好！",// 确定位置 index 2
+                        "Just do it!",
+                        "Never give you up~",
+                    ];
+
+                    // ----------- 处理各个时段的消息 -----------
+                    // WARN: 确定的位置，请勿修改
+                    const now_text = new Date();
+
+                    const currentHour = now_text.getHours(); // 获取当前小时数
+
+                    if ((currentHour >= 0 && currentHour < 5) || (currentHour >= 22 && currentHour < 24)) {
+                        txt[1] = "还不睡觉呢? 小猫~";
+                    } else if (currentHour >= 5 && currentHour < 8) {
+                        txt[1] = "早起的小虫有鸟吃~";
+                    } else if (currentHour >= 9 && currentHour < 11) {
+                        txt[1] = "一日之计在于晨，想好要做什么了吗？";
+                    } else if (currentHour >= 12 && currentHour < 14) {
+                        txt[1] = "o((>ω< ))o 太阳这么大要晒化掉了 (南方)";
+                    } else if (currentHour >= 14 && currentHour < 16) {
+                        txt[1] = "下午要做什么捏？";
+                    } else if (currentHour >= 17 && currentHour < 18) {
+                        txt[1] = "你那的晚霞好看吗？";
+                    } else if (currentHour >= 19 && currentHour < 21) {
+                        txt[1] = "⭐SUPER NIGHT TIME⭐";
+                    }
+
+                    console.log(`%c[TEST(标语-时间)] 当前时间 ${now_text} | ${currentHour}时 | ${txt[1]}`, "color: cyan;")
+
+                    // 生成一个新的随机顺序的文字数组
+                    function getRandomOrder(array) {
+                        const shuffled = array.slice(); // 复制数组
+                        for (let i = shuffled.length - 1; i > 0; i--) {
+                            const j = Math.floor(Math.random() * (i + 1));
+                            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // 交换元素
+                        }
+                        return shuffled;
+                    }
 
                     // 定义当前正在操作的文字下标和字符下标
+                    let currentOrder = getRandomOrder(txt); // 初始随机顺序
                     let currentIndex = 0;
                     let charIndex = 0;
 
@@ -124,15 +164,15 @@
                     // 设置定时器，每200毫秒执行一次
                     setInterval(function() {
                         if (typing) {
-                            // 正在打字状态，显示当前字符串的前index个字符
-                            text.innerHTML = txt[currentIndex].slice(0, ++charIndex);
+                            // 正在打字状态，显示当前字符串的前charIndex个字符
+                            text.innerHTML = currentOrder[currentIndex].slice(0, ++charIndex);
                         } else {
-                            // 正在删除字状态，显示当前字符串的前index个字符
-                            text.innerHTML = txt[currentIndex].slice(0, --charIndex);
+                            // 正在删除字状态，显示当前字符串的前charIndex个字符
+                            text.innerHTML = currentOrder[currentIndex].slice(0, --charIndex);
                         }
 
                         // 判断打字或删除字是否完成
-                        if (charIndex === txt[currentIndex].length + 3) {
+                        if (charIndex === currentOrder[currentIndex].length + 3) {
                             // 打字完成后停留时间较长（1000毫秒），然后切换到删除字状态
                             setTimeout(function() {
                                 typing = false;
@@ -142,8 +182,9 @@
                             typing = true;
                             charIndex = 0;
                             currentIndex++;
-                            // 如果当前文字下标超过数组长度，重置为0
-                            if (currentIndex >= txt.length) {
+                            // 如果当前文字下标超过数组长度，生成新的随机顺序并重置为0
+                            if (currentIndex >= currentOrder.length) {
+                                currentOrder = getRandomOrder(txt);
                                 currentIndex = 0;
                             }
                         }
