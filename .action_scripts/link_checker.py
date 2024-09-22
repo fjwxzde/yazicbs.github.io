@@ -9,6 +9,7 @@ IGNORE_FILES = ['Duck Parkour.html'] # 忽略的文件
 IGNORE_URLS = [
     # 常时
     'https://duckduckstudio.github.io/yazicbs.github.io/Interesting/sounds/*.mp3',
+    'https://duckduckstudio.github.io/yazicbs.github.io/music_games/photos/show.png'
 ] # 忽略的链接
 
 # 更新后的链接正则表达式
