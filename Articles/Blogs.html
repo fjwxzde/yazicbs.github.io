@@ -90,6 +90,10 @@
                 border: 1px solid #ccc;
             }
             /* ------ */
+
+            .抑 {
+                display: none;
+            }
         </style>
         <!-- 芙芙工具箱网页通用样式 by鸭鸭「カモ」 -->
         <link rel="stylesheet" href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/css/universal.css">
@@ -244,7 +248,7 @@
             -->
 
             <!-- blog 样例 Start -->
-            <div id="抑" style="display: none;">
+            <div class="抑">
                 <div class="center-text">
                     <p id="20241003"><i>2024/10/3 <span id="抑郁日记6">抑郁日记6</span></i></p>
                 </div>
@@ -996,7 +1000,7 @@
             <h2 id="index">Blog 索引</h2>
             <!-- 倒序 月份新的在前 日期旧的在前 -->
             <h3 id="y2024">2024年</h3>
-            <div id="抑" style="display: none;">
+            <div class="抑">
                 <h4 id="y2024m10">10月</h4><!---->
                 <a href="#20241001">2024/10/1 - 抑郁日记5</a>
                 &nbsp;|&nbsp;
@@ -1014,7 +1018,7 @@
             <a href="#20240812">2024/8/12</a>
             &nbsp;|&nbsp;
             <a href="#2024082501">2024/8/25[1]</a>
-            <div id="抑" style="display: none;">
+            <div class="抑">
                 &nbsp;|&nbsp;
                 <a href="#2024082502">2024/8/25[2] - 抑郁日记1</a>
             </div>
@@ -1118,7 +1122,7 @@
             <p><i>更建议使用<code>Ctrl</code>+<code>F</code>搜索关键词。</i></p>
             <!-- 倒序 月份新的在前 日期旧的在前 -->
             <h3 id="y2024">2024年</h3>
-            <div id="抑" style="display: none;">
+            <div class="抑">
                 <h4 id="y2024m10">10月</h4><!---->
                 <a href="#20241001">2024/10/1(抑郁日记5)</a>
                 &nbsp;|&nbsp;
@@ -1136,7 +1140,7 @@
             <a href="#20240812">2024/8/12(厦门人的精神状态都是这样的？)</a>
             &nbsp;|&nbsp;
             <a href="#2024082501">2024/8/25[1](记得好好吃饭。)</a>
-            <div id="抑" style="display: none;">
+            <div class="抑">
                 &nbsp;|&nbsp;
                 <a href="#2024082502">2024/8/25[2](活着，挺好。)</a>
             </div>
@@ -1336,10 +1340,16 @@
 
             // 获取当前 URL 的查询参数
             const params = new URLSearchParams(window.location.search);
-            
+
             // 检查是否含有 '抑' 参数
             if (params.has('抑')) {
-                document.getElementById('抑').style.display = 'block';
+                // 获取所有类名为 '抑' 的元素
+                const elements = document.querySelectorAll('.抑');
+                
+                // 遍历每个元素并设置显示样式
+                elements.forEach(element => {
+                    element.style.display = 'block'; // 显示元素
+                });
             }
         </script>
     </body>
