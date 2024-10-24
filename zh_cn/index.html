@@ -93,30 +93,6 @@ aooaa    a  aa  am cp a   a     aw ra  a   hb l    a  aa  a  ya  a
                 欢迎关注我的bilibili频道：@鸭鸭_カモ
                 https://space.bilibili.com/2054654702/
             `)
-            //初始化结束
-
-            var _strk = _strk || []
-            //定义全局变量_strk
-            _strk.push = function (arg1, arg2) {
-                var _arrayPush = Array.prototype.push.bind(this)
-                if (typeof arg1 === 'string' && typeof arg2 === 'function') {
-                    // Support _strk.push(event, fn) for better UX
-                    _arrayPush([arg1, arg2])
-                } else {
-                    _arrayPush.apply(this, arguments)
-                }
-            }
-
-            window.runAfterDomBinding = {
-                //定义对象runAfterDomBinding
-                add: function (name, fn) {
-                    _strk.push(['Page.didMount', fn])
-                }
-            }
-
-            (function () {
-                window.$B || (window.$B = {});
-            }).call(this);
         </script>
 
         <!-- 自写优化css -->
