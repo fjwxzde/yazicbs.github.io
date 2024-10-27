@@ -8,3 +8,5 @@ package-lock.json
 package.json
 # 编写中
 other/links/
+# Just for fun
+zh_cn/js/neofetch.js
