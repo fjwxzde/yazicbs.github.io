@@ -23,11 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const 鸭子出生 = new Date(2023, 11, 6); // 2023年12月5日
     const 鸭子没嘎 = true;
+    let showDay = true; // 初始时显示“日”
 
     function 格式化岁数(岁数) {
         const 年 = Math.floor(岁数);
         const 月 = Math.floor((岁数 - 年) * 365 / 30); // 365天1年 30天1月
-        return `${年} 年 ${月} 月`;
+        const 日 = (((岁数 - 年) * 365 ) % 30).toFixed(2);
+        const 返回 = [`${年} 岁 ${月} 月`, `${日}日`];
+        return 返回;
     }
 
     function 更新岁数() {
@@ -42,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (鸭子没嘎) {
                 活了多久 = (现在 - 鸭子出生) / 1000 / (365 * 24 * 60 * 60); // 年
                 鸭子占比 = 活了多久 / 8;
-                岁数 = (80 * 鸭子占比).toFixed(2);
+                岁数 = 80 * 鸭子占比
                 岁数 = 格式化岁数(岁数);
             }
         } catch (error) {
@@ -51,7 +54,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // 更新显示内容
-        document.getElementById('age').innerHTML = 岁数;
+        document.getElementById('age').innerHTML = 岁数[0];
+        
+        // 根据showDay控制是否显示“日”
+        if (showDay) {
+            document.getElementById('day').innerHTML = 岁数[1];
+        } else {
+            document.getElementById('day').innerHTML = "";
+        }
     }
 
     // 每秒更新一次
@@ -59,4 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 初次调用以显示时间
     更新岁数();
+
+    // 添加按钮点击事件来切换显示“日”
+    document.getElementById('toggleDay').addEventListener('click', () => {
+        showDay = !showDay;  // 切换显示状态
+        更新岁数();  // 更新显示
+    });
 });
