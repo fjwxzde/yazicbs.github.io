@@ -54,7 +54,7 @@ jobs:
                        --body "Created through the [workflow](${WORKFLOW_URL})." \
                        --base main \
                        --head $BRANCH_NAME \
-                       --reviewer fjwxzde \
+                       --reviewer Luna-Grace \
                        --reviewer DuckDuckStudio
 
           echo "Pull Request 创建成功。"
