@@ -31,8 +31,12 @@ try {
 
   scanDirectory(repoRoot);
 
+  // 获取当前日期并格式化
+  const currentDate = new Date().toISOString();
+
   // 创建 sitemap.xml 文件内容
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  sitemap += `<!-- 生成日期: ${currentDate} -->\n`; // 添加生成日期的注释
   sitemap += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 

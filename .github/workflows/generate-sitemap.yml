@@ -49,6 +49,7 @@ jobs:
                        --body "Created through the [workflow](${WORKFLOW_URL})." \
                        --base main \
                        --head $BRANCH_NAME \
+                       --label "工作流,DEV-开发分支合并" \
                        --reviewer Luna-Grace \
                        --reviewer DuckDuckStudio
 
