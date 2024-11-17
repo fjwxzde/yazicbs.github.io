@@ -1,6 +1,12 @@
 # 鸭鸭「カモ」 的个人网站
 
-[![pages-build-deployment](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/pages/pages-build-deployment) | [![检查本地路径](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check-local-paths.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check-local-paths.yml) | [![检查链接有效性](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check_url_visit.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check_url_visit.yml)  
+| 页面部署 | 检查本地路径 | 检查链接有效性 |
+|---------|-------------|---------------|
+| [![pages-build-deployment](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/pages/pages-build-deployment) | [![检查本地路径](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check-local-paths.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check-local-paths.yml) | [![检查链接有效性](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check_url_visit.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check_url_visit.yml) |
+
+| 处理自动合并标签 | 生成 Sitemap | 依赖更新 |
+|-----------------|-------------|----------|
+| [![处理自动合并标签](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/handle_auto_merge_labels.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/handle_auto_merge_labels.yml) | [![生成 Sitemap](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/generate-sitemap.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/generate-sitemap.yml) | [![Dependabot Updates](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/dependabot/dependabot-updates) |
 
 ## 关于本网页
 本网页由 **鸭鸭「カモ」** 编写与维护，**如有任何问题可以[提交Issues](https://github.com/DuckDuckStudio/yazicbs.github.io/issues)进行反馈。**  
