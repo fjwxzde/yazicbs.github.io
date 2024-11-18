@@ -1330,7 +1330,7 @@ https://space.bilibili.com/2054654702/
                                                 <p>问题反馈: <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues" target="_blank">[前去提交Issues]</a></p>
                                                 <p><i>Note: 暂不处理手机端的显示问题</i></p>
                                                 <p><a href="https://duckduckstudio.github.io/yazicbs.github.io/privacy.html">[隐私政策]</a></p>
-                                                <p><strong>网站最新修改内容:</strong></p>
+                                                <p><strong>全站最新修改内容:</strong></p>
                                                 <p><strong><span id="commitMessage">[加载中...]</span></strong></p>
                                                 <!-- 使用GitHub API 获取最新 Commit message -->
                                                 <script>
@@ -1342,7 +1342,7 @@ https://space.bilibili.com/2054654702/
                                                     fetch(repoUrl)
                                                         .then(response => response.json())
                                                         .then(data => {
-                                                            const latestCommitMessage = data[0].commit.message; // 获取最新提交的消息
+                                                            const latestCommitMessage = data[0].commit.message.split('\n')[0]; // 获取最新提交的消息的第一行
                                                             const latestCommitTime = new Date(data[0].commit.committer.date); // 获取最新提交的时间，并转换为 Date 对象
 
                                                             // 格式化日期
