@@ -60,13 +60,13 @@ try {
         const fullUrl = `${repoUrl}/${encodedPath}`;
 
         // 只在获取到有效的 lastmod 时添加 <lastmod> 标签
-        const urlTag = `<url>\n  <loc>${fullUrl}</loc>`;
+        const urlTag = `  <url>\n    <loc>${fullUrl}</loc>`;
         if (lastmod) {
           // 如果 lastmod 存在，添加 <lastmod>
-          urls.add(`${urlTag}\n  <lastmod>${lastmod}</lastmod>\n</url>`);
+          urls.add(`${urlTag}\n    <lastmod>${lastmod}</lastmod>\n  </url>`);
         } else {
           // 如果没有 lastmod，直接添加 <loc>
-          urls.add(`${urlTag}\n</url>`);
+          urls.add(`${urlTag}\n  </url>`);
         }
       }
     });
