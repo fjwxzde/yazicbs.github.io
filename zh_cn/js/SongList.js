@@ -59,13 +59,13 @@ var playlists = [
             name: '不再年轻的村庄(轻策夜间)',
             artist: '陈致逸 / HOYO-MiX',
             url: 'https://music.163.com/song/media/outer/url?id=1492276660.mp3',
-            cover: 'http://p2.music.126.net/yoRaxBY77koSqhjh52g-DA==/109951165434255510.jpg'
+            cover: 'httpss://p2.music.126.net/yoRaxBY77koSqhjh52g-DA==/109951165434255510.jpg'
         },
         {
             name: '风轻云暖',
             artist: 'HOYO-MiX',
             url: 'https://music.163.com/song/media/outer/url?id=2613484725.mp3',
-            cover: 'http://p1.music.126.net/dH0bfwKCPFdT65ZIe2OUjA==/109951169835593264.jpg'
+            cover: 'https://p1.music.126.net/dH0bfwKCPFdT65ZIe2OUjA==/109951169835593264.jpg'
         },
     ],
     // 崩坏3
@@ -110,7 +110,7 @@ var playlists = [
             name: 'Moon (feat. MYLK)',
             artist: 'Kirara Magic / MYLK',
             url: 'https://music.163.com/song/media/outer/url?id=1970065457.mp3',
-            cover: 'http://p1.music.126.net/8iXNNlZSJgePYhBmWpPaVQ==/109951167752893617.jpg'
+            cover: 'https://p1.music.126.net/8iXNNlZSJgePYhBmWpPaVQ==/109951167752893617.jpg'
         },
     ],
     // 纯音乐
@@ -140,7 +140,7 @@ var playlists = [
             cover: 'https://p2.music.126.net/6_oOAFwqRnW1m_S7EZk5OQ==/109951169274100743.jpg'
         },
     ],
-    /* 春节
+    /* 春节 */
     [
         {
             name: '春节序曲',
@@ -155,7 +155,7 @@ var playlists = [
             cover: 'https://p2.music.126.net/9HMwjKJ28PkHp609d98dJQ==/109951169761022710.jpg'
         }
     ],
-    */
+    // */
 ];
 
 // 从歌单列表中随机选择一个歌单
