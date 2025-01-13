@@ -1,59 +1,36 @@
 name: 生成 Sitemap
 
+# GitHub Actiion DuckDuckStudio/Sitemap_Creator 版本 1.0.2 示例工作流
+# https://github.com/marketplace/actions/sitemap-creator-stable
+# Under the [GNU Affero General Public License v3.0](https://github.com/DuckDuckStudio/Sitemap_Creator/blob/main/LICENSE)
+
 on:
   push:
     branches:
       - main
+      # 当 main 分支上有新推送且以下文件被更改时
     paths:
       - '**/*.html'
-  workflow_dispatch:
+  workflow_dispatch: # 手动运行
 
 jobs:
   generate_sitemap:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 检出仓库
-        uses: actions/checkout@v4
+      - name: 更新网站地图
+        uses: DuckDuckStudio/Sitemap_Creator@1.0.2
         with:
-          fetch-depth: 0
-
-      - name: 设置 Node.js 环境
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: 设置时区
-        run: sudo timedatectl set-timezone Asia/Shanghai
-
-      - name: 创建 Sitemap
-        run: node .action_scripts/JavaScript/generate-sitemap.mjs
-
-      - name: 提交并推送 sitemap.xml
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          # 获取当前日期和时间
-          DATE_TIME=$(date '+%Y/%m/%d %H:%M')
-
-          BRANCH_NAME="sitemap-update-$(date +%Y%m%d%H%M%S)"
-          git checkout -b $BRANCH_NAME
-          echo "已创建分支 $BRANCH_NAME"
-          git config --global user.name "${{ secrets.BOT_ACCOUNT }}"
-          git config --global user.email "${{ secrets.BOT_EMAIL }}"
-          git add sitemap.xml
-          git commit -m "[${DATE_TIME}] Auto update sitemap"
-          git push --set-upstream origin $BRANCH_NAME
-
-          # 生成工作流 URL
-          WORKFLOW_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-
-          # 使用 GitHub CLI 创建 PR，动态设置 body 内容为工作流链接
-          gh pr create --title "[${DATE_TIME}] Auto update sitemap" \
-                       --body "Created through the [workflow](${WORKFLOW_URL})." \
-                       --base main \
-                       --head $BRANCH_NAME \
-                       --label "工作流,DEV-开发分支合并" \
-                       --reviewer DuckDuckStudio
-
-          echo "Pull Request 创建成功。"
+          ignore_file: "debug.html,404.html,无聊闲话.html,VerificationFailure.html,test"
+          labels: "DEV-已启用自动合并,工作流,DEV-开发分支合并"
+          auto_merge: "压缩合并"
+          debug: true # 启用调试输出
+          # 其他参数默认
+          # website_path: "./"
+          # location: "./sitemap.xml"
+          # basic_link: "https://duckduckstudio.github.io/yazicbs.github.io"
+          # base_branch: "main"
+          # file_type: "html,md"
+          # token: ${{ github.token }}
+          # timezone: "Asia/Shanghai"
+          # update: "拉取请求"

@@ -7,6 +7,6 @@
     "sitemap": "node generate-sitemap.mjs"
   },
   "author": "Duck Studio",
-  "license": "GPL-3.0",
+  "license": "AGPL-3.0",
   "description": "Some auto javascript script for DuckDuckStudio/yazicbs.github.io github action."
 }
