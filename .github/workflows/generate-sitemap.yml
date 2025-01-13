@@ -21,6 +21,7 @@ jobs:
       - name: 更新网站地图
         uses: DuckDuckStudio/Sitemap_Creator@1.0.2
         with:
+          file_type: "html"
           ignore_file: "debug.html,404.html,无聊闲话.html,VerificationFailure.html,test"
           labels: "DEV-已启用自动合并,工作流,DEV-开发分支合并"
           auto_merge: "压缩合并"
@@ -30,7 +31,6 @@ jobs:
           # location: "./sitemap.xml"
           # basic_link: "https://duckduckstudio.github.io/yazicbs.github.io"
           # base_branch: "main"
-          # file_type: "html,md"
           # token: ${{ github.token }}
           # timezone: "Asia/Shanghai"
           # update: "拉取请求"
