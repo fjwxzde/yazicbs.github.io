@@ -198,15 +198,18 @@ https://space.bilibili.com/2054654702/
 
             <br>
             <div class="container">
-                <h2 id="随机密码生成配置文件">随机密码生成配置文件</h2>
+                <h2 id="自动打包py文件">自动打包py文件</h2>
                 <p>(位于<code>.\Tools\【实验性工具】\自动化\自动打包所有py文件\config.ini</code>)</p>
                 <p>你可以通过修改<code>Compile_C</code>的值来指定使用Nuitka打包时使用的编译器，默认为<code>mingw64</code></p>
                 <p>可选值有<code>clang</code>、<code>mingw64</code></p>
-                <p>附加选项：</p>
+                <p>附加选项:</p>
+                <p><i>对于 v1.3.6 及之前的版本:</i></p>
                 <p>由于构建指令时的特殊结构，<strong>理论上</strong>您也可以在<code>Compile_C</code>的值中添加附加参数。</p>
                 <p>默认的打包指令为<code>python -m nuitka (--disable-console) --output-dir=\"{output_dir}\" --show-progress (--windows-icon-from-ico=\"{icon_path}\") --onefile --remove-output --{compile} {file_path}</code></p>
                 <p>例如，你可以将<code>Compile_C</code>的值设为<code>clang --show-memory</code>来添加<code>--show-memory</code>参数。</p>
                 <p><strong>虽然您可以这样做，但这样做出现的错误我将不会处理。</strong></p>
+                <p><i>对于 v1.3.7 及之后的版本:</i></p>
+                <p>由于在 v1.3.7 版本中对命令传递方式的修改 (字符串 → 列表)，前面的参数添加方式将不再适用。</p>
             </div>
         </div>
 
