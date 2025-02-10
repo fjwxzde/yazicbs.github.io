@@ -81,216 +81,29 @@ https://space.bilibili.com/2054654702/
             <div class="center-text">
                 <h1>芙芙工具箱 开发工具 说明</h1>
                 <p><i>适用于芙芙工具箱&nbsp;独立开发工具包</i></p>
-                <p>你可以通过下载单独的开发工具包获取。</p>
-                <p><i>本文档的路径针对独立开发工具包编辑。</i></p>
                 <p>&nbsp;</p>
             </div>
 
             <div class="container">
-                <h2 id="总调用">总调用</h2>
-                <p>你可以在主程序直接启动总调用程序对代码进行检查，也可以使用指令调用指定工具。</p>
-                <p>在主程序的开发工具分类你应该会看到 4 个按钮，以下是各个按钮的解释:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>名称</th>
-                            <th>解释</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>总调用</td>
-                            <td>应用所有检查</td>
-                        </tr>
-                        <tr>
-                            <td>复制目录</td>
-                            <td>将开发工具所在目录复制到剪贴板上以方便<code>cd</code></td>
-                        </tr>
-                        <tr>
-                            <td>配置文件</td>
-                            <td>打开开发工具的总配置文件(<code>config.ini</code>)</td>
-                        </tr>
-                        <tr>
-                            <td>文档</td>
-                            <td>打开本页面</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>你虽然可以直接在主程序中调用一些功能，但我并<strong>不建议这样做</strong>。</p>
-                <p>最好的调用方法应该是<strong>使用命令调用</strong>。</p>
-            </div>
-            <br />
-            <div class="container">
-                <h2 id="命令调用">命令调用</h2>
-                <p>以下为示例命令，在执行前请先<code>cd</code>到开发工具目录，然后再<code>cd</code>到对应分类。</p>
-                <p>使用<code>python 工具名.py --help</code>获取每个工具的详细指令帮助！</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>分类</th>
-                            <th>校验内容</th>
-                            <th>命令</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>代码校对</td>
-                            <td>尾随空格</td>
-                            <td>
-                                <pre>
-                                    <code>
-usage: 尾随空格.py [-h] [--file_extensions FILE_EXTENSIONS] --dir DIRECTORY
-
-检查指定目录下的文件是否存在尾随空格
-
-options:
-    -h, --help            show this help message and exit
-    --file_extensions FILE_EXTENSIONS
-                        要检查的文件扩展名列表，以 , 分隔
-    --dir DIRECTORY       要检查的目录路径
-                                    </code>
-                                </pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>代码校对</td>
-                            <td>非UTF-8编码</td>
-                            <td>
-                                <pre>
-                                    <code>
-usage: 非UTF-8编码.py [-h] [--file_extensions FILE_EXTENSIONS] --dir DIRECTORY
-
-检查指定目录下的文件是否存在非UTF-8编码的文件
-
-options:
-    -h, --help            show this help message and exit
-    --file_extensions FILE_EXTENSIONS
-                        要检查的文件扩展名列表，以 , 分隔
-    --dir DIRECTORY       要检查的目录路径
-                                    </code>
-                                </pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>代码校对</td>
-                            <td>参数查重</td>
-                            <td>
-                                <pre>
-                                    <code>
-usage: 参数查重.py [-h] [--show-duplicates] [--remove-duplicates] [--copy-to-clipboard] input
-
-参数查重工具
-
-positional arguments:
-    input                输入以逗号分隔的字符串
-
-options:
-    -h, --help           show this help message and exit
-    --show-duplicates    查找并显示重复内容
-    --remove-duplicates  查找并移除重复内容（保留一个）
-    --copy-to-clipboard  将结果复制到剪贴板（必须与--remove_duplicates同时使用）
-                                    </code>
-                                </pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>代码校对</td>
-                            <td>末尾空行</td>
-                            <td>
-                                <pre>
-                                    <code>
-usage: 末尾空行.py [-h] --dir DIRECTORY
-
-检查文件末尾是否为空行
-
-options:
-    -h, --help       show this help message and exit
-    --dir DIRECTORY  要检查的目录路径
-                                    </code>
-                                </pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>生成工具</td>
-                            <td>需求生成</td>
-                            <td>
-                                <pre>
-                                    <code>
-usage: 需求生成.py [-h] --dir DIR [--output OUTPUT] [--env ENV]
-
-根据目录中的Python文件生成requirements.txt文件。
-
-options:
-    -h, --help       show this help message and exit
-    --dir DIR        包含Python文件的目录路径。
-    --output OUTPUT  requirements.txt文件的输出路径（完整路径）。
-    --env ENV        指定已有环境中的Python解释器，仅列出环境中还未安装的库。
-                                    </code>
-                                </pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>统计</td>
-                            <td>代码总行数</td>
-                            <td>
-                                <pre>
-                                    <code>
-usage: 代码总行数.py [-h] --dir DIR_PATH [--ignore-folders IGNORE_FOLDERS] [--ignore-files IGNORE_FILES] [--formats FILE_FORMATS] [--ignore-empty-lines] [--ignore-comments] [--show-ignored-lines] [--show-test-info] [--code-file-formats]
-                        
-计算指定目录中的总代码行数
-
-options:
-    -h, --help            show this help message and exit
-    --dir DIR_PATH        要扫描的目录
-    --ignore-folders IGNORE_FOLDERS
-                        要忽略的文件夹（逗号分隔）
-    --ignore-files IGNORE_FILES
-                        要忽略的文件（逗号分隔）
-    --formats FILE_FORMATS
-                        要包含的文件格式（逗号分隔）
-    --ignore-empty-lines  在统计时忽略空行
-    --ignore-comments     在统计时忽略注释行
-    --show-ignored-lines  显示总共忽略的空行和注释行数
-    --show-test-info      显示测试信息（非必要不要使用）
-    --code-file-formats   仅统计代码文件
-                                    </code>
-                                </pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>git</td>
-                            <td>账号切换</td>
-                            <td>
-                                <pre>
-                                    <code>
-usage: 账号切换.py [--fast] USERNAME
-                                    </code>
-                                </pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <br />
-            <div class="container">
-                <h2 id="终端调用">在终端中调用</h2>
-                <p><i>与前面的方式的区别是这里直接在终端通过<code>ffdev 工具 参数</code>调用。</i></p>
-                <p>在第一次配置时，请先进行以下操作:</p>
+                <p>下载zip文件的在第一次配置时，请先进行以下操作:</p>
                 <ol>
-                    <li><p>找到芙芙工具箱安装目录</p></li>
-                    <li><p>找到<code>Tools\开发工具\Script</code>目录</p></li>
+                    <li><p>解压下载的 zip 文件</p></li>
+                    <li><p>找到开发工具包解压目录</p></li>
                     <li><p>将该目录添加到环境变量<code>PATH</code>中，类似步骤请查看<a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98QandA/%E4%B8%BB%E7%A8%8B%E5%BA%8F/#add-python-to-path" target="_blank">[Q：我该如何添加python到系统PATH环境变量]</a> (我相信你能通过这个类似的文档看懂)</p></li>
-                    <li><p>尝试在终端中使用<code>ffdev</code>命令，如果提示命令不存在则请重启你的设备。</p></li>
+                    <li><p>尝试在终端中使用<code>ffdev</code>命令，如果提示命令不存在则请重开一个终端实例/重启你的设备。</p></li>
                 </ol>
-                <p>如果你已正常配置，你应该可以看到类似如下的输出:</p>
+                <p>用安装程序安装的不用弄。</p>
+                <p>如果你已正确配置，你应该可以看到类似如下的输出:</p>
                 <pre>
                     <code>
-PS D:\root> ffdev
-WARNING: 无效的程序调用
-可用程序: [目录复制] [参数查重] [非UTF-8编码] [尾随空格] [需求生成] [代码行数]
+&gt; ffdev
+Usage: ffdev &lt;工具&gt; &lt;命令&gt; [&lt;参数&gt;...]
+&gt; ffdev 帮助
+⚠ 无效的程序调用
+[!] 可用程序: [总调用] [目录复制] [参数查重] [非UTF-8编码] [尾随空格] [需求生成] [代码行数] [账号切换] [连续push] [连续pull] [git连续尝试]
                     </code>
                 </pre>
-                <p>最后，使用<code>ffdev &lt;工具&gt; [参数]</code>即可执行工具，具体参数请见<a href="#命令调用">上方</a>。</p>
+                <p>最后，使用<code>ffdev &lt;工具&gt; [参数]</code>即可执行工具，具体使用方法请参阅每个功能的<code>--help</code>。</p>
             </div>
             <br />
             <div class="container">
@@ -330,8 +143,7 @@ WARNING: 无效的程序调用
         <div class="container" style="margin-bottom: 1%; margin-right: 1%; margin-left: 1%;">
             <div class="right-text">
                 <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/">回到索引</a>
-                <p>最后更新：<strong>2024/6/10</strong></p>
-                <p>Last edit by <strong><a href="https://github.com/Luna-Grace" target="_blank">Luna Grace</a></strong></p>
+                <p>最后更新：<strong>2025/2/10</strong></p>
                 <a href="https://github.com/DuckDuckStudio/yazicbs.github.io/issues">[提交<strong>本页面</strong>的反馈]</a><br>
                 <a href="https://github.com/DuckDuckStudio/Fufu_Tools/issues">[提交<strong>芙芙工具箱</strong>的反馈]</a><br>
             </div>
