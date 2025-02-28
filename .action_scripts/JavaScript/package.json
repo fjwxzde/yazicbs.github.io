@@ -8,5 +8,8 @@
   },
   "author": "Duck Studio",
   "license": "AGPL-3.0",
-  "description": "Some auto javascript script for DuckDuckStudio/yazicbs.github.io github action."
+  "description": "Some auto javascript script for DuckDuckStudio/yazicbs.github.io github action.",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
 }
