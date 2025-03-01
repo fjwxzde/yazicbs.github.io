@@ -148,9 +148,8 @@ https://space.bilibili.com/2054654702/
                                                         <div class="s-title sb-title-left-align">
                                                             <div class="s-component s-text">
                                                                 <div class="s-component-content s-font-title">
-                                                                    <p class="my_name">
-                                                                        鸭鸭「カモ」
-                                                                    </p>
+                                                                    <p class="my_name">&nbsp;&nbsp;鸭鸭「カモ」</p>
+                                                                    <!-- 两个空格用来抵消「」产生的错位 -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -171,37 +170,37 @@ https://space.bilibili.com/2054654702/
                                                                             "(躺在地上打滚)(尖叫)(对食物无差别攻击)",
                                                                             "中文Git作者",
                                                                             "芙芙工具箱作者",
+                                                                            "Sitemap Creator (GitHub Action) 作者",
                                                                             "GitHub Labels Manager (GLM) 作者",
-                                                                            "来看看我的视频吧！↓",
+                                                                            "GitHubView (ghv) 作者",
                                                                             "鸭子，你可以吃芝士汉堡",
                                                                             "Want it, Merge it.",
+                                                                            "if 不能，至少不应该 fi",
                                                                             "Also try F12.",
-                                                                            "不管你有没有昼夜的概念，首先祝你早上 中午 晚上好！"// 确定位置 index 11
+                                                                            "不管你有没有昼夜的概念，首先祝你早上 中午 晚上好！" // 确定位置 index 13
                                                                         ];
 
                                                                         // ----------- 处理各个时段的消息 -----------
                                                                         // WARN: 确定的位置，请勿修改
-                                                                        const now_text = new Date();
+                                                                        const currentHour = new Date().getHours(); // 获取当前小时数
 
-                                                                        const currentHour = now_text.getHours(); // 获取当前小时数
-
-                                                                        if ((currentHour >= 0 && currentHour < 5) || (currentHour >= 22 && currentHour < 24)) {
-                                                                            txt[11] = "还不睡觉呢? 小猫~";
-                                                                        } else if (currentHour >= 5 && currentHour < 8) {
-                                                                            txt[11] = "早起的小虫有鸟吃~";
+                                                                        if ((currentHour >= 0 && currentHour < 5) || (currentHour >= 21 && currentHour < 24)) {
+                                                                            txt[13] = "还不睡觉呢? 小猫~";
+                                                                        } else if (currentHour >= 5 && currentHour < 9) {
+                                                                            txt[13] = "早起的小虫有鸟吃~";
                                                                         } else if (currentHour >= 9 && currentHour < 11) {
-                                                                            txt[11] = "一日之计在于晨，想好要做什么了吗？";
-                                                                        } else if (currentHour >= 12 && currentHour < 14) {
-                                                                            txt[11] = "o((>ω< ))o 太阳这么大要晒化掉了 (南方)";
-                                                                        } else if (currentHour >= 14 && currentHour < 16) {
-                                                                            txt[11] = "下午要做什么捏？";
-                                                                        } else if (currentHour >= 17 && currentHour < 18) {
-                                                                            txt[11] = "你那的晚霞好看吗？";
+                                                                            txt[13] = "一日之计在于晨，想好要做什么了吗？";
+                                                                        } else if (currentHour >= 11 && currentHour < 14) {
+                                                                            txt[13] = "o((>ω< ))o 太阳这么大要晒化掉了 (南方)";
+                                                                        } else if (currentHour >= 14 && currentHour < 17) {
+                                                                            txt[13] = "下午要做什么捏？";
+                                                                        } else if (currentHour >= 17 && currentHour < 19) {
+                                                                            txt[13] = "你那的晚霞好看吗？";
                                                                         } else if (currentHour >= 19 && currentHour < 21) {
-                                                                            txt[11] = "⭐SUPER NIGHT TIME⭐";
+                                                                            txt[13] = "⭐SUPER NIGHT TIME⭐";
                                                                         }
 
-                                                                        console.log(`%c[TEST(标语-时间)] 当前时间 ${now_text} | ${currentHour}时 | ${txt[11]}`, "color: cyan;")
+                                                                        console.log(`%c[TEST(标语-时间)] 当前时间 ${new Date()} | ${currentHour}时 | ${txt[13]}`, "color: cyan;");
 
                                                                         // 生成一个新的随机顺序的文字数组
                                                                         function getRandomOrder(array) {
@@ -255,7 +254,7 @@ https://space.bilibili.com/2054654702/
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="s-button-group">
+                                                    <!-- <div class="s-button-group">
                                                         <div class="css-17vc2g2 css-fr6mkq0">
                                                             <div class="s-button s-component">
                                                                 <div>
@@ -269,7 +268,7 @@ https://space.bilibili.com/2054654702/
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -361,40 +360,6 @@ https://space.bilibili.com/2054654702/
                                             </div>
                                         </div>
                                         <!-------------------->
-                                        <!--
-                                        <div class="s-section">
-                                            <div class="container">
-                                                <div class="center-text">
-                                                    <div class="clearfix">
-                                                        <div class="hello_container">
-                                                            <h3 style="font-size: 27px;">很抱歉，我还是没能坚持下来。</h3>
-                                                            <p>2024 年 9 月 28 日 晚上 11 点 (2024/09/28T23:00)</p>
-                                                            <br>
-                                                            <div style="text-align: left; font-size: 20px;">
-                                                                <p>&nbsp;&nbsp;我还是很累，这几天的请假并没能帮到我什么，什么都没有。我尝试过向同学倾诉、向老师倾诉、去心理辅导站、(无法执行)去看医生...但我依然没有得到答案。</p>
-                                                                <p>&nbsp;&nbsp;<i><strong>为什么要活着?</strong> 为什么.... 为了双亲? <strong>为了那些将我推向死亡的人???</strong> 我不明白，也没有机会明白。</i></p>
-                                                                <p>&nbsp;&nbsp;最后一个晚上了，如果我继续犹豫的话，我不会得到帮助，而是<strong>更大的威胁</strong>。如果我明天仍然选择请假，我就再也没有机会再在网上留下遗言了。但如果我明天去了学校，我不仅要面对那些同学，我还要面对那些我从来都没有学过的知识的小测，还有最不好的历史课。</p>
-                                                                <p>&nbsp;&nbsp;<strong>当一个憋屈的人、当一个别人心中的人，真的好吗?</strong></p>
-                                                                <p>&nbsp;&nbsp;对不起，母亲。我不是您心中的儿子，我成为不了您期望的样子。我只是一个占用公共资源的畜生罢了。</p>
-                                                                <p>&nbsp;&nbsp;<i>社会不会因为一个人的离去而停止运转，我走后自然会有别人补上来。</i></p>
-                                                                <p>&nbsp;&nbsp;<strong>不必挂念，走的只是那个沉迷游戏的畜生罢了。</strong></p>
-                                                                <p>&nbsp;&nbsp;想鸭子了。去陪陪吧。</p>
-                                                            </div>
-                                                            <div class="right-text">
-                                                                <p>如果要找我的话...我也不知道我接下来会去哪...</p>
-                                                                <ul>用的时候记得改，记得改
-                                                                    <li>楼顶边缘</li>
-                                                                    <li>海沧大桥</li>
-                                                                    <li>房间门上</li>
-                                                                    <li>...真到这时候还有点怕怕的，但是吃药自杀是真的没有效果...</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        -->
                                     </div>
                                 </li>
                                 <li class="slide s-section-3 css-1rkmeg4">
@@ -446,10 +411,106 @@ https://space.bilibili.com/2054654702/
                                                                                 <div>
                                                                                     <div class="s-component-content">
                                                                                         <div class="s-img-wrapper">
+                                                                                            <a href="https://github.com/marketplace/actions/sitemap-creator-stable"
+                                                                                                target="_blank">
+                                                                                                <div class="s-ratio-box"
+                                                                                                    style="max-width: 720px; max-height: 450px;">
+                                                                                                    <!--大小设定-->
+                                                                                                    <div class="s-ratio-fill"
+                                                                                                        style="padding-bottom: 56.25%;">
+                                                                                                    </div>
+                                                                                                    <div class="s-img-wrapper">
+                                                                                                        <img alt="Sitemap Creator 展示图"
+                                                                                                            class="crop-default ls-is-cached lazyloaded"
+                                                                                                            width="720"
+                                                                                                            height="405"
+                                                                                                            src="https://duckduckstudio.github.io/yazicbs.github.io/project_photos/Sitemap_Creator.png">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--文本-->
+                                                                    <div class="ten columns s-right-in-row s-rva-text">
+                                                                        <div class="s-item-text-group half-offset-left">
+                                                                            <div class="s-item-title">
+                                                                                <div class="s-component s-text" style="display: flex; align-items: center;">
+                                                                                    <h3 class="s-component-content s-font-heading" style="font-size: 130%; margin-right: 5px;">
+                                                                                        Sitemap Creator
+                                                                                    </h3>
+                                                                                    (<a href="https://github.com/marketplace/actions/sitemap-creator-stable" target="_blank">Stable</a>&nbsp;|&nbsp;<a href="https://github.com/marketplace/actions/sitemap-creator-pre-release" target="_blank">Pre-Release</a>)
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="s-item-text">
+                                                                                <div class="s-component s-text">
+                                                                                    <div class="s-component-content s-font-body">
+                                                                                        <p>
+                                                                                            <strong>用 GitHub Action 🚀 在你的仓库中创建和更新网站地图。</strong>
+                                                                                        </p>
+                                                                                        <table style="width: 60%;">
+                                                                                            <caption>
+                                                                                                <p>为什么选择 Sitemap Creator 🏆</p>
+                                                                                            </caption>
+                                                                                            <thead>
+                                                                                                <tr>
+                                                                                                    <td>无需本地操作</td>
+                                                                                                    <td>✅</td>
+                                                                                                    <td>稳定更新</td>
+                                                                                                    <td>✅</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>完全免费</td>
+                                                                                                    <td>✅</td>
+                                                                                                    <td>修改时区</td>
+                                                                                                    <td>✅</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>指定更新/创建方式</td>
+                                                                                                    <td>✅</td>
+                                                                                                    <td>不遗漏页面</td>
+                                                                                                    <td>✅</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>忽略页面</td>
+                                                                                                    <td>✅</td>
+                                                                                                    <td>指定网站地图存放位置</td>
+                                                                                                    <td>✅</td>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tfoot>
+                                                                                                <tr>
+                                                                                                    <th colspan="4" style="text-align: center;">更多优点...✅</th>
+                                                                                                </tr>
+                                                                                            </tfoot>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 展示块分界 -->
+                                                        <br>
+                                                        <div data-sorting-index="5" class="s-repeatable-item s-last-row">
+                                                            <div class="clearfix">
+                                                                <div>
+                                                                    <div
+                                                                        class="s-item-media-wrapper six columns  s-left-in-row s-rva-media">
+                                                                        <div class="s-item-media-group">
+                                                                            <div class="s-component s-media">
+                                                                                <div>
+                                                                                    <div class="s-component-content">
+                                                                                        <div class="s-img-wrapper">
                                                                                             <a href="https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/"
                                                                                                 target="_blank">
                                                                                                 <div class="s-ratio-box"
-                                                                                                    style="max-width: 720px; max-height:450px;">
+                                                                                                    style="max-width: 720px; max-height: 450px;">
                                                                                                     <!--大小设定-->
                                                                                                     <div class="s-ratio-fill"
                                                                                                         style="padding-bottom: 56.25%;">
@@ -536,7 +597,7 @@ https://space.bilibili.com/2054654702/
                                                                                             <a href="https://DuckDuckStudio.github.io/yazicbs.github.io/Tools/chinese_git/"
                                                                                                 target="_blank">
                                                                                                 <div class="s-ratio-box"
-                                                                                                    style="max-width: 720px; max-height:450px;">
+                                                                                                    style="max-width: 720px; max-height: 450px;">
                                                                                                     <!--大小设定-->
                                                                                                     <div class="s-ratio-fill"
                                                                                                         style="padding-bottom: 56.25%;">
@@ -609,7 +670,7 @@ https://space.bilibili.com/2054654702/
                                                                                             <a href="https://DuckDuckStudio.github.io/yazicbs.github.io/minecraft/"
                                                                                                 target="_blank">
                                                                                                 <div class="s-ratio-box"
-                                                                                                    style="max-width: 720px; max-height:450px;">
+                                                                                                    style="max-width: 720px; max-height: 450px;">
                                                                                                     <!--大小设定-->
                                                                                                     <div class="s-ratio-fill"
                                                                                                         style="padding-bottom: 56.25%;">
@@ -685,7 +746,7 @@ https://space.bilibili.com/2054654702/
                                                                                             <a href="https://DuckDuckStudio.github.io/yazicbs.github.io/GenshinImpact/"
                                                                                                 target="_blank">
                                                                                                 <div class="s-ratio-box"
-                                                                                                    style="max-width: 720px; max-height:450px;">
+                                                                                                    style="max-width: 720px; max-height: 450px;">
                                                                                                     <!--大小设定-->
                                                                                                     <div class="s-ratio-fill"
                                                                                                         style="padding-bottom: 56.25%;">
@@ -1306,17 +1367,11 @@ https://space.bilibili.com/2054654702/
                                                         }
                                                     };
 
-                                                    /* 计算周年数 */
-                                                    const now = new Date(); // 获取当前日期
-                                                    const currentYear = now.getFullYear(); // 获取当前年份
+                                                    /* 替换年份 */
+                                                    const currentYear = new Date().getFullYear(); // 获取当前年份
 
-                                                    /* 自动替换版权年份 */
-                                                    const NowYearElement = document.getElementById("now_year");// 获取要替换的文本元素
-                                                    NowYearElement.textContent = currentYear;// 将年份写入文本元素中
-
-                                                    const difference = currentYear - 2021; // 计算年份差距
-                                                    const yearDifferenceElement = document.getElementById("year-difference");// 获取要替换的文本元素
-                                                    yearDifferenceElement.textContent = difference;// 将年份差距写入文本元素中
+                                                    document.getElementById("now_year").textContent = currentYear; // 版权
+                                                    document.getElementById("year-difference").textContent = currentYear - 2021; // 周年庆祝
                                                 </script>
                                                 <!-- END -->
                                             </div>
