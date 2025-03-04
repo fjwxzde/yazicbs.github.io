@@ -48,7 +48,7 @@ yazicbs.github.io
 │   ├───excel → 表格附件  
 │   ├───photos → 使用的图片  
 │   └───promotion → 推广页面(编的)  
-│       └───oak_island → 橡木岛  
+│       └───橡木岛 → 橡木岛  
 │           └───photos → 推广页面>橡木岛所需图片  
 ├───music_games → 某鸭的音游记录  
 │   ├───disuke → ~~快把浴霸关上！~~  
