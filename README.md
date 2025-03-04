@@ -2,7 +2,7 @@
 
 | 页面部署 | 检查本地路径 | 检查链接有效性 |
 |---------|-------------|---------------|
-| [![pages-build-deployment](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/pages/pages-build-deployment) | [![检查本地路径](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check-local-paths.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check-local-paths.yml) | [![检查链接有效性](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check_url_visit.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check_url_visit.yml) |
+| [![向 GitHub Page 部署静态内容](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/deploy.yml) | [![检查本地路径](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check-local-paths.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check-local-paths.yml) | [![检查链接有效性](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check_url_visit.yml/badge.svg)](https://github.com/DuckDuckStudio/yazicbs.github.io/actions/workflows/check_url_visit.yml) |
 
 | 处理自动合并标签 | 生成 Sitemap | 依赖更新 |
 |-----------------|-------------|----------|
